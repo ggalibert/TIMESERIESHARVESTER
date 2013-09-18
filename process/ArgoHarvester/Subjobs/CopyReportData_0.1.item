@@ -1,95 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="DestinationDatabase_Database" prompt="DestinationDatabase_Database?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="talend"/>
-    <contextParameter comment="" name="DestinationDatabase_Login" prompt="DestinationDatabase_Login?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="DestinationDatabase_Password" prompt="DestinationDatabase_Password?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_Password" value="Ku46BPaQBR8="/>
+    <contextParameter comment="" name="DestinationDatabase_Database" prompt="DestinationDatabase_Database?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="harvest"/>
+    <contextParameter comment="" name="DestinationDatabase_Login" prompt="DestinationDatabase_Login?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="anmn"/>
+    <contextParameter comment="" name="DestinationDatabase_Password" prompt="DestinationDatabase_Password?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_Password" value="WAfq3KSpK04="/>
     <contextParameter comment="" name="DestinationDatabase_Port" prompt="DestinationDatabase_Port?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="5432"/>
-    <contextParameter comment="" name="DestinationDatabase_Schema" prompt="DestinationDatabase_Schema?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="DestinationDatabase_Server" prompt="DestinationDatabase_Server?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="localhost"/>
-    <contextParameter comment="" name="ReportingDatabase_Database" prompt="ReportingDatabase_Database?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="report_db"/>
-    <contextParameter comment="" name="ReportingDatabase_Login" prompt="ReportingDatabase_Login?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="ReportingDatabase_Password" prompt="ReportingDatabase_Password?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_Password" value="Ku46BPaQBR8="/>
-    <contextParameter comment="" name="ReportingDatabase_Port" prompt="ReportingDatabase_Port?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="5432"/>
-    <contextParameter comment="" name="ReportingDatabase_Schema" prompt="ReportingDatabase_Schema?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="ReportingDatabase_Server" prompt="ReportingDatabase_Server?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="localhost"/>
-  </context>
-  <context confirmationNeeded="false" name="soop_frrf_dev">
-    <contextParameter comment="" name="DestinationDatabase_Database" prompt="DestinationDatabase_Database?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="talend"/>
-    <contextParameter comment="" name="DestinationDatabase_Login" prompt="DestinationDatabase_Login?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="DestinationDatabase_Password" prompt="DestinationDatabase_Password?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_Password" value="Ku46BPaQBR8="/>
-    <contextParameter comment="" name="DestinationDatabase_Port" prompt="DestinationDatabase_Port?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="5432"/>
-    <contextParameter comment="" name="DestinationDatabase_Schema" prompt="DestinationDatabase_Schema?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="DestinationDatabase_Server" prompt="DestinationDatabase_Server?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="localhost"/>
-    <contextParameter comment="" name="ReportingDatabase_Database" prompt="ReportingDatabase_Database?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="report_db"/>
-    <contextParameter comment="" name="ReportingDatabase_Login" prompt="ReportingDatabase_Login?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="ReportingDatabase_Password" prompt="ReportingDatabase_Password?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_Password" value="Ku46BPaQBR8="/>
-    <contextParameter comment="" name="ReportingDatabase_Port" prompt="ReportingDatabase_Port?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="5432"/>
-    <contextParameter comment="" name="ReportingDatabase_Schema" prompt="ReportingDatabase_Schema?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="ReportingDatabase_Server" prompt="ReportingDatabase_Server?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="localhost"/>
-  </context>
-  <context confirmationNeeded="false" name="soop_sst_dev">
-    <contextParameter comment="" name="DestinationDatabase_Database" prompt="DestinationDatabase_Database?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="talend"/>
-    <contextParameter comment="" name="DestinationDatabase_Login" prompt="DestinationDatabase_Login?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="DestinationDatabase_Password" prompt="DestinationDatabase_Password?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_Password" value="Ku46BPaQBR8="/>
-    <contextParameter comment="" name="DestinationDatabase_Port" prompt="DestinationDatabase_Port?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="5432"/>
-    <contextParameter comment="" name="DestinationDatabase_Schema" prompt="DestinationDatabase_Schema?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="DestinationDatabase_Server" prompt="DestinationDatabase_Server?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="localhost"/>
-    <contextParameter comment="" name="ReportingDatabase_Database" prompt="ReportingDatabase_Database?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="report_db"/>
-    <contextParameter comment="" name="ReportingDatabase_Login" prompt="ReportingDatabase_Login?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="ReportingDatabase_Password" prompt="ReportingDatabase_Password?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_Password" value="Ku46BPaQBR8="/>
-    <contextParameter comment="" name="ReportingDatabase_Port" prompt="ReportingDatabase_Port?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="5432"/>
-    <contextParameter comment="" name="ReportingDatabase_Schema" prompt="ReportingDatabase_Schema?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="ReportingDatabase_Server" prompt="ReportingDatabase_Server?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="localhost"/>
-  </context>
-  <context confirmationNeeded="false" name="soop_trv_dev">
-    <contextParameter comment="" name="DestinationDatabase_Database" prompt="DestinationDatabase_Database?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="talend"/>
-    <contextParameter comment="" name="DestinationDatabase_Login" prompt="DestinationDatabase_Login?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="DestinationDatabase_Password" prompt="DestinationDatabase_Password?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_Password" value="Ku46BPaQBR8="/>
-    <contextParameter comment="" name="DestinationDatabase_Port" prompt="DestinationDatabase_Port?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="5432"/>
-    <contextParameter comment="" name="DestinationDatabase_Schema" prompt="DestinationDatabase_Schema?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="DestinationDatabase_Server" prompt="DestinationDatabase_Server?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="localhost"/>
-    <contextParameter comment="" name="ReportingDatabase_Database" prompt="ReportingDatabase_Database?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="report_db"/>
-    <contextParameter comment="" name="ReportingDatabase_Login" prompt="ReportingDatabase_Login?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="ReportingDatabase_Password" prompt="ReportingDatabase_Password?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_Password" value="Ku46BPaQBR8="/>
-    <contextParameter comment="" name="ReportingDatabase_Port" prompt="ReportingDatabase_Port?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="5432"/>
-    <contextParameter comment="" name="ReportingDatabase_Schema" prompt="ReportingDatabase_Schema?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="ReportingDatabase_Server" prompt="ReportingDatabase_Server?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="localhost"/>
-  </context>
-  <context confirmationNeeded="false" name="soop_ba_dev">
-    <contextParameter comment="" name="DestinationDatabase_Database" prompt="DestinationDatabase_Database?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="talend"/>
-    <contextParameter comment="" name="DestinationDatabase_Login" prompt="DestinationDatabase_Login?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="DestinationDatabase_Password" prompt="DestinationDatabase_Password?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_Password" value="Ku46BPaQBR8="/>
-    <contextParameter comment="" name="DestinationDatabase_Port" prompt="DestinationDatabase_Port?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="5432"/>
-    <contextParameter comment="" name="DestinationDatabase_Schema" prompt="DestinationDatabase_Schema?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="DestinationDatabase_Server" prompt="DestinationDatabase_Server?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="localhost"/>
-    <contextParameter comment="" name="ReportingDatabase_Database" prompt="ReportingDatabase_Database?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="report_db"/>
-    <contextParameter comment="" name="ReportingDatabase_Login" prompt="ReportingDatabase_Login?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="ReportingDatabase_Password" prompt="ReportingDatabase_Password?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_Password" value="Ku46BPaQBR8="/>
-    <contextParameter comment="" name="ReportingDatabase_Port" prompt="ReportingDatabase_Port?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="5432"/>
-    <contextParameter comment="" name="ReportingDatabase_Schema" prompt="ReportingDatabase_Schema?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="ReportingDatabase_Server" prompt="ReportingDatabase_Server?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="localhost"/>
-  </context>
-  <context confirmationNeeded="false" name="soop_tmv_dev">
-    <contextParameter comment="" name="DestinationDatabase_Database" prompt="DestinationDatabase_Database?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="talend"/>
-    <contextParameter comment="" name="DestinationDatabase_Login" prompt="DestinationDatabase_Login?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="DestinationDatabase_Password" prompt="DestinationDatabase_Password?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_Password" value="Ku46BPaQBR8="/>
-    <contextParameter comment="" name="DestinationDatabase_Port" prompt="DestinationDatabase_Port?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="5432"/>
-    <contextParameter comment="" name="DestinationDatabase_Schema" prompt="DestinationDatabase_Schema?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="DestinationDatabase_Server" prompt="DestinationDatabase_Server?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="localhost"/>
-    <contextParameter comment="" name="ReportingDatabase_Database" prompt="ReportingDatabase_Database?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="report_db"/>
-    <contextParameter comment="" name="ReportingDatabase_Login" prompt="ReportingDatabase_Login?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="ReportingDatabase_Password" prompt="ReportingDatabase_Password?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_Password" value="Ku46BPaQBR8="/>
-    <contextParameter comment="" name="ReportingDatabase_Port" prompt="ReportingDatabase_Port?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="5432"/>
-    <contextParameter comment="" name="ReportingDatabase_Schema" prompt="ReportingDatabase_Schema?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="ReportingDatabase_Server" prompt="ReportingDatabase_Server?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="localhost"/>
-  </context>
-  <context confirmationNeeded="false" name="soop_asf_dev">
-    <contextParameter comment="" name="DestinationDatabase_Database" prompt="DestinationDatabase_Database?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="talend"/>
-    <contextParameter comment="" name="DestinationDatabase_Login" prompt="DestinationDatabase_Login?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="DestinationDatabase_Password" prompt="DestinationDatabase_Password?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_Password" value="Ku46BPaQBR8="/>
-    <contextParameter comment="" name="DestinationDatabase_Port" prompt="DestinationDatabase_Port?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="5432"/>
-    <contextParameter comment="" name="DestinationDatabase_Schema" prompt="DestinationDatabase_Schema?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="soop"/>
+    <contextParameter comment="" name="DestinationDatabase_Schema" prompt="DestinationDatabase_Schema?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="anmn"/>
     <contextParameter comment="" name="DestinationDatabase_Server" prompt="DestinationDatabase_Server?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="localhost"/>
     <contextParameter comment="" name="ReportingDatabase_Database" prompt="ReportingDatabase_Database?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="report_db"/>
     <contextParameter comment="" name="ReportingDatabase_Login" prompt="ReportingDatabase_Login?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="soop"/>
@@ -99,7 +15,7 @@
     <contextParameter comment="" name="ReportingDatabase_Server" prompt="ReportingDatabase_Server?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="localhost"/>
   </context>
   <context confirmationNeeded="false" name="argo_dev">
-    <contextParameter comment="" name="DestinationDatabase_Database" prompt="DestinationDatabase_Database?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="talend"/>
+    <contextParameter comment="" name="DestinationDatabase_Database" prompt="DestinationDatabase_Database?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="harvest"/>
     <contextParameter comment="" name="DestinationDatabase_Login" prompt="DestinationDatabase_Login?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="argo"/>
     <contextParameter comment="" name="DestinationDatabase_Password" prompt="DestinationDatabase_Password?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_Password" value="bQdsCI2gjYQ="/>
     <contextParameter comment="" name="DestinationDatabase_Port" prompt="DestinationDatabase_Port?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="5432"/>
@@ -112,22 +28,8 @@
     <contextParameter comment="" name="ReportingDatabase_Schema" prompt="ReportingDatabase_Schema?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="argo"/>
     <contextParameter comment="" name="ReportingDatabase_Server" prompt="ReportingDatabase_Server?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="localhost"/>
   </context>
-  <context confirmationNeeded="false" name="soop_co2_dev">
-    <contextParameter comment="" name="DestinationDatabase_Database" prompt="DestinationDatabase_Database?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="talend"/>
-    <contextParameter comment="" name="DestinationDatabase_Login" prompt="DestinationDatabase_Login?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="DestinationDatabase_Password" prompt="DestinationDatabase_Password?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_Password" value="Ku46BPaQBR8="/>
-    <contextParameter comment="" name="DestinationDatabase_Port" prompt="DestinationDatabase_Port?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="5432"/>
-    <contextParameter comment="" name="DestinationDatabase_Schema" prompt="DestinationDatabase_Schema?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="DestinationDatabase_Server" prompt="DestinationDatabase_Server?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="localhost"/>
-    <contextParameter comment="" name="ReportingDatabase_Database" prompt="ReportingDatabase_Database?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="report_db"/>
-    <contextParameter comment="" name="ReportingDatabase_Login" prompt="ReportingDatabase_Login?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="ReportingDatabase_Password" prompt="ReportingDatabase_Password?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_Password" value="Ku46BPaQBR8="/>
-    <contextParameter comment="" name="ReportingDatabase_Port" prompt="ReportingDatabase_Port?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="5432"/>
-    <contextParameter comment="" name="ReportingDatabase_Schema" prompt="ReportingDatabase_Schema?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="soop"/>
-    <contextParameter comment="" name="ReportingDatabase_Server" prompt="ReportingDatabase_Server?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="localhost"/>
-  </context>
   <context confirmationNeeded="false" name="abos_dev">
-    <contextParameter comment="" name="DestinationDatabase_Database" prompt="DestinationDatabase_Database?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="talend"/>
+    <contextParameter comment="" name="DestinationDatabase_Database" prompt="DestinationDatabase_Database?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="harvest"/>
     <contextParameter comment="" name="DestinationDatabase_Login" prompt="DestinationDatabase_Login?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="abos"/>
     <contextParameter comment="" name="DestinationDatabase_Password" prompt="DestinationDatabase_Password?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_Password" value="WYdtEy1EWs0="/>
     <contextParameter comment="" name="DestinationDatabase_Port" prompt="DestinationDatabase_Port?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="5432"/>
@@ -139,20 +41,6 @@
     <contextParameter comment="" name="ReportingDatabase_Port" prompt="ReportingDatabase_Port?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="5432"/>
     <contextParameter comment="" name="ReportingDatabase_Schema" prompt="ReportingDatabase_Schema?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="abos"/>
     <contextParameter comment="" name="ReportingDatabase_Server" prompt="ReportingDatabase_Server?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="localhost"/>
-  </context>
-  <context confirmationNeeded="false" name="srs_oc_dev">
-    <contextParameter comment="" name="ReportingDatabase_Database" prompt="ReportingDatabase_Database?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="report_db"/>
-    <contextParameter comment="" name="ReportingDatabase_Login" prompt="ReportingDatabase_Login?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="srs"/>
-    <contextParameter comment="" name="ReportingDatabase_Password" prompt="ReportingDatabase_Password?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_Password" value="l1sHDT12nrQ="/>
-    <contextParameter comment="" name="ReportingDatabase_Port" prompt="ReportingDatabase_Port?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="5432"/>
-    <contextParameter comment="" name="ReportingDatabase_Schema" prompt="ReportingDatabase_Schema?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="srs"/>
-    <contextParameter comment="" name="ReportingDatabase_Server" prompt="ReportingDatabase_Server?" promptNeeded="false" repositoryContextId="_SAdMUFpEEeK1xoAXx1MZbA" type="id_String" value="localhost"/>
-    <contextParameter comment="" name="DestinationDatabase_Database" prompt="DestinationDatabase_Database?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="talend"/>
-    <contextParameter comment="" name="DestinationDatabase_Password" prompt="DestinationDatabase_Password?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_Password" value="l1sHDT12nrQ="/>
-    <contextParameter comment="" name="DestinationDatabase_Schema" prompt="DestinationDatabase_Schema?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="srs"/>
-    <contextParameter comment="" name="DestinationDatabase_Server" prompt="DestinationDatabase_Server?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="localhost"/>
-    <contextParameter comment="" name="DestinationDatabase_Port" prompt="DestinationDatabase_Port?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="5432"/>
-    <contextParameter comment="" name="DestinationDatabase_Login" prompt="DestinationDatabase_Login?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="srs"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value=" -Xms256M -Xmx1024M"/>
@@ -340,6 +228,7 @@
     <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" value="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
@@ -616,6 +505,7 @@
     <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" value="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
