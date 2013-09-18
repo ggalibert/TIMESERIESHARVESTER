@@ -50,7 +50,7 @@
     <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false"/>
     <elementParameter field="CHECK" name="DISABLE_INFO" value="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ojdbc14-10g.jar"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ojdbc14.jar"/>
     <routinesParameter id="_PkwEwNMrEeK05ZcTg8uRzg" name="DataOperation"/>
     <routinesParameter id="_Pknh4NMrEeK05ZcTg8uRzg" name="GeoOperation"/>
     <routinesParameter id="_Pke_ANMrEeK05ZcTg8uRzg" name="GeometryOperation"/>

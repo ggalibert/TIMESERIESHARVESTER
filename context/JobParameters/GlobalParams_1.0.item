@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType confirmationNeeded="false" name="abos_dev">
+    <contextParameter comment="" name="jobName" prompt="jobName?" promptNeeded="false" type="id_String" value="abos"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="argo_dev">
+    <contextParameter comment="" name="jobName" prompt="jobName?" promptNeeded="false" type="id_String" value="argo"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="soop_asf_dev">
+    <contextParameter comment="" name="jobName" prompt="jobName?" promptNeeded="false" type="id_String" value="soop-asf"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="soop_ba_dev">
+    <contextParameter comment="" name="jobName" prompt="jobName?" promptNeeded="false" type="id_String" value="soop-ba"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="soop_co2_dev">
+    <contextParameter comment="" name="jobName" prompt="jobName?" promptNeeded="false" type="id_String" value="soop-co2"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="soop_frrf_dev">
+    <contextParameter comment="" name="jobName" prompt="jobName?" promptNeeded="false" type="id_String" value="soop-frrf"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="soop_sst_dev">
+    <contextParameter comment="" name="jobName" prompt="jobName?" promptNeeded="false" type="id_String" value="soop-sst"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="soop_tmv_dev">
+    <contextParameter comment="" name="jobName" prompt="jobName?" promptNeeded="false" type="id_String" value="soop-tmv"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="soop_trv_dev">
+    <contextParameter comment="" name="jobName" prompt="jobName?" promptNeeded="false" type="id_String" value="soop-trv"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="soop_xbt_dev">
+    <contextParameter comment="" name="jobName" prompt="jobName?" promptNeeded="false" type="id_String" value="soop-xbt"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="srs_oc_dev">
+    <contextParameter comment="" name="jobName" prompt="jobName?" promptNeeded="false" type="id_String" value="srs-oc"/>
+  </talendfile:ContextType>
+</xmi:XMI>
