@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_Mvxq8CTpEeOTa_OfsPeSzA" name="harvestDb" label="harvestDb" dataPackage="_Mx8OICTpEeOTa_OfsPeSzA" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://localhost:5432/harvest" Port="5432" Username="anmn" Password="0Vcl3Hz867o=" ServerName="localhost" DatasourceName="" FileFieldName="" SID="harvest" SqlSynthax="SQL Syntax" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="anmn">
+    <taggedValue xmi:id="_Mvxq8STpEeOTa_OfsPeSzA" tag="Using URL" value="jdbc:postgresql://localhost:5432/harvest"/>
+    <taggedValue xmi:id="_MwljQCTpEeOTa_OfsPeSzA" tag="package filter" value=""/>
+    <taggedValue xmi:id="_MxvZ0CTpEeOTa_OfsPeSzA" tag="Status" value=""/>
+    <taggedValue xmi:id="_MxvZ0STpEeOTa_OfsPeSzA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_MxvZ0iTpEeOTa_OfsPeSzA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_MxvZ0yTpEeOTa_OfsPeSzA" tag="Description" value=""/>
+    <taggedValue xmi:id="_MxvZ1CTpEeOTa_OfsPeSzA" tag="Author" value=""/>
+    <taggedValue xmi:id="_MxvZ1STpEeOTa_OfsPeSzA" tag="otherParameter" value=""/>
+    <taggedValue xmi:id="_MxvZ1iTpEeOTa_OfsPeSzA" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_MxvZ1yTpEeOTa_OfsPeSzA" tag="DB ProductVersion" value="9.1.9"/>
+    <taggedValue xmi:id="_MxvZ2CTpEeOTa_OfsPeSzA" tag="DB IdentifierQuoteString" value="&quot;"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_Mx8OICTpEeOTa_OfsPeSzA" name="harvest" dataManager="_Mvxq8CTpEeOTa_OfsPeSzA">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Mx8OISTpEeOTa_OfsPeSzA" name="anmn"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
