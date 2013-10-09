@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+    <changeSet author="talend" id="1381295243277-1">
+        <createTable schemaName="anmn_ts" tableName="file">
+            <column name="file_id" type="int8">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="file_pk"/>
+            </column>
+            <column name="url" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="talend" id="1381295243277-5">
+        <createTable schemaName="anmn_ts" tableName="measurement">
+            <column name="ts_id" type="int8">
+                <constraints nullable="false"/>
+            </column>
+            <column name="time" type="TIMESTAMP WITH TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="time_qc" type="char(1)"/>
+            <column name="depth" type="FLOAT4(8,8)"/>
+            <column name="depth_qc" type="char(1)"/>
+            <column name="temp" type="FLOAT4(8,8)"/>
+            <column name="temp_qc" type="char(1)"/>
+            <column name="pres" type="FLOAT4(8,8)"/>
+            <column name="pres_qc" type="char(1)"/>
+            <column name="pres_rel" type="FLOAT4(8,8)"/>
+            <column name="pres_rel_qc" type="char(1)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="talend" id="1381295243277-6">
+        <createTable schemaName="anmn_ts" tableName="timeseries">
+            <column autoIncrement="true" name="id" type="bigserial">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="timeseries_pk"/>
+            </column>
+            <column name="file_id" type="int8">
+                <constraints nullable="false"/>
+            </column>
+            <column name="site_code" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="platform_code" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="deployment_code" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="lat" remarks="actual latitude of deployment" type="FLOAT4(8,8)"/>
+            <column name="lon" remarks="actual longitude of deployment" type="FLOAT4(8,8)"/>
+            <column name="geom" type="GEOMETRY">
+                <constraints nullable="false"/>
+            </column>
+            <column name="depth_nominal" remarks="netCDF global attribute instrument_nominal_depth" type="FLOAT4(8,8)"/>
+            <column name="instrument" type="TEXT"/>
+            <column name="instrument_serial_number" type="TEXT"/>
+            <column name="time_coverage_start" type="TIMESTAMP WITH TIME ZONE"/>
+            <column name="time_coverage_end" type="TIMESTAMP WITH TIME ZONE"/>
+            <column name="time_deployment_start" type="TIMESTAMP WITH TIME ZONE"/>
+            <column name="time_deployment_end" type="TIMESTAMP WITH TIME ZONE"/>
+            <column name="comment" type="TEXT"/>
+            <column name="history" type="TEXT"/>
+            <column name="toolbox_version" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="talend" id="1381295243277-7">
+        <addPrimaryKey columnNames="ts_id, time" constraintName="measurement_pk" schemaName="anmn_ts" tableName="measurement"/>
+    </changeSet>
+    <changeSet author="talend" id="1381295243277-11">
+        <addUniqueConstraint columnNames="deployment_code, instrument, depth_nominal" constraintName="timeseries_deployment_instrument_depth_uc" deferrable="false" disabled="false" initiallyDeferred="false" schemaName="anmn_ts" tableName="timeseries"/>
+    </changeSet>
+    <changeSet author="talend" id="1381295243277-12">
+        <addForeignKeyConstraint baseColumnNames="ts_id" baseTableName="measurement" baseTableSchemaName="anmn_ts" constraintName="measurement_ts_fk" deferrable="false" initiallyDeferred="false" onDelete="CASCADE" onUpdate="CASCADE" referencedColumnNames="id" referencedTableName="timeseries" referencedTableSchemaName="anmn_ts" referencesUniqueColumn="false"/>
+    </changeSet>
+    <changeSet author="talend" id="1381295243277-13">
+        <addForeignKeyConstraint baseColumnNames="file_id" baseTableName="timeseries" baseTableSchemaName="anmn_ts" constraintName="timeseries_file_fk" deferrable="false" initiallyDeferred="false" onDelete="CASCADE" onUpdate="CASCADE" referencedColumnNames="id" referencedTableName="indexed_file" referencedTableSchemaName="anmn_ts" referencesUniqueColumn="false"/>
+    </changeSet>
+</databaseChangeLog>
