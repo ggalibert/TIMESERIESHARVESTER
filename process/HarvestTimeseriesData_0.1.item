@@ -30,7 +30,7 @@
     <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value=" -Xms256M -Xmx1024M"/>
     <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="128"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0"/>
     <elementParameter field="TEXT" name="SCHEMA_OPTIONS" value="none"/>
     <elementParameter field="TEXT" name="OEM_CUSTOM_ATTRIBUTE" value=""/>
     <elementParameter field="TEXT" name="HADOOP_APP_PATH" value=""/>
@@ -177,6 +177,7 @@
   </node>
   <node componentName="iIndexFiles" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="iIndexFiles_1"/>
+    <elementParameter field="CHECK" name="START" value="true"/>
     <elementParameter field="TEXT" name="HOST" value="context.harvestDb_Server"/>
     <elementParameter field="TEXT" name="PORT" value="context.harvestDb_Port"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.harvestDb_Database"/>
@@ -227,24 +228,15 @@
     <elementParameter field="MEMO" name="COMMENT" value=""/>
     <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
   </node>
-  <node componentName="iIncludeSdiLibraries" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="-64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iIncludeSdiLibraries_1"/>
-    <elementParameter field="CHECK" name="START" value="true"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import org.talend.sdi.geometry.Geometry;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
-    <elementParameter field="MEMO" name="COMMENT" value=""/>
-    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
-  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="iHarvestResources_1" offsetLabelX="0" offsetLabelY="0" source="iHarvestResources_1" target="iDeletedResources_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2"/>
+  </connection>
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="iHarvestResources_1" offsetLabelX="0" offsetLabelY="0" source="iHarvestResources_1" target="tRunJob_1">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="iHarvestResources_1" offsetLabelX="0" offsetLabelY="0" source="iHarvestResources_1" target="iDeletedResources_1">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2"/>
   </connection>
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="iDeletedResources_1" offsetLabelX="0" offsetLabelY="0" source="iDeletedResources_1" target="tRunJob_2">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
@@ -255,10 +247,6 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="iIndexFiles_1" offsetLabelX="0" offsetLabelY="0" source="iIndexFiles_1" target="iPostgresqlDbUpdate_1">
     <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="iIncludeSdiLibraries_1" offsetLabelX="0" offsetLabelY="0" source="iIncludeSdiLibraries_1" target="iIndexFiles_1">
-    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3"/>
   </connection>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
@@ -290,11 +278,6 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="iPostgresqlGenerateChangelog_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iIncludeSdiLibraries_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
   </subjob>

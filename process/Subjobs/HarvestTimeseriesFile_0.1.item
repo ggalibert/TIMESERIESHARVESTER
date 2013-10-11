@@ -27,7 +27,7 @@
   <parameters>
     <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value=" -Xms256M -Xmx1024M"/>
     <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="96"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="224"/>
     <elementParameter field="TEXT" name="SCHEMA_OPTIONS" value="none"/>
     <elementParameter field="TEXT" name="OEM_CUSTOM_ATTRIBUTE" value=""/>
@@ -215,7 +215,6 @@
   </node>
   <node componentName="tPostgresqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="-160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlConnection_1"/>
-    <elementParameter field="CHECK" name="START" value="true"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="HOST" value="context.harvestDb_Server"/>
     <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL"/>
@@ -247,7 +246,6 @@
   </node>
   <node componentName="iNetCDFGlobalAttributes" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="160" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="iNetCDFGlobalAttributes_1"/>
-    <elementParameter field="CHECK" name="START" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="context.url"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_KK5s4DE-EeOcI7mZXhxeFw - globalAttributes"/>
@@ -285,7 +283,7 @@
     <elementParameter field="MEMO" name="COMMENT" value=""/>
     <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
     <metadata connector="FLOW" label="timeseries" name="timeseries">
-      <column comment="" defaultValue="nextval('timeseries_id_seq'::regclass)" key="true" length="19" name="id" nullable="true" pattern="" precision="0" sourceType="BIGSERIAL" type="id_Long">
+      <column comment="" defaultValue="nextval('timeseries_id_seq'::regclass)" key="true" length="19" name="id" nullable="false" pattern="" precision="0" sourceType="BIGSERIAL" type="id_Long">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="19" name="file_id" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long">
@@ -305,6 +303,9 @@
       </column>
       <column comment="actual longitude of deployment" key="false" length="8" name="lon" nullable="true" pattern="" precision="8" sourceType="FLOAT4" type="id_Float">
         <additionalField key="Comment" value="actual longitude of deployment"/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="geom" nullable="false" pattern="" precision="0" sourceType="GEOMETRY" type="id_Geometry">
+        <additionalField key="Comment" value=""/>
       </column>
       <column comment="netCDF global attribute instrument_nominal_depth" key="false" length="8" name="depth_nominal" nullable="true" pattern="" precision="8" sourceType="FLOAT4" type="id_Float">
         <additionalField key="Comment" value="netCDF global attribute instrument_nominal_depth"/>
@@ -341,13 +342,14 @@
       <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="timeseries">
-        <mapperTableEntries name="id" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="id" type="id_Long"/>
         <mapperTableEntries name="file_id" expression="context.fileId" type="id_Long"/>
         <mapperTableEntries name="site_code" expression="row1.site_code" type="id_String"/>
         <mapperTableEntries name="platform_code" expression="row1.platform_code" type="id_String"/>
         <mapperTableEntries name="deployment_code" expression="row1.deployment_code" type="id_String"/>
         <mapperTableEntries name="lat" expression="Numeric.convertImpliedDecimalFormat(&quot;&quot;,context.dummy_lat) " type="id_Float" nullable="true"/>
         <mapperTableEntries name="lon" expression="Numeric.convertImpliedDecimalFormat(&quot;&quot;,context.dummy_lon) " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="geom" expression="new Geometry(&quot;POINT(&quot;+context.dummy_lon+&quot; &quot;+context.dummy_lat+&quot;)&quot;) " type="id_Geometry"/>
         <mapperTableEntries name="depth_nominal" expression="Numeric.convertImpliedDecimalFormat(&quot;&quot;,row1.instrument_nominal_depth) " type="id_Float" nullable="true"/>
         <mapperTableEntries name="instrument" expression="row1.instrument" type="id_String" nullable="true"/>
         <mapperTableEntries name="instrument_serial_number" expression="row1.instrument_serial_number" type="id_String" nullable="true"/>
@@ -378,6 +380,8 @@
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_MvuAkCTpEeOTa_OfsPeSzA - timeseries"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
     <elementParameter field="RADIO" name="VERTICAL" value="true"/>
@@ -403,6 +407,8 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="lat"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="lon"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="geom"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="depth_nominal"/>
       <elementValue elementRef="LENGTH" value="10"/>
@@ -430,7 +436,7 @@
     <elementParameter field="MEMO" name="COMMENT" value=""/>
     <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
     <metadata connector="FLOW" label="timeseries" name="tLogRow_1">
-      <column comment="" defaultValue="nextval('timeseries_id_seq'::regclass)" key="true" length="19" name="id" nullable="true" pattern="" precision="0" sourceType="BIGSERIAL" type="id_Long">
+      <column comment="" defaultValue="nextval('timeseries_id_seq'::regclass)" key="true" length="19" name="id" nullable="false" pattern="" precision="0" sourceType="BIGSERIAL" type="id_Long">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="19" name="file_id" nullable="false" pattern="" precision="0" sourceType="INT8" type="id_Long">
@@ -451,6 +457,9 @@
       <column comment="actual longitude of deployment" key="false" length="8" name="lon" nullable="true" pattern="" precision="8" sourceType="FLOAT4" type="id_Float">
         <additionalField key="Comment" value="actual longitude of deployment"/>
       </column>
+      <column comment="" key="false" length="2147483647" name="geom" nullable="false" pattern="" precision="0" sourceType="GEOMETRY" type="id_Geometry">
+        <additionalField key="Comment" value=""/>
+      </column>
       <column comment="netCDF global attribute instrument_nominal_depth" key="false" length="8" name="depth_nominal" nullable="true" pattern="" precision="8" sourceType="FLOAT4" type="id_Float">
         <additionalField key="Comment" value="netCDF global attribute instrument_nominal_depth"/>
       </column>
@@ -460,10 +469,10 @@
       <column comment="" key="false" length="256" name="instrument_serial_number" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" originalLength="256">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="35" name="time_coverage_start" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date">
+      <column comment="" key="false" length="35" name="time_coverage_start" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="35" name="time_coverage_end" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date">
+      <column comment="" key="false" length="35" name="time_coverage_end" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="35" name="time_deployment_start" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date">
@@ -724,6 +733,15 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String"/>
     </metadata>
   </node>
+  <node componentName="iIncludeSdiLibraries" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-32" posY="-160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iIncludeSdiLibraries_1"/>
+    <elementParameter field="CHECK" name="START" value="true"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import org.talend.sdi.geometry.Geometry;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+  </node>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="iOPeNDAPVariable_1" offsetLabelX="0" offsetLabelY="0" source="iOPeNDAPVariable_1" target="tMap_2">
     <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
@@ -770,10 +788,6 @@
     <elementParameter field="TABLE" name="THRESHLODS"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="variable"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tPostgresqlRow_1" offsetLabelX="-1" offsetLabelY="-8" source="tPostgresqlRow_1" target="iNetCDFGlobalAttributes_1">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tPostgresqlConnection_1" offsetLabelX="-1" offsetLabelY="-22" source="tPostgresqlConnection_1" target="tPostgresqlRow_1">
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
@@ -902,6 +916,10 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="timeseries"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="iIncludeSdiLibraries_1" offsetLabelX="0" offsetLabelY="0" source="iIncludeSdiLibraries_1" target="iNetCDFGlobalAttributes_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3"/>
+  </connection>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="iOPeNDAPVariable_1"/>
@@ -939,6 +957,11 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlOutput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iIncludeSdiLibraries_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
   </subjob>
