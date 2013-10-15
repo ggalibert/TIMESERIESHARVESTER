@@ -2,7 +2,7 @@
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="argo_dev">
   <context confirmationNeeded="false" name="argo_dev">
     <contextParameter comment="" name="jobName" prompt="jobName?" promptNeeded="false" repositoryContextId="_BEs4sAY4EeK4RLc2ENsRtg" type="id_String" value="argo"/>
-    <contextParameter comment="" name="DestinationDatabase_Password" prompt="DestinationDatabase_Password?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_Password" value="bQdsCI2gjYQ="/>
+    <contextParameter comment="" name="DestinationDatabase_Password" prompt="DestinationDatabase_Password?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_Password" value="E8TMw/MGfvpmjOZrt2tYiw=="/>
     <contextParameter comment="" name="DestinationDatabase_Schema" prompt="DestinationDatabase_Schema?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="argo"/>
     <contextParameter comment="" name="DestinationDatabase_Login" prompt="DestinationDatabase_Login?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="argo"/>
     <contextParameter comment="" name="DestinationDatabase_Port" prompt="DestinationDatabase_Port?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="5432"/>
@@ -12,7 +12,7 @@
   </context>
   <context confirmationNeeded="false" name="abos_dev">
     <contextParameter comment="" name="jobName" prompt="jobName?" promptNeeded="false" repositoryContextId="_BEs4sAY4EeK4RLc2ENsRtg" type="id_String" value="abos"/>
-    <contextParameter comment="" name="DestinationDatabase_Password" prompt="DestinationDatabase_Password?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_Password" value="WYdtEy1EWs0="/>
+    <contextParameter comment="" name="DestinationDatabase_Password" prompt="DestinationDatabase_Password?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_Password" value="wL3TVQFzVVDO+27/X+1K1Q=="/>
     <contextParameter comment="" name="DestinationDatabase_Schema" prompt="DestinationDatabase_Schema?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="abos"/>
     <contextParameter comment="" name="DestinationDatabase_Login" prompt="DestinationDatabase_Login?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="abos"/>
     <contextParameter comment="" name="DestinationDatabase_Port" prompt="DestinationDatabase_Port?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="5432"/>
@@ -21,7 +21,7 @@
     <contextParameter comment="" name="harvestType" prompt="harvestType?" promptNeeded="false" type="id_String" value="null"/>
   </context>
   <context confirmationNeeded="false" name="soop_asf_flux_dev">
-    <contextParameter comment="" name="DestinationDatabase_Password" prompt="DestinationDatabase_Password?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_Password" value="WAfq3KSpK04="/>
+    <contextParameter comment="" name="DestinationDatabase_Password" prompt="DestinationDatabase_Password?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_Password" value="5gqSDSa7iIRiX7padwLT/A=="/>
     <contextParameter comment="" name="DestinationDatabase_Schema" prompt="DestinationDatabase_Schema?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="anmn"/>
     <contextParameter comment="" name="DestinationDatabase_Login" prompt="DestinationDatabase_Login?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="anmn"/>
     <contextParameter comment="" name="DestinationDatabase_Port" prompt="DestinationDatabase_Port?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="5432"/>
@@ -48,22 +48,22 @@
     <elementParameter field="CHECK" name="DISABLE_INFO" value="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ojdbc14.jar"/>
-    <routinesParameter id="_LdRAcBnrEeKtI8kn2iXJbQ" name="DataOperation"/>
-    <routinesParameter id="_X2KNUC4DEeK558KNMD8eOQ" name="GeoOperation"/>
-    <routinesParameter id="_Xx-38C4DEeK558KNMD8eOQ" name="GeometryOperation"/>
-    <routinesParameter id="_X4SUQC4DEeK558KNMD8eOQ" name="GeometryUtility"/>
-    <routinesParameter id="_Le0foBnrEeKtI8kn2iXJbQ" name="Mathematical"/>
-    <routinesParameter id="_LeVXcBnrEeKtI8kn2iXJbQ" name="Numeric"/>
-    <routinesParameter id="_X3RnoC4DEeK558KNMD8eOQ" name="OpenStreetMap"/>
-    <routinesParameter id="_Ld4EcBnrEeKtI8kn2iXJbQ" name="Relational"/>
     <routinesParameter id="_Lfz-IBnrEeKtI8kn2iXJbQ" name="SQLike"/>
-    <routinesParameter id="_LeiLwBnrEeKtI8kn2iXJbQ" name="StringHandling"/>
-    <routinesParameter id="_LfLsABnrEeKtI8kn2iXJbQ" name="TalendDataGenerator"/>
-    <routinesParameter id="_LeIjIBnrEeKtI8kn2iXJbQ" name="TalendDate"/>
-    <routinesParameter id="_LffOABnrEeKtI8kn2iXJbQ" name="TalendString"/>
     <routinesParameter id="_cRn34BQsEeKRFb0vPU_LNg" name="DAPUtils"/>
     <routinesParameter id="_IMfY4Dp8EeKYTu4DLH4cKg" name="NetCDFUtils"/>
     <routinesParameter id="_BzxlsElWEeK5TPMSOHM6dA" name="ArgoUtils"/>
+    <routinesParameter id="_NhIv8AuOEeO-v4jR06LTxA" name="DataOperation"/>
+    <routinesParameter id="_NhFsoAuOEeO-v4jR06LTxA" name="GeoOperation"/>
+    <routinesParameter id="_NhDQYAuOEeO-v4jR06LTxA" name="GeometryOperation"/>
+    <routinesParameter id="_NhFFkAuOEeO-v4jR06LTxA" name="GeometryUtility"/>
+    <routinesParameter id="_NhJ-EAuOEeO-v4jR06LTxA" name="Mathematical"/>
+    <routinesParameter id="_NhG6wAuOEeO-v4jR06LTxA" name="Numeric"/>
+    <routinesParameter id="_Ngf2wAuOEeO-v4jR06LTxA" name="OpenStreetMap"/>
+    <routinesParameter id="_NhLMMAuOEeO-v4jR06LTxA" name="Relational"/>
+    <routinesParameter id="_NhQEsAuOEeO-v4jR06LTxA" name="StringHandling"/>
+    <routinesParameter id="_NhMaUAuOEeO-v4jR06LTxA" name="TalendDataGenerator"/>
+    <routinesParameter id="_NhR54AuOEeO-v4jR06LTxA" name="TalendDate"/>
+    <routinesParameter id="_NhOPgAuOEeO-v4jR06LTxA" name="TalendString"/>
   </parameters>
   <node componentName="iPostgresqlDbUpdate" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="-32" posY="-736">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="iPostgresqlDbUpdate_1"/>
@@ -113,7 +113,7 @@
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value=""/>
     <elementParameter field="PROCESS_TYPE" name="PROCESS" value="HarvestArgoProfile"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_9aoK0M2REeKiq7aX4s0UoA"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value=""/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="argo_dev"/>
     <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default"/>
@@ -127,12 +127,13 @@
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="((String)globalMap.get(&quot;iHarvestResources_1_URL&quot;))"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
-    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="CHECK" name="INFORMATION" value="false"/>
     <elementParameter field="MEMO" name="COMMENT" value=""/>
     <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT"/>
     <metadata connector="FLOW" name="tRunJob_1"/>
   </node>
   <node componentName="iDeletedResources" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="-32" posY="-384">
@@ -163,7 +164,7 @@
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value=""/>
     <elementParameter field="PROCESS_TYPE" name="PROCESS" value="DeleteArgoProfile"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_Irl6AM2YEeKiq7aX4s0UoA"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value=""/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="argo_dev"/>
     <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default"/>
@@ -175,12 +176,13 @@
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="((Long)globalMap.get(&quot;iDeletedResources_1_FILE_ID&quot;))"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
-    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="CHECK" name="INFORMATION" value="false"/>
     <elementParameter field="MEMO" name="COMMENT" value=""/>
     <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT"/>
     <metadata connector="FLOW" name="tRunJob_2"/>
   </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="iPostgresqlDbUpdate_1" offsetLabelX="0" offsetLabelY="0" source="iPostgresqlDbUpdate_1" target="iHarvestResources_1">

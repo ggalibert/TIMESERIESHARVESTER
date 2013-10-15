@@ -47,18 +47,18 @@
     <elementParameter field="DIRECTORY" name="FILE_PATH" value="context.logDir"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ojdbc14.jar"/>
-    <routinesParameter id="_PkwEwNMrEeK05ZcTg8uRzg" name="DataOperation"/>
-    <routinesParameter id="_Pknh4NMrEeK05ZcTg8uRzg" name="GeoOperation"/>
-    <routinesParameter id="_Pke_ANMrEeK05ZcTg8uRzg" name="GeometryOperation"/>
-    <routinesParameter id="_PkjQcNMrEeK05ZcTg8uRzg" name="GeometryUtility"/>
-    <routinesParameter id="_PkzIENMrEeK05ZcTg8uRzg" name="Mathematical"/>
-    <routinesParameter id="_PkrzUNMrEeK05ZcTg8uRzg" name="Numeric"/>
-    <routinesParameter id="_PiVC4NMrEeK05ZcTg8uRzg" name="OpenStreetMap"/>
-    <routinesParameter id="_Pk3ZgNMrEeK05ZcTg8uRzg" name="Relational"/>
-    <routinesParameter id="_PlDmwNMrEeK05ZcTg8uRzg" name="StringHandling"/>
-    <routinesParameter id="_Pk7D4NMrEeK05ZcTg8uRzg" name="TalendDataGenerator"/>
-    <routinesParameter id="_PlIfQNMrEeK05ZcTg8uRzg" name="TalendDate"/>
-    <routinesParameter id="_Pk_VUNMrEeK05ZcTg8uRzg" name="TalendString"/>
+    <routinesParameter id="_NhIv8AuOEeO-v4jR06LTxA" name="DataOperation"/>
+    <routinesParameter id="_NhFsoAuOEeO-v4jR06LTxA" name="GeoOperation"/>
+    <routinesParameter id="_NhDQYAuOEeO-v4jR06LTxA" name="GeometryOperation"/>
+    <routinesParameter id="_NhFFkAuOEeO-v4jR06LTxA" name="GeometryUtility"/>
+    <routinesParameter id="_NhJ-EAuOEeO-v4jR06LTxA" name="Mathematical"/>
+    <routinesParameter id="_NhG6wAuOEeO-v4jR06LTxA" name="Numeric"/>
+    <routinesParameter id="_Ngf2wAuOEeO-v4jR06LTxA" name="OpenStreetMap"/>
+    <routinesParameter id="_NhLMMAuOEeO-v4jR06LTxA" name="Relational"/>
+    <routinesParameter id="_NhQEsAuOEeO-v4jR06LTxA" name="StringHandling"/>
+    <routinesParameter id="_NhMaUAuOEeO-v4jR06LTxA" name="TalendDataGenerator"/>
+    <routinesParameter id="_NhR54AuOEeO-v4jR06LTxA" name="TalendDate"/>
+    <routinesParameter id="_NhOPgAuOEeO-v4jR06LTxA" name="TalendString"/>
   </parameters>
   <node componentName="iIndexThreddsResources" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="192" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="iIndexThreddsResources_1"/>
@@ -125,7 +125,7 @@
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="((String)globalMap.get(&quot;iHarvestResources_1_URL&quot;))"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
-    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="CHECK" name="INFORMATION" value="false"/>
@@ -173,7 +173,7 @@
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="((Long)globalMap.get(&quot;iDeletedResources_1_FILE_ID&quot;))"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
-    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="CHECK" name="INFORMATION" value="false"/>

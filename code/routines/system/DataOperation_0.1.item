@@ -40,14 +40,13 @@ public class DataOperation {
     }
 
     /**
-     * FIX(double) Rounds a number of type Double to a number of type Long with the precision specified in the PRECISION
-     * statement.
+     * FIX( ) Rounds an expression to a decimal number having the accuracy specified by the PRECISION statement.
      * 
      * {talendTypes} long | Long
      * 
      * {Category} DataOperation
      * 
-     * {param} double (0.0) d:double number
+     * {param} double (0.0) d:decimal number
      * 
      * {example} FIX(3.14)
      * 

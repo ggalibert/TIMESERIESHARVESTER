@@ -2,7 +2,7 @@
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default">
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="paramFile" prompt="paramFile?" promptNeeded="false" type="id_String" value="null"/>
-    <contextParameter comment="" name="sourceDir" prompt="sourceDir?" promptNeeded="false" type="id_String" value="/home/mhidas/data/tmp/opendap/ANMN/NRS"/>
+    <contextParameter comment="" name="sourceDir" prompt="sourceDir?" promptNeeded="false" type="id_String" value="/home/ggalibert/Documents/ANMN"/>
     <contextParameter comment="" name="include" prompt="include?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="exclude" prompt="exclude?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="logDir" prompt="logDir?" promptNeeded="false" type="id_String" value="/tmp"/>
@@ -15,7 +15,7 @@
   </context>
   <context confirmationNeeded="false" name="Prompt">
     <contextParameter comment="" name="paramFile" prompt="paramFile?" promptNeeded="true" type="id_String" value="null"/>
-    <contextParameter comment="" name="sourceDir" prompt="sourceDir?" promptNeeded="true" type="id_String" value="/home/mhidas/data/tmp/opendap/ANMN/NRS"/>
+    <contextParameter comment="" name="sourceDir" prompt="sourceDir?" promptNeeded="true" type="id_String" value="/home/ggalibert/Documents/ANMN"/>
     <contextParameter comment="" name="include" prompt="include?" promptNeeded="true" type="id_String" value=""/>
     <contextParameter comment="" name="exclude" prompt="exclude?" promptNeeded="true" type="id_String" value=""/>
     <contextParameter comment="" name="logDir" prompt="logDir?" promptNeeded="true" type="id_String" value="/tmp"/>
@@ -47,23 +47,21 @@
     <elementParameter field="DIRECTORY" name="FILE_PATH" value="context.logDir"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ojdbc14.jar"/>
-    <routinesParameter id="_PkwEwNMrEeK05ZcTg8uRzg" name="DataOperation"/>
-    <routinesParameter id="_Pknh4NMrEeK05ZcTg8uRzg" name="GeoOperation"/>
-    <routinesParameter id="_Pke_ANMrEeK05ZcTg8uRzg" name="GeometryOperation"/>
-    <routinesParameter id="_PkjQcNMrEeK05ZcTg8uRzg" name="GeometryUtility"/>
-    <routinesParameter id="_PkzIENMrEeK05ZcTg8uRzg" name="Mathematical"/>
-    <routinesParameter id="_PkrzUNMrEeK05ZcTg8uRzg" name="Numeric"/>
-    <routinesParameter id="_PiVC4NMrEeK05ZcTg8uRzg" name="OpenStreetMap"/>
-    <routinesParameter id="_Pk3ZgNMrEeK05ZcTg8uRzg" name="Relational"/>
-    <routinesParameter id="_PlDmwNMrEeK05ZcTg8uRzg" name="StringHandling"/>
-    <routinesParameter id="_Pk7D4NMrEeK05ZcTg8uRzg" name="TalendDataGenerator"/>
-    <routinesParameter id="_PlIfQNMrEeK05ZcTg8uRzg" name="TalendDate"/>
-    <routinesParameter id="_Pk_VUNMrEeK05ZcTg8uRzg" name="TalendString"/>
+    <routinesParameter id="_NhIv8AuOEeO-v4jR06LTxA" name="DataOperation"/>
+    <routinesParameter id="_NhFsoAuOEeO-v4jR06LTxA" name="GeoOperation"/>
+    <routinesParameter id="_NhDQYAuOEeO-v4jR06LTxA" name="GeometryOperation"/>
+    <routinesParameter id="_NhFFkAuOEeO-v4jR06LTxA" name="GeometryUtility"/>
+    <routinesParameter id="_NhJ-EAuOEeO-v4jR06LTxA" name="Mathematical"/>
+    <routinesParameter id="_NhG6wAuOEeO-v4jR06LTxA" name="Numeric"/>
+    <routinesParameter id="_Ngf2wAuOEeO-v4jR06LTxA" name="OpenStreetMap"/>
+    <routinesParameter id="_NhLMMAuOEeO-v4jR06LTxA" name="Relational"/>
+    <routinesParameter id="_NhQEsAuOEeO-v4jR06LTxA" name="StringHandling"/>
+    <routinesParameter id="_NhMaUAuOEeO-v4jR06LTxA" name="TalendDataGenerator"/>
+    <routinesParameter id="_NhR54AuOEeO-v4jR06LTxA" name="TalendDate"/>
+    <routinesParameter id="_NhOPgAuOEeO-v4jR06LTxA" name="TalendString"/>
   </parameters>
-  <node componentName="iHarvestResources" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="320">
+  <node componentName="iHarvestResources" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="192" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="iHarvestResources_1"/>
-    <elementParameter field="CHECK" name="START" value="true"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="HOST" value="context.metadataDb_Server"/>
     <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL"/>
     <elementParameter field="TEXT" name="PORT" value="context.metadataDb_Port"/>
@@ -83,13 +81,12 @@
     <elementParameter field="MEMO" name="COMMENT" value=""/>
     <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
   </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="320">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_3"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value=""/>
-    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="HarvestOpendapMetadata"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_MnsfUPqfEeK2NoOypYTkxA"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="HarvestFileSystemMetadata"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_TIegQDR9EeOSmsR_8MkXWw"/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
     <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default"/>
@@ -109,18 +106,17 @@
     <elementParameter field="CHECK" name="INFORMATION" value="false"/>
     <elementParameter field="MEMO" name="COMMENT" value=""/>
     <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
-    <metadata connector="FLOW" name="tRunJob_1"/>
+    <metadata connector="FLOW" name="tRunJob_3"/>
   </node>
-  <node componentName="iDeletedResources" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="448">
+  <node componentName="iDeletedResources" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="192" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="iDeletedResources_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="HOST" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="context.metadataDb_Server"/>
     <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL"/>
-    <elementParameter field="TEXT" name="PORT" value=""/>
-    <elementParameter field="TEXT" name="DBNAME" value=""/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value=""/>
-    <elementParameter field="TEXT" name="USER" value=""/>
-    <elementParameter field="TEXT" name="PASS" value=""/>
+    <elementParameter field="TEXT" name="PORT" value="context.metadataDb_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.metadataDb_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.metadataDb_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.metadataDb_Login"/>
+    <elementParameter field="TEXT" name="PASS" value="context.metadataDb_Password"/>
     <elementParameter field="TEXT" name="JOBNAME" value="&quot;index&quot;"/>
     <elementParameter field="TEXT" name="HARVEST_TYPE" value="&quot;harvest&quot;"/>
     <elementParameter field="RADIO" name="USE_DEFAULT" value="true"/>
@@ -133,22 +129,21 @@
     <elementParameter field="MEMO" name="COMMENT" value=""/>
     <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
   </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="448">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_4"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value=""/>
-    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="DeleteOpendapMetadata"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_eu9X8PqlEeK2NoOypYTkxA"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="DeleteMetadata"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_n4t1ADR9EeOSmsR_8MkXWw"/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
     <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default"/>
     <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
-    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
     <elementParameter field="TABLE" name="CONTEXTPARAMS">
       <elementValue elementRef="PARAM_NAME_COLUMN" value="fileId"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="((Long)globalMap.get(&quot;iDeletedResources_1_FILE_ID&quot;))"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="((Long)globalMap.get(&quot;iHarvestResources_1_FILE_ID&quot;))"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
     <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true"/>
@@ -157,7 +152,7 @@
     <elementParameter field="CHECK" name="INFORMATION" value="false"/>
     <elementParameter field="MEMO" name="COMMENT" value=""/>
     <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
-    <metadata connector="FLOW" name="tRunJob_2"/>
+    <metadata connector="FLOW" name="tRunJob_4"/>
   </node>
   <node componentName="iPostgresqlDbUpdate" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="192" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="iPostgresqlDbUpdate_1"/>
@@ -211,23 +206,27 @@
       <column defaultValue="" key="false" length="0" name="fileLastModified" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'000Z'&quot;" precision="0" sourceType="" type="id_Date"/>
     </metadata>
   </node>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="iHarvestResources_1" offsetLabelX="0" offsetLabelY="0" source="iHarvestResources_1" target="iDeletedResources_1">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2"/>
-  </connection>
-  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="iHarvestResources_1" offsetLabelX="0" offsetLabelY="0" source="iHarvestResources_1" target="tRunJob_1">
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="iHarvestResources_1" offsetLabelX="0" offsetLabelY="0" source="iHarvestResources_1" target="tRunJob_3">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1"/>
   </connection>
-  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="iDeletedResources_1" offsetLabelX="0" offsetLabelY="0" source="iDeletedResources_1" target="tRunJob_2">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="iHarvestResources_1" offsetLabelX="0" offsetLabelY="0" source="iHarvestResources_1" target="iDeletedResources_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="iDeletedResources_1" offsetLabelX="0" offsetLabelY="0" source="iDeletedResources_1" target="tRunJob_4">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate2"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="iPostgresqlDbUpdate_1" offsetLabelX="0" offsetLabelY="0" source="iPostgresqlDbUpdate_1" target="iIndexFiles_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="iIndexFiles_1" offsetLabelX="0" offsetLabelY="0" source="iIndexFiles_1" target="iHarvestResources_1">
     <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3"/>
   </connection>

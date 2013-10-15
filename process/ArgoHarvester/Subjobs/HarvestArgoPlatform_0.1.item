@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="argo_dev">
   <context confirmationNeeded="false" name="argo_dev">
-    <contextParameter comment="" name="DestinationDatabase_Password" prompt="DestinationDatabase_Password?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_Password" value="bQdsCI2gjYQ="/>
+    <contextParameter comment="" name="DestinationDatabase_Password" prompt="DestinationDatabase_Password?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_Password" value="E8TMw/MGfvpmjOZrt2tYiw=="/>
     <contextParameter comment="" name="DestinationDatabase_Schema" prompt="DestinationDatabase_Schema?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="argo"/>
     <contextParameter comment="" name="DestinationDatabase_Login" prompt="DestinationDatabase_Login?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="argo"/>
     <contextParameter comment="" name="DestinationDatabase_Port" prompt="DestinationDatabase_Port?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="5432"/>
@@ -11,7 +11,7 @@
     <contextParameter comment="" name="url" prompt="url?" promptNeeded="false" type="id_String" value="null"/>
   </context>
   <context confirmationNeeded="false" name="abos_dev">
-    <contextParameter comment="" name="DestinationDatabase_Password" prompt="DestinationDatabase_Password?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_Password" value="WYdtEy1EWs0="/>
+    <contextParameter comment="" name="DestinationDatabase_Password" prompt="DestinationDatabase_Password?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_Password" value="wL3TVQFzVVDO+27/X+1K1Q=="/>
     <contextParameter comment="" name="DestinationDatabase_Schema" prompt="DestinationDatabase_Schema?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="abos"/>
     <contextParameter comment="" name="DestinationDatabase_Login" prompt="DestinationDatabase_Login?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="abos"/>
     <contextParameter comment="" name="DestinationDatabase_Port" prompt="DestinationDatabase_Port?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="5432"/>
@@ -21,7 +21,7 @@
     <contextParameter comment="" name="url" prompt="url?" promptNeeded="false" type="id_String" value="null"/>
   </context>
   <context confirmationNeeded="false" name="soop_asf_flux_dev">
-    <contextParameter comment="" name="DestinationDatabase_Password" prompt="DestinationDatabase_Password?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_Password" value="WAfq3KSpK04="/>
+    <contextParameter comment="" name="DestinationDatabase_Password" prompt="DestinationDatabase_Password?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_Password" value="5gqSDSa7iIRiX7padwLT/A=="/>
     <contextParameter comment="" name="DestinationDatabase_Schema" prompt="DestinationDatabase_Schema?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="anmn"/>
     <contextParameter comment="" name="DestinationDatabase_Login" prompt="DestinationDatabase_Login?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="anmn"/>
     <contextParameter comment="" name="DestinationDatabase_Port" prompt="DestinationDatabase_Port?" promptNeeded="false" repositoryContextId="_zBQGAFo_EeK1xoAXx1MZbA" type="id_String" value="5432"/>
@@ -48,22 +48,22 @@
     <elementParameter field="CHECK" name="DISABLE_INFO" value="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ojdbc14.jar"/>
-    <routinesParameter id="_LdRAcBnrEeKtI8kn2iXJbQ" name="DataOperation"/>
-    <routinesParameter id="_X2KNUC4DEeK558KNMD8eOQ" name="GeoOperation"/>
-    <routinesParameter id="_Xx-38C4DEeK558KNMD8eOQ" name="GeometryOperation"/>
-    <routinesParameter id="_X4SUQC4DEeK558KNMD8eOQ" name="GeometryUtility"/>
-    <routinesParameter id="_Le0foBnrEeKtI8kn2iXJbQ" name="Mathematical"/>
-    <routinesParameter id="_LeVXcBnrEeKtI8kn2iXJbQ" name="Numeric"/>
-    <routinesParameter id="_X3RnoC4DEeK558KNMD8eOQ" name="OpenStreetMap"/>
-    <routinesParameter id="_Ld4EcBnrEeKtI8kn2iXJbQ" name="Relational"/>
     <routinesParameter id="_Lfz-IBnrEeKtI8kn2iXJbQ" name="SQLike"/>
-    <routinesParameter id="_LeiLwBnrEeKtI8kn2iXJbQ" name="StringHandling"/>
-    <routinesParameter id="_LfLsABnrEeKtI8kn2iXJbQ" name="TalendDataGenerator"/>
-    <routinesParameter id="_LeIjIBnrEeKtI8kn2iXJbQ" name="TalendDate"/>
-    <routinesParameter id="_LffOABnrEeKtI8kn2iXJbQ" name="TalendString"/>
     <routinesParameter id="_cRn34BQsEeKRFb0vPU_LNg" name="DAPUtils"/>
     <routinesParameter id="_IMfY4Dp8EeKYTu4DLH4cKg" name="NetCDFUtils"/>
     <routinesParameter id="_BzxlsElWEeK5TPMSOHM6dA" name="ArgoUtils"/>
+    <routinesParameter id="_NhIv8AuOEeO-v4jR06LTxA" name="DataOperation"/>
+    <routinesParameter id="_NhFsoAuOEeO-v4jR06LTxA" name="GeoOperation"/>
+    <routinesParameter id="_NhDQYAuOEeO-v4jR06LTxA" name="GeometryOperation"/>
+    <routinesParameter id="_NhFFkAuOEeO-v4jR06LTxA" name="GeometryUtility"/>
+    <routinesParameter id="_NhJ-EAuOEeO-v4jR06LTxA" name="Mathematical"/>
+    <routinesParameter id="_NhG6wAuOEeO-v4jR06LTxA" name="Numeric"/>
+    <routinesParameter id="_Ngf2wAuOEeO-v4jR06LTxA" name="OpenStreetMap"/>
+    <routinesParameter id="_NhLMMAuOEeO-v4jR06LTxA" name="Relational"/>
+    <routinesParameter id="_NhQEsAuOEeO-v4jR06LTxA" name="StringHandling"/>
+    <routinesParameter id="_NhMaUAuOEeO-v4jR06LTxA" name="TalendDataGenerator"/>
+    <routinesParameter id="_NhR54AuOEeO-v4jR06LTxA" name="TalendDate"/>
+    <routinesParameter id="_NhOPgAuOEeO-v4jR06LTxA" name="TalendString"/>
   </parameters>
   <node componentName="tPostgresqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-32" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlCommit_1"/>
@@ -206,65 +206,65 @@
     <elementParameter field="MEMO" name="COMMENT" value=""/>
     <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
     <metadata connector="FLOW" label="argo_platform_meta" name="argo_platform_meta">
-      <column comment="" key="false" length="16" name="DATA_TYPE" nullable="true" originalDbColumnName="data_type" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="4" name="FORMAT_VERSION" nullable="true" originalDbColumnName="format_version" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="4" name="HANDBOOK_VERSION" nullable="true" originalDbColumnName="handbook_version" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="14" name="DATE_CREATION" nullable="true" originalDbColumnName="date_creation" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="14" name="DATE_UPDATE" nullable="true" originalDbColumnName="date_update" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="8" name="PLATFORM_NUMBER" nullable="true" originalDbColumnName="platform_number" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="256" name="PTT" nullable="true" originalDbColumnName="ptt" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="16" name="TRANS_SYSTEM" nullable="true" originalDbColumnName="trans_system" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="32" name="TRANS_SYSTEM_ID" nullable="true" originalDbColumnName="trans_system_id" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="16" name="TRANS_FREQUENCY" nullable="true" originalDbColumnName="trans_frequency" pattern="" sourceType="" type="id_String"/>
-      <column comment="" defaultValue="" key="false" name="TRANS_REPETITION" nullable="true" originalDbColumnName="trans_repetition" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" key="false" length="8" name="POSITIONING_SYSTEM" nullable="true" originalDbColumnName="positioning_system" pattern="" sourceType="" type="id_String"/>
-      <column comment="" defaultValue="" key="false" name="CLOCK_DRIFT" nullable="true" originalDbColumnName="clock_drift" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" key="false" length="16" name="PLATFORM_MODEL" nullable="true" originalDbColumnName="platform_model" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="256" name="PLATFORM_MAKER" nullable="true" originalDbColumnName="platform_maker" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="64" name="INST_REFERENCE" nullable="true" originalDbColumnName="inst_reference" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="4" name="WMO_INST_TYPE" nullable="true" originalDbColumnName="wmo_inst_type" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="1" name="DIRECTION" nullable="true" originalDbColumnName="direction" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="64" name="PROJECT_NAME" nullable="true" originalDbColumnName="project_name" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="2" name="DATA_CENTRE" nullable="true" originalDbColumnName="data_centre" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="64" name="PI_NAME" nullable="true" originalDbColumnName="pi_name" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="256" name="ANOMALY" nullable="true" originalDbColumnName="anomaly" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="14" name="LAUNCH_DATE" nullable="true" originalDbColumnName="launch_date" pattern="" sourceType="" type="id_String"/>
-      <column comment="" defaultValue="" key="false" name="LAUNCH_LATITUDE" nullable="true" originalDbColumnName="launch_latitude" pattern="" sourceType="" type="id_Double"/>
-      <column comment="" defaultValue="" key="false" name="LAUNCH_LONGITUDE" nullable="true" originalDbColumnName="launch_longitude" pattern="" sourceType="" type="id_Double"/>
-      <column comment="" key="false" length="1" name="LAUNCH_QC" nullable="true" originalDbColumnName="launch_qc" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="14" name="START_DATE" nullable="true" originalDbColumnName="start_date" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="1" name="START_DATE_QC" nullable="true" originalDbColumnName="start_date_qc" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="32" name="DEPLOY_PLATFORM" nullable="true" originalDbColumnName="deploy_platform" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="32" name="DEPLOY_MISSION" nullable="true" originalDbColumnName="deploy_mission" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="256" name="DEPLOY_AVAILABLE_PROFILE_ID" nullable="true" originalDbColumnName="deploy_available_profile_id" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="14" name="END_MISSION_DATE" nullable="true" originalDbColumnName="end_mission_date" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="1" name="END_MISSION_STATUS" nullable="true" originalDbColumnName="end_mission_status" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="16" name="DATA_TYPE" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="4" name="FORMAT_VERSION" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="4" name="HANDBOOK_VERSION" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="14" name="DATE_CREATION" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="14" name="DATE_UPDATE" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="8" name="PLATFORM_NUMBER" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="256" name="PTT" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="16" name="TRANS_SYSTEM" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="32" name="TRANS_SYSTEM_ID" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="16" name="TRANS_FREQUENCY" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" defaultValue="" key="false" name="TRANS_REPETITION" nullable="true" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" key="false" length="8" name="POSITIONING_SYSTEM" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" defaultValue="" key="false" name="CLOCK_DRIFT" nullable="true" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" key="false" length="16" name="PLATFORM_MODEL" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="256" name="PLATFORM_MAKER" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="64" name="INST_REFERENCE" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="4" name="WMO_INST_TYPE" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="1" name="DIRECTION" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="64" name="PROJECT_NAME" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="2" name="DATA_CENTRE" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="64" name="PI_NAME" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="256" name="ANOMALY" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="14" name="LAUNCH_DATE" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" defaultValue="" key="false" name="LAUNCH_LATITUDE" nullable="true" pattern="" sourceType="" type="id_Double"/>
+      <column comment="" defaultValue="" key="false" name="LAUNCH_LONGITUDE" nullable="true" pattern="" sourceType="" type="id_Double"/>
+      <column comment="" key="false" length="1" name="LAUNCH_QC" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="14" name="START_DATE" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="1" name="START_DATE_QC" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="32" name="DEPLOY_PLATFORM" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="32" name="DEPLOY_MISSION" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="256" name="DEPLOY_AVAILABLE_PROFILE_ID" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="14" name="END_MISSION_DATE" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="1" name="END_MISSION_STATUS" nullable="true" pattern="" sourceType="" type="id_String"/>
     </metadata>
     <metadata connector="FLOW" label="argo_platform_nominal_cycle" name="argo_platform_nominal_cycle">
       <column comment="" key="true" name="N_CYCLES" nullable="true" pattern="" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" name="REPETITION_RATE" nullable="true" originalDbColumnName="repetition_rate" pattern="" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" name="CYCLE_TIME" nullable="true" originalDbColumnName="cycle_time" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="PARKING_TIME" nullable="true" originalDbColumnName="parking_time" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="DESCENDING_PROFILING_TIME" nullable="true" originalDbColumnName="descending_profiling_time" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="ASCENDING_PROFILING_TIME" nullable="true" originalDbColumnName="ascending_profiling_time" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="SURFACE_TIME" nullable="true" originalDbColumnName="surface_time" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="PARKING_PRESSURE" nullable="true" originalDbColumnName="parking_pressure" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="DEEPEST_PRESSURE" nullable="true" originalDbColumnName="deepest_pressure" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="DEEPEST_PRESSURE_DESCENDING" nullable="true" originalDbColumnName="deepest_pressure_descending" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="REPETITION_RATE" nullable="true" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="CYCLE_TIME" nullable="true" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="PARKING_TIME" nullable="true" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DESCENDING_PROFILING_TIME" nullable="true" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="ASCENDING_PROFILING_TIME" nullable="true" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="SURFACE_TIME" nullable="true" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="PARKING_PRESSURE" nullable="true" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DEEPEST_PRESSURE" nullable="true" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DEEPEST_PRESSURE_DESCENDING" nullable="true" pattern="" sourceType="" type="id_Float"/>
     </metadata>
     <metadata connector="FLOW" label="argo_platform_params" name="argo_platform_params">
       <column comment="" key="true" name="N_PARAM" nullable="true" pattern="" sourceType="" type="id_Integer"/>
-      <column comment="" key="false" length="16" name="SENSOR" nullable="true" originalDbColumnName="sensor" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="256" name="SENSOR_MAKER" nullable="true" originalDbColumnName="sensor_maker" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="256" name="SENSOR_MODEL" nullable="true" originalDbColumnName="sensor_model" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="16" name="SENSOR_SERIAL_NO" nullable="true" originalDbColumnName="sensor_serial_no" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="16" name="SENSOR_UNITS" nullable="true" originalDbColumnName="sensor_units" pattern="" sourceType="" type="id_String"/>
-      <column comment="" defaultValue="" key="false" name="SENSOR_ACCURACY" nullable="true" originalDbColumnName="sensor_accuracy" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="SENSOR_RESOLUTION" nullable="true" originalDbColumnName="sensor_resolution" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" key="false" length="16" name="PARAMETER" nullable="true" originalDbColumnName="parameter" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="256" name="PREDEPLOYMENT_CALIB_EQUATION" nullable="true" originalDbColumnName="predeployment_calib_equation" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="256" name="PREDEPLOYMENT_CALIB_COEFFICIENT" nullable="true" originalDbColumnName="predeployment_calib_coefficient" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="256" name="PREDEPLOYMENT_CALIB_COMMENT" nullable="true" originalDbColumnName="predeployment_calib_comment" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="16" name="SENSOR" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="256" name="SENSOR_MAKER" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="256" name="SENSOR_MODEL" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="16" name="SENSOR_SERIAL_NO" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="16" name="SENSOR_UNITS" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" defaultValue="" key="false" name="SENSOR_ACCURACY" nullable="true" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="SENSOR_RESOLUTION" nullable="true" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" key="false" length="16" name="PARAMETER" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="256" name="PREDEPLOYMENT_CALIB_EQUATION" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="256" name="PREDEPLOYMENT_CALIB_COEFFICIENT" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="256" name="PREDEPLOYMENT_CALIB_COMMENT" nullable="true" pattern="" sourceType="" type="id_String"/>
     </metadata>
   </node>
   <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="-160">
@@ -476,75 +476,75 @@
     <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
     <metadata connector="FLOW" label="argo_platform_meta" name="tPostgresqlOutput_1">
       <column comment="" key="false" name="file_id" nullable="true" pattern="" sourceType="INT8" type="id_Long"/>
-      <column comment="" key="false" length="16" name="DATA_TYPE" nullable="true" originalDbColumnName="data_type" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="4" name="FORMAT_VERSION" nullable="true" originalDbColumnName="format_version" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="4" name="HANDBOOK_VERSION" nullable="true" originalDbColumnName="handbook_version" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="14" name="DATE_CREATION" nullable="true" originalDbColumnName="date_creation" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="TIMESTAMP" type="id_Date"/>
-      <column comment="" key="false" length="14" name="DATE_UPDATE" nullable="true" originalDbColumnName="date_update" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="TIMESTAMP" type="id_Date"/>
-      <column comment="" key="false" length="8" name="PLATFORM_NUMBER" nullable="true" originalDbColumnName="platform_number" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="256" name="PTT" nullable="true" originalDbColumnName="ptt" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="16" name="TRANS_SYSTEM" nullable="true" originalDbColumnName="trans_system" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="32" name="TRANS_SYSTEM_ID" nullable="true" originalDbColumnName="trans_system_id" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="16" name="TRANS_FREQUENCY" nullable="true" originalDbColumnName="trans_frequency" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" defaultValue="" key="false" name="TRANS_REPETITION" nullable="true" originalDbColumnName="trans_repetition" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" key="false" length="8" name="POSITIONING_SYSTEM" nullable="true" originalDbColumnName="positioning_system" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" defaultValue="" key="false" name="CLOCK_DRIFT" nullable="true" originalDbColumnName="clock_drift" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" key="false" length="16" name="PLATFORM_MODEL" nullable="true" originalDbColumnName="platform_model" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="256" name="PLATFORM_MAKER" nullable="true" originalDbColumnName="platform_maker" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="64" name="INST_REFERENCE" nullable="true" originalDbColumnName="inst_reference" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="4" name="WMO_INST_TYPE" nullable="true" originalDbColumnName="wmo_inst_type" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="1" name="DIRECTION" nullable="true" originalDbColumnName="direction" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="64" name="PROJECT_NAME" nullable="true" originalDbColumnName="project_name" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="2" name="DATA_CENTRE" nullable="true" originalDbColumnName="data_centre" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="64" name="PI_NAME" nullable="true" originalDbColumnName="pi_name" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="256" name="ANOMALY" nullable="true" originalDbColumnName="anomaly" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="14" name="LAUNCH_DATE" nullable="true" originalDbColumnName="launch_date" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="TIMESTAMP" type="id_Date"/>
-      <column comment="" defaultValue="" key="false" name="LAUNCH_LATITUDE" nullable="true" originalDbColumnName="launch_latitude" pattern="" sourceType="FLOAT8" type="id_Double"/>
-      <column comment="" defaultValue="" key="false" name="LAUNCH_LONGITUDE" nullable="true" originalDbColumnName="launch_longitude" pattern="" sourceType="FLOAT8" type="id_Double"/>
-      <column comment="" key="false" length="1" name="LAUNCH_QC" nullable="true" originalDbColumnName="launch_qc" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="14" name="START_DATE" nullable="true" originalDbColumnName="start_date" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="TIMESTAMP" type="id_Date"/>
-      <column comment="" key="false" length="1" name="START_DATE_QC" nullable="true" originalDbColumnName="start_date_qc" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="32" name="DEPLOY_PLATFORM" nullable="true" originalDbColumnName="deploy_platform" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="32" name="DEPLOY_MISSION" nullable="true" originalDbColumnName="deploy_mission" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="256" name="DEPLOY_AVAILABLE_PROFILE_ID" nullable="true" originalDbColumnName="deploy_available_profile_id" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="14" name="END_MISSION_DATE" nullable="true" originalDbColumnName="end_mission_date" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="TIMESTAMPTZ" type="id_Date"/>
-      <column comment="" key="false" length="1" name="END_MISSION_STATUS" nullable="true" originalDbColumnName="end_mission_status" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="16" name="DATA_TYPE" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="4" name="FORMAT_VERSION" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="4" name="HANDBOOK_VERSION" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="14" name="DATE_CREATION" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="TIMESTAMP" type="id_Date"/>
+      <column comment="" key="false" length="14" name="DATE_UPDATE" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="TIMESTAMP" type="id_Date"/>
+      <column comment="" key="false" length="8" name="PLATFORM_NUMBER" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="256" name="PTT" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="16" name="TRANS_SYSTEM" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="32" name="TRANS_SYSTEM_ID" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="16" name="TRANS_FREQUENCY" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" defaultValue="" key="false" name="TRANS_REPETITION" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" key="false" length="8" name="POSITIONING_SYSTEM" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" defaultValue="" key="false" name="CLOCK_DRIFT" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" key="false" length="16" name="PLATFORM_MODEL" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="256" name="PLATFORM_MAKER" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="64" name="INST_REFERENCE" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="4" name="WMO_INST_TYPE" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="1" name="DIRECTION" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="64" name="PROJECT_NAME" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="2" name="DATA_CENTRE" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="64" name="PI_NAME" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="256" name="ANOMALY" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="14" name="LAUNCH_DATE" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="TIMESTAMP" type="id_Date"/>
+      <column comment="" defaultValue="" key="false" name="LAUNCH_LATITUDE" nullable="true" pattern="" sourceType="FLOAT8" type="id_Double"/>
+      <column comment="" defaultValue="" key="false" name="LAUNCH_LONGITUDE" nullable="true" pattern="" sourceType="FLOAT8" type="id_Double"/>
+      <column comment="" key="false" length="1" name="LAUNCH_QC" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="14" name="START_DATE" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="TIMESTAMP" type="id_Date"/>
+      <column comment="" key="false" length="1" name="START_DATE_QC" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="32" name="DEPLOY_PLATFORM" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="32" name="DEPLOY_MISSION" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="256" name="DEPLOY_AVAILABLE_PROFILE_ID" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="14" name="END_MISSION_DATE" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="TIMESTAMPTZ" type="id_Date"/>
+      <column comment="" key="false" length="1" name="END_MISSION_STATUS" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
     </metadata>
     <metadata connector="REJECT" label="argo_platform_meta" name="REJECT">
       <column comment="" key="false" name="file_id" nullable="true" pattern="" sourceType="INT8" type="id_Long"/>
-      <column comment="" key="false" length="16" name="DATA_TYPE" nullable="true" originalDbColumnName="data_type" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="4" name="FORMAT_VERSION" nullable="true" originalDbColumnName="format_version" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="4" name="HANDBOOK_VERSION" nullable="true" originalDbColumnName="handbook_version" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="14" name="DATE_CREATION" nullable="true" originalDbColumnName="date_creation" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="TIMESTAMP" type="id_Date"/>
-      <column comment="" key="false" length="14" name="DATE_UPDATE" nullable="true" originalDbColumnName="date_update" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="TIMESTAMP" type="id_Date"/>
-      <column comment="" key="false" length="8" name="PLATFORM_NUMBER" nullable="true" originalDbColumnName="platform_number" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="256" name="PTT" nullable="true" originalDbColumnName="ptt" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="16" name="TRANS_SYSTEM" nullable="true" originalDbColumnName="trans_system" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="32" name="TRANS_SYSTEM_ID" nullable="true" originalDbColumnName="trans_system_id" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="16" name="TRANS_FREQUENCY" nullable="true" originalDbColumnName="trans_frequency" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" defaultValue="" key="false" name="TRANS_REPETITION" nullable="true" originalDbColumnName="trans_repetition" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" key="false" length="8" name="POSITIONING_SYSTEM" nullable="true" originalDbColumnName="positioning_system" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" defaultValue="" key="false" name="CLOCK_DRIFT" nullable="true" originalDbColumnName="clock_drift" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" key="false" length="16" name="PLATFORM_MODEL" nullable="true" originalDbColumnName="platform_model" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="256" name="PLATFORM_MAKER" nullable="true" originalDbColumnName="platform_maker" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="64" name="INST_REFERENCE" nullable="true" originalDbColumnName="inst_reference" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="4" name="WMO_INST_TYPE" nullable="true" originalDbColumnName="wmo_inst_type" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="1" name="DIRECTION" nullable="true" originalDbColumnName="direction" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="64" name="PROJECT_NAME" nullable="true" originalDbColumnName="project_name" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="2" name="DATA_CENTRE" nullable="true" originalDbColumnName="data_centre" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="64" name="PI_NAME" nullable="true" originalDbColumnName="pi_name" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="256" name="ANOMALY" nullable="true" originalDbColumnName="anomaly" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="14" name="LAUNCH_DATE" nullable="true" originalDbColumnName="launch_date" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="TIMESTAMP" type="id_Date"/>
-      <column comment="" defaultValue="" key="false" name="LAUNCH_LATITUDE" nullable="true" originalDbColumnName="launch_latitude" pattern="" sourceType="FLOAT8" type="id_Double"/>
-      <column comment="" defaultValue="" key="false" name="LAUNCH_LONGITUDE" nullable="true" originalDbColumnName="launch_longitude" pattern="" sourceType="FLOAT8" type="id_Double"/>
-      <column comment="" key="false" length="1" name="LAUNCH_QC" nullable="true" originalDbColumnName="launch_qc" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="14" name="START_DATE" nullable="true" originalDbColumnName="start_date" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="TIMESTAMP" type="id_Date"/>
-      <column comment="" key="false" length="1" name="START_DATE_QC" nullable="true" originalDbColumnName="start_date_qc" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="32" name="DEPLOY_PLATFORM" nullable="true" originalDbColumnName="deploy_platform" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="32" name="DEPLOY_MISSION" nullable="true" originalDbColumnName="deploy_mission" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="256" name="DEPLOY_AVAILABLE_PROFILE_ID" nullable="true" originalDbColumnName="deploy_available_profile_id" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="14" name="END_MISSION_DATE" nullable="true" originalDbColumnName="end_mission_date" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="TIMESTAMPTZ" type="id_Date"/>
-      <column comment="" key="false" length="1" name="END_MISSION_STATUS" nullable="true" originalDbColumnName="end_mission_status" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="16" name="DATA_TYPE" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="4" name="FORMAT_VERSION" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="4" name="HANDBOOK_VERSION" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="14" name="DATE_CREATION" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="TIMESTAMP" type="id_Date"/>
+      <column comment="" key="false" length="14" name="DATE_UPDATE" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="TIMESTAMP" type="id_Date"/>
+      <column comment="" key="false" length="8" name="PLATFORM_NUMBER" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="256" name="PTT" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="16" name="TRANS_SYSTEM" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="32" name="TRANS_SYSTEM_ID" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="16" name="TRANS_FREQUENCY" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" defaultValue="" key="false" name="TRANS_REPETITION" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" key="false" length="8" name="POSITIONING_SYSTEM" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" defaultValue="" key="false" name="CLOCK_DRIFT" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" key="false" length="16" name="PLATFORM_MODEL" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="256" name="PLATFORM_MAKER" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="64" name="INST_REFERENCE" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="4" name="WMO_INST_TYPE" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="1" name="DIRECTION" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="64" name="PROJECT_NAME" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="2" name="DATA_CENTRE" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="64" name="PI_NAME" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="256" name="ANOMALY" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="14" name="LAUNCH_DATE" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="TIMESTAMP" type="id_Date"/>
+      <column comment="" defaultValue="" key="false" name="LAUNCH_LATITUDE" nullable="true" pattern="" sourceType="FLOAT8" type="id_Double"/>
+      <column comment="" defaultValue="" key="false" name="LAUNCH_LONGITUDE" nullable="true" pattern="" sourceType="FLOAT8" type="id_Double"/>
+      <column comment="" key="false" length="1" name="LAUNCH_QC" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="14" name="START_DATE" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="TIMESTAMP" type="id_Date"/>
+      <column comment="" key="false" length="1" name="START_DATE_QC" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="32" name="DEPLOY_PLATFORM" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="32" name="DEPLOY_MISSION" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="256" name="DEPLOY_AVAILABLE_PROFILE_ID" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="14" name="END_MISSION_DATE" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="TIMESTAMPTZ" type="id_Date"/>
+      <column comment="" key="false" length="1" name="END_MISSION_STATUS" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String"/>
     </metadata>
@@ -644,28 +644,28 @@
     <metadata connector="FLOW" label="argo_platform_nominal_cycle" name="tPostgresqlOutput_2">
       <column comment="" key="true" name="file_id" nullable="true" pattern="" sourceType="INT8" type="id_Long"/>
       <column comment="" key="true" name="cycles_no" nullable="true" pattern="" sourceType="INT4" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" name="REPETITION_RATE" nullable="true" originalDbColumnName="repetition_rate" pattern="" sourceType="INT4" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" name="CYCLE_TIME" nullable="true" originalDbColumnName="cycle_time" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="PARKING_TIME" nullable="true" originalDbColumnName="parking_time" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="DESCENDING_PROFILING_TIME" nullable="true" originalDbColumnName="descending_profiling_time" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="ASCENDING_PROFILING_TIME" nullable="true" originalDbColumnName="ascending_profiling_time" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="SURFACE_TIME" nullable="true" originalDbColumnName="surface_time" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="PARKING_PRESSURE" nullable="true" originalDbColumnName="parking_pressure" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="DEEPEST_PRESSURE" nullable="true" originalDbColumnName="deepest_pressure" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="DEEPEST_PRESSURE_DESCENDING" nullable="true" originalDbColumnName="deepest_pressure_descending" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="REPETITION_RATE" nullable="true" pattern="" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="CYCLE_TIME" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="PARKING_TIME" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DESCENDING_PROFILING_TIME" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="ASCENDING_PROFILING_TIME" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="SURFACE_TIME" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="PARKING_PRESSURE" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DEEPEST_PRESSURE" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DEEPEST_PRESSURE_DESCENDING" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
     </metadata>
     <metadata connector="REJECT" label="argo_platform_nominal_cycle" name="REJECT">
       <column comment="" key="true" name="file_id" nullable="true" pattern="" sourceType="INT8" type="id_Long"/>
       <column comment="" key="true" name="cycles_no" nullable="true" pattern="" sourceType="INT4" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" name="REPETITION_RATE" nullable="true" originalDbColumnName="repetition_rate" pattern="" sourceType="INT4" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" name="CYCLE_TIME" nullable="true" originalDbColumnName="cycle_time" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="PARKING_TIME" nullable="true" originalDbColumnName="parking_time" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="DESCENDING_PROFILING_TIME" nullable="true" originalDbColumnName="descending_profiling_time" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="ASCENDING_PROFILING_TIME" nullable="true" originalDbColumnName="ascending_profiling_time" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="SURFACE_TIME" nullable="true" originalDbColumnName="surface_time" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="PARKING_PRESSURE" nullable="true" originalDbColumnName="parking_pressure" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="DEEPEST_PRESSURE" nullable="true" originalDbColumnName="deepest_pressure" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="DEEPEST_PRESSURE_DESCENDING" nullable="true" originalDbColumnName="deepest_pressure_descending" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="REPETITION_RATE" nullable="true" pattern="" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="CYCLE_TIME" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="PARKING_TIME" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DESCENDING_PROFILING_TIME" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="ASCENDING_PROFILING_TIME" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="SURFACE_TIME" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="PARKING_PRESSURE" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DEEPEST_PRESSURE" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DEEPEST_PRESSURE_DESCENDING" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String"/>
     </metadata>
@@ -775,32 +775,32 @@
     <metadata connector="FLOW" label="argo_platform_params" name="tPostgresqlOutput_3">
       <column comment="" key="true" name="file_id" nullable="true" pattern="" sourceType="INT8" type="id_Long"/>
       <column comment="" key="true" name="param_no" nullable="true" pattern="" sourceType="INT4" type="id_Integer"/>
-      <column comment="" key="false" length="16" name="SENSOR" nullable="true" originalDbColumnName="sensor" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="256" name="SENSOR_MAKER" nullable="true" originalDbColumnName="sensor_maker" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="256" name="SENSOR_MODEL" nullable="true" originalDbColumnName="sensor_model" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="16" name="SENSOR_SERIAL_NO" nullable="true" originalDbColumnName="sensor_serial_no" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="16" name="SENSOR_UNITS" nullable="true" originalDbColumnName="sensor_units" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" defaultValue="" key="false" name="SENSOR_ACCURACY" nullable="true" originalDbColumnName="sensor_accuracy" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="SENSOR_RESOLUTION" nullable="true" originalDbColumnName="sensor_resolution" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" key="false" length="16" name="PARAMETER" nullable="true" originalDbColumnName="parameter" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="256" name="PREDEPLOYMENT_CALIB_EQUATION" nullable="true" originalDbColumnName="predeployment_calib_equation" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="256" name="PREDEPLOYMENT_CALIB_COEFFICIENT" nullable="true" originalDbColumnName="predeployment_calib_coefficient" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="256" name="PREDEPLOYMENT_CALIB_COMMENT" nullable="true" originalDbColumnName="predeployment_calib_comment" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="16" name="SENSOR" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="256" name="SENSOR_MAKER" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="256" name="SENSOR_MODEL" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="16" name="SENSOR_SERIAL_NO" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="16" name="SENSOR_UNITS" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" defaultValue="" key="false" name="SENSOR_ACCURACY" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="SENSOR_RESOLUTION" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" key="false" length="16" name="PARAMETER" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="256" name="PREDEPLOYMENT_CALIB_EQUATION" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="256" name="PREDEPLOYMENT_CALIB_COEFFICIENT" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="256" name="PREDEPLOYMENT_CALIB_COMMENT" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
     </metadata>
     <metadata connector="REJECT" label="argo_platform_params" name="REJECT">
       <column comment="" key="true" name="file_id" nullable="true" pattern="" sourceType="INT8" type="id_Long"/>
       <column comment="" key="true" name="param_no" nullable="true" pattern="" sourceType="INT4" type="id_Integer"/>
-      <column comment="" key="false" length="16" name="SENSOR" nullable="true" originalDbColumnName="sensor" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="256" name="SENSOR_MAKER" nullable="true" originalDbColumnName="sensor_maker" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="256" name="SENSOR_MODEL" nullable="true" originalDbColumnName="sensor_model" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="16" name="SENSOR_SERIAL_NO" nullable="true" originalDbColumnName="sensor_serial_no" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="16" name="SENSOR_UNITS" nullable="true" originalDbColumnName="sensor_units" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" defaultValue="" key="false" name="SENSOR_ACCURACY" nullable="true" originalDbColumnName="sensor_accuracy" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="SENSOR_RESOLUTION" nullable="true" originalDbColumnName="sensor_resolution" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" key="false" length="16" name="PARAMETER" nullable="true" originalDbColumnName="parameter" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="256" name="PREDEPLOYMENT_CALIB_EQUATION" nullable="true" originalDbColumnName="predeployment_calib_equation" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="256" name="PREDEPLOYMENT_CALIB_COEFFICIENT" nullable="true" originalDbColumnName="predeployment_calib_coefficient" pattern="" sourceType="VARCHAR" type="id_String"/>
-      <column comment="" key="false" length="256" name="PREDEPLOYMENT_CALIB_COMMENT" nullable="true" originalDbColumnName="predeployment_calib_comment" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="16" name="SENSOR" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="256" name="SENSOR_MAKER" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="256" name="SENSOR_MODEL" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="16" name="SENSOR_SERIAL_NO" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="16" name="SENSOR_UNITS" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" defaultValue="" key="false" name="SENSOR_ACCURACY" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="SENSOR_RESOLUTION" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" key="false" length="16" name="PARAMETER" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="256" name="PREDEPLOYMENT_CALIB_EQUATION" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="256" name="PREDEPLOYMENT_CALIB_COEFFICIENT" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
+      <column comment="" key="false" length="256" name="PREDEPLOYMENT_CALIB_COMMENT" nullable="true" pattern="" sourceType="VARCHAR" type="id_String"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String"/>
     </metadata>
@@ -820,39 +820,39 @@
     <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
     <metadata connector="FLOW" label="argo_platform_meta" name="platform_metadata">
       <column comment="" key="false" name="file_id" nullable="true" pattern="" sourceType="" type="id_Long"/>
-      <column comment="" key="false" length="16" name="DATA_TYPE" nullable="true" originalDbColumnName="data_type" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="4" name="FORMAT_VERSION" nullable="true" originalDbColumnName="format_version" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="4" name="HANDBOOK_VERSION" nullable="true" originalDbColumnName="handbook_version" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="14" name="DATE_CREATION" nullable="true" originalDbColumnName="date_creation" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="" type="id_Date"/>
-      <column comment="" key="false" length="14" name="DATE_UPDATE" nullable="true" originalDbColumnName="date_update" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="" type="id_Date"/>
-      <column comment="" key="false" length="8" name="PLATFORM_NUMBER" nullable="true" originalDbColumnName="platform_number" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="256" name="PTT" nullable="true" originalDbColumnName="ptt" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="16" name="TRANS_SYSTEM" nullable="true" originalDbColumnName="trans_system" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="32" name="TRANS_SYSTEM_ID" nullable="true" originalDbColumnName="trans_system_id" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="16" name="TRANS_FREQUENCY" nullable="true" originalDbColumnName="trans_frequency" pattern="" sourceType="" type="id_String"/>
-      <column comment="" defaultValue="" key="false" name="TRANS_REPETITION" nullable="true" originalDbColumnName="trans_repetition" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" key="false" length="8" name="POSITIONING_SYSTEM" nullable="true" originalDbColumnName="positioning_system" pattern="" sourceType="" type="id_String"/>
-      <column comment="" defaultValue="" key="false" name="CLOCK_DRIFT" nullable="true" originalDbColumnName="clock_drift" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" key="false" length="16" name="PLATFORM_MODEL" nullable="true" originalDbColumnName="platform_model" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="256" name="PLATFORM_MAKER" nullable="true" originalDbColumnName="platform_maker" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="64" name="INST_REFERENCE" nullable="true" originalDbColumnName="inst_reference" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="4" name="WMO_INST_TYPE" nullable="true" originalDbColumnName="wmo_inst_type" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="1" name="DIRECTION" nullable="true" originalDbColumnName="direction" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="64" name="PROJECT_NAME" nullable="true" originalDbColumnName="project_name" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="2" name="DATA_CENTRE" nullable="true" originalDbColumnName="data_centre" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="64" name="PI_NAME" nullable="true" originalDbColumnName="pi_name" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="256" name="ANOMALY" nullable="true" originalDbColumnName="anomaly" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="14" name="LAUNCH_DATE" nullable="true" originalDbColumnName="launch_date" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="" type="id_Date"/>
-      <column comment="" defaultValue="" key="false" name="LAUNCH_LATITUDE" nullable="true" originalDbColumnName="launch_latitude" pattern="" sourceType="" type="id_Double"/>
-      <column comment="" defaultValue="" key="false" name="LAUNCH_LONGITUDE" nullable="true" originalDbColumnName="launch_longitude" pattern="" sourceType="" type="id_Double"/>
-      <column comment="" key="false" length="1" name="LAUNCH_QC" nullable="true" originalDbColumnName="launch_qc" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="14" name="START_DATE" nullable="true" originalDbColumnName="start_date" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="" type="id_Date"/>
-      <column comment="" key="false" length="1" name="START_DATE_QC" nullable="true" originalDbColumnName="start_date_qc" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="32" name="DEPLOY_PLATFORM" nullable="true" originalDbColumnName="deploy_platform" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="32" name="DEPLOY_MISSION" nullable="true" originalDbColumnName="deploy_mission" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="256" name="DEPLOY_AVAILABLE_PROFILE_ID" nullable="true" originalDbColumnName="deploy_available_profile_id" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="14" name="END_MISSION_DATE" nullable="true" originalDbColumnName="end_mission_date" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="" type="id_Date"/>
-      <column comment="" key="false" length="1" name="END_MISSION_STATUS" nullable="true" originalDbColumnName="end_mission_status" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="16" name="DATA_TYPE" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="4" name="FORMAT_VERSION" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="4" name="HANDBOOK_VERSION" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="14" name="DATE_CREATION" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="" type="id_Date"/>
+      <column comment="" key="false" length="14" name="DATE_UPDATE" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="" type="id_Date"/>
+      <column comment="" key="false" length="8" name="PLATFORM_NUMBER" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="256" name="PTT" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="16" name="TRANS_SYSTEM" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="32" name="TRANS_SYSTEM_ID" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="16" name="TRANS_FREQUENCY" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" defaultValue="" key="false" name="TRANS_REPETITION" nullable="true" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" key="false" length="8" name="POSITIONING_SYSTEM" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" defaultValue="" key="false" name="CLOCK_DRIFT" nullable="true" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" key="false" length="16" name="PLATFORM_MODEL" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="256" name="PLATFORM_MAKER" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="64" name="INST_REFERENCE" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="4" name="WMO_INST_TYPE" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="1" name="DIRECTION" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="64" name="PROJECT_NAME" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="2" name="DATA_CENTRE" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="64" name="PI_NAME" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="256" name="ANOMALY" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="14" name="LAUNCH_DATE" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="" type="id_Date"/>
+      <column comment="" defaultValue="" key="false" name="LAUNCH_LATITUDE" nullable="true" pattern="" sourceType="" type="id_Double"/>
+      <column comment="" defaultValue="" key="false" name="LAUNCH_LONGITUDE" nullable="true" pattern="" sourceType="" type="id_Double"/>
+      <column comment="" key="false" length="1" name="LAUNCH_QC" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="14" name="START_DATE" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="" type="id_Date"/>
+      <column comment="" key="false" length="1" name="START_DATE_QC" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="32" name="DEPLOY_PLATFORM" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="32" name="DEPLOY_MISSION" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="256" name="DEPLOY_AVAILABLE_PROFILE_ID" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="14" name="END_MISSION_DATE" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" sourceType="" type="id_Date"/>
+      <column comment="" key="false" length="1" name="END_MISSION_STATUS" nullable="true" pattern="" sourceType="" type="id_String"/>
     </metadata>
     <nodeData xsi:type="MapperData">
       <uiProperties/>
@@ -946,15 +946,15 @@
     <metadata connector="FLOW" label="argo_platform_nominal_cycle" name="platform_nominal_cycle">
       <column comment="" key="false" name="file_id" nullable="true" pattern="" sourceType="" type="id_Long"/>
       <column comment="" key="false" name="cycles_no" nullable="true" pattern="" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" name="REPETITION_RATE" nullable="true" originalDbColumnName="repetition_rate" pattern="" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" name="CYCLE_TIME" nullable="true" originalDbColumnName="cycle_time" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="PARKING_TIME" nullable="true" originalDbColumnName="parking_time" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="DESCENDING_PROFILING_TIME" nullable="true" originalDbColumnName="descending_profiling_time" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="ASCENDING_PROFILING_TIME" nullable="true" originalDbColumnName="ascending_profiling_time" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="SURFACE_TIME" nullable="true" originalDbColumnName="surface_time" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="PARKING_PRESSURE" nullable="true" originalDbColumnName="parking_pressure" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="DEEPEST_PRESSURE" nullable="true" originalDbColumnName="deepest_pressure" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="DEEPEST_PRESSURE_DESCENDING" nullable="true" originalDbColumnName="deepest_pressure_descending" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="REPETITION_RATE" nullable="true" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="CYCLE_TIME" nullable="true" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="PARKING_TIME" nullable="true" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DESCENDING_PROFILING_TIME" nullable="true" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="ASCENDING_PROFILING_TIME" nullable="true" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="SURFACE_TIME" nullable="true" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="PARKING_PRESSURE" nullable="true" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DEEPEST_PRESSURE" nullable="true" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DEEPEST_PRESSURE_DESCENDING" nullable="true" pattern="" sourceType="" type="id_Float"/>
     </metadata>
     <nodeData xsi:type="MapperData">
       <uiProperties/>
@@ -1002,17 +1002,17 @@
     <metadata connector="FLOW" label="argo_platform_params" name="platform_params">
       <column comment="" key="true" name="file_id" nullable="true" pattern="" sourceType="" type="id_Long"/>
       <column comment="" key="true" name="param_no" nullable="true" pattern="" sourceType="" type="id_Integer"/>
-      <column comment="" key="false" length="16" name="SENSOR" nullable="true" originalDbColumnName="sensor" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="256" name="SENSOR_MAKER" nullable="true" originalDbColumnName="sensor_maker" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="256" name="SENSOR_MODEL" nullable="true" originalDbColumnName="sensor_model" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="16" name="SENSOR_SERIAL_NO" nullable="true" originalDbColumnName="sensor_serial_no" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="16" name="SENSOR_UNITS" nullable="true" originalDbColumnName="sensor_units" pattern="" sourceType="" type="id_String"/>
-      <column comment="" defaultValue="" key="false" name="SENSOR_ACCURACY" nullable="true" originalDbColumnName="sensor_accuracy" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="SENSOR_RESOLUTION" nullable="true" originalDbColumnName="sensor_resolution" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" key="false" length="16" name="PARAMETER" nullable="true" originalDbColumnName="parameter" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="256" name="PREDEPLOYMENT_CALIB_EQUATION" nullable="true" originalDbColumnName="predeployment_calib_equation" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="256" name="PREDEPLOYMENT_CALIB_COEFFICIENT" nullable="true" originalDbColumnName="predeployment_calib_coefficient" pattern="" sourceType="" type="id_String"/>
-      <column comment="" key="false" length="256" name="PREDEPLOYMENT_CALIB_COMMENT" nullable="true" originalDbColumnName="predeployment_calib_comment" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="16" name="SENSOR" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="256" name="SENSOR_MAKER" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="256" name="SENSOR_MODEL" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="16" name="SENSOR_SERIAL_NO" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="16" name="SENSOR_UNITS" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" defaultValue="" key="false" name="SENSOR_ACCURACY" nullable="true" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="SENSOR_RESOLUTION" nullable="true" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" key="false" length="16" name="PARAMETER" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="256" name="PREDEPLOYMENT_CALIB_EQUATION" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="256" name="PREDEPLOYMENT_CALIB_COEFFICIENT" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="256" name="PREDEPLOYMENT_CALIB_COMMENT" nullable="true" pattern="" sourceType="" type="id_String"/>
     </metadata>
     <nodeData xsi:type="MapperData">
       <uiProperties/>
