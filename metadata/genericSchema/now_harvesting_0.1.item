@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_Zg5NUDSdEeOf4Jv0VPpgQQ" comment="connectionComment" label="connectionLabel" dataPackage="_Zg5NUTSdEeOf4Jv0VPpgQQ" mappingTypeUsed="true" mappingTypeId="postgres_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_Zg5NUTSdEeOf4Jv0VPpgQQ" dataManager="_Zg5NUDSdEeOf4Jv0VPpgQQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Zg5NUjSdEeOf4Jv0VPpgQQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Zg5NUzSdEeOf4Jv0VPpgQQ" name="deployment_code" id="28" label="deployment_code" length="64" sourceType="TEXT" talendType="id_String" key="true" nullable="false">
+        <initialValue xmi:id="_Zg5NVDSdEeOf4Jv0VPpgQQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Zg5NVTSdEeOf4Jv0VPpgQQ" name="instrument_serial_number" id="31" label="instrument_serial_number" length="2147483647" sourceType="TEXT" talendType="id_String" key="true" nullable="false">
+        <initialValue xmi:id="_Zg5NVjSdEeOf4Jv0VPpgQQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Zg5NVzSdEeOf4Jv0VPpgQQ" name="id" id="4134" label="id" sourceType="INT4" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_Zg5NWDSdEeOf4Jv0VPpgQQ"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

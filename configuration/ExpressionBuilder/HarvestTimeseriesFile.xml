@@ -1,48 +1,9 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore">
-  <expression:EMFExpression id="null=>timeseries=>depth_nominal" expression="Numeric.convertImpliedDecimalFormat(&quot;&quot;,row1.instrument_nominal_depth)">
-    <variables name="row1.site_code" value="null" talendType="id_String"/>
-    <variables name="row1.platform_code" value="null" talendType="id_String"/>
-    <variables name="row1.deployment_code" value="null" talendType="id_String"/>
-    <variables name="row1.instrument_nominal_depth" value="31.77" talendType="id_String" nullable="true"/>
-    <variables name="row1.instrument" value="null" talendType="id_String" nullable="true"/>
-    <variables name="row1.instrument_serial_number" value="null" talendType="id_String" nullable="true"/>
-    <variables name="row1.time_coverage_start" value="null" talendType="id_String" nullable="true"/>
-    <variables name="row1.time_coverage_end" value="null" talendType="id_String" nullable="true"/>
-    <variables name="row1.time_deployment_start" value="null" talendType="id_String" nullable="true"/>
-    <variables name="row1.time_deployment_end" value="null" talendType="id_String" nullable="true"/>
-    <variables name="row1.comment" value="null" talendType="id_String" nullable="true"/>
-    <variables name="row1.history" value="null" talendType="id_String" nullable="true"/>
-    <variables name="row1.toolbox_version" value="null" talendType="id_String" nullable="true"/>
-  </expression:EMFExpression>
-  <expression:EMFExpression id="null=>timeseries=>time_coverage_start" expression="TalendDate.parseDate(&quot;yyyy-MM-dd'T'HH:mm:ssZ&quot;,StringHandling.EREPLACE(row1.time_coverage_start,&quot;Z&quot;,&quot;+0000&quot;))">
-    <variables name="row1.site_code" value="null" talendType="id_String"/>
-    <variables name="row1.platform_code" value="null" talendType="id_String"/>
-    <variables name="row1.deployment_code" value="null" talendType="id_String"/>
-    <variables name="row1.instrument_nominal_depth" value="null" talendType="id_String" nullable="true"/>
-    <variables name="row1.instrument" value="null" talendType="id_String" nullable="true"/>
-    <variables name="row1.instrument_serial_number" value="null" talendType="id_String" nullable="true"/>
-    <variables name="row1.time_coverage_start" value="null" talendType="id_String" nullable="true"/>
-    <variables name="row1.time_coverage_end" value="null" talendType="id_String" nullable="true"/>
-    <variables name="row1.time_deployment_start" value="null" talendType="id_String" nullable="true"/>
-    <variables name="row1.time_deployment_end" value="null" talendType="id_String" nullable="true"/>
-    <variables name="row1.comment" value="null" talendType="id_String" nullable="true"/>
-    <variables name="row1.history" value="null" talendType="id_String" nullable="true"/>
-    <variables name="row1.toolbox_version" value="null" talendType="id_String" nullable="true"/>
-  </expression:EMFExpression>
-  <expression:EMFExpression id="null=>timeseries=>geom" expression="new Geometry(&quot;POINT(&quot;+context.dummy_lon+&quot; &quot;+context.dummy_lat+&quot;)&quot;)">
-    <variables name="row1.site_code" value="null" talendType="id_String"/>
-    <variables name="row1.platform_code" value="null" talendType="id_String"/>
-    <variables name="row1.deployment_code" value="null" talendType="id_String"/>
-    <variables name="row1.instrument_nominal_depth" value="null" talendType="id_String" nullable="true"/>
-    <variables name="row1.instrument" value="null" talendType="id_String" nullable="true"/>
-    <variables name="row1.instrument_serial_number" value="null" talendType="id_String" nullable="true"/>
-    <variables name="row1.time_coverage_start" value="null" talendType="id_String" nullable="true"/>
-    <variables name="row1.time_coverage_end" value="null" talendType="id_String" nullable="true"/>
-    <variables name="row1.time_deployment_start" value="null" talendType="id_String" nullable="true"/>
-    <variables name="row1.time_deployment_end" value="null" talendType="id_String" nullable="true"/>
-    <variables name="row1.comment" value="null" talendType="id_String" nullable="true"/>
-    <variables name="row1.history" value="null" talendType="id_String" nullable="true"/>
-    <variables name="row1.toolbox_version" value="null" talendType="id_String" nullable="true"/>
-  </expression:EMFExpression>
-</xmi:XMI>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="null=>Var=>depth_qc" expression="variables.DEPTH.equals(null)?'9':'1'">
+  <variables name="variables.TIME" value="0" talendType="id_Double"/>
+  <variables name="variables.DEPTH" value="null" talendType="id_Float" nullable="true"/>
+  <variables name="variables.PRES_REL" value="null" talendType="id_Float" nullable="true"/>
+  <variables name="variables.TEMP" value="null" talendType="id_Float" nullable="true"/>
+  <variables name="row3.ts_id" value="0" talendType="id_Long"/>
+  <variables name="if (variables.DEPTH == null) { return '9'; } else { return '1'; }   " value="null" talendType="id_Character" nullable="true"/>
+</expression:EMFExpression>
