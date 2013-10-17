@@ -23,7 +23,7 @@
   <parameters>
     <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value=" -Xms256M -Xmx1024M"/>
     <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="767"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="384"/>
     <elementParameter field="TEXT" name="SCHEMA_OPTIONS" value="none"/>
     <elementParameter field="TEXT" name="OEM_CUSTOM_ATTRIBUTE" value=""/>
@@ -175,7 +175,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="timeseries">
         <mapperTableEntries name="file_id" expression="context.fileId" type="id_Long"/>
@@ -531,85 +531,85 @@
       <column comment="" key="false" name="LONGITUDE" nullable="true" pattern="" sourceType="" type="id_Double"/>
     </metadata>
     <metadata connector="FLOW" label="variables" name="variables">
-      <column comment="" defaultValue="" key="false" length="-1" name="TIME" nullable="false" originalDbColumnName="time" pattern="" precision="-1" sourceType="" type="id_Double"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CHLF" nullable="true" originalDbColumnName="chlf" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CHLF_Burst_Max" nullable="true" originalDbColumnName="chlf_burst_max" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CHLF_Burst_Min" nullable="true" originalDbColumnName="chlf_burst_min" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CHLF_Burst_SD" nullable="true" originalDbColumnName="chlf_burst_sd" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CHLF_Num_Excluded" nullable="true" originalDbColumnName="chlf_num_excluded" pattern="" precision="-1" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CHLF_Num_Included" nullable="true" originalDbColumnName="chlf_num_included" pattern="" precision="-1" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CHLR" nullable="true" originalDbColumnName="chlr" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CHLR_Burst_Max" nullable="true" originalDbColumnName="chlr_burst_max" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CHLR_Burst_Min" nullable="true" originalDbColumnName="chlr_burst_min" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CHLR_Burst_SD" nullable="true" originalDbColumnName="chlr_burst_sd" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CHLR_Num_Excluded" nullable="true" originalDbColumnName="chlr_num_excluded" pattern="" precision="-1" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CHLR_Num_Included" nullable="true" originalDbColumnName="chlr_num_included" pattern="" precision="-1" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CHLU" nullable="true" originalDbColumnName="chlu" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CHLU_Burst_Max" nullable="true" originalDbColumnName="chlu_burst_max" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CHLU_Burst_Min" nullable="true" originalDbColumnName="chlu_burst_min" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CHLU_Burst_SD" nullable="true" originalDbColumnName="chlu_burst_sd" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CHLU_Num_Excluded" nullable="true" originalDbColumnName="chlu_num_excluded" pattern="" precision="-1" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CHLU_Num_Included" nullable="true" originalDbColumnName="chlu_num_included" pattern="" precision="-1" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CNDC" nullable="true" originalDbColumnName="cndc" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CNDC_Burst_Max" nullable="true" originalDbColumnName="cndc_burst_max" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CNDC_Burst_Min" nullable="true" originalDbColumnName="cndc_burst_min" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CNDC_Burst_SD" nullable="true" originalDbColumnName="cndc_burst_sd" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CNDC_Num_Excluded" nullable="true" originalDbColumnName="cndc_num_excluded" pattern="" precision="-1" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CNDC_Num_Included" nullable="true" originalDbColumnName="cndc_num_included" pattern="" precision="-1" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CPHL" nullable="true" originalDbColumnName="cphl" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CPHL_Burst_Max" nullable="true" originalDbColumnName="cphl_burst_max" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CPHL_Burst_Min" nullable="true" originalDbColumnName="cphl_burst_min" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CPHL_Burst_SD" nullable="true" originalDbColumnName="cphl_burst_sd" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CPHL_Num_Excluded" nullable="true" originalDbColumnName="cphl_num_excluded" pattern="" precision="-1" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CPHL_Num_Included" nullable="true" originalDbColumnName="cphl_num_included" pattern="" precision="-1" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DEPTH" nullable="true" originalDbColumnName="depth" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DEPTH_Burst_Max" nullable="true" originalDbColumnName="depth_burst_max" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DEPTH_Burst_Min" nullable="true" originalDbColumnName="depth_burst_min" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DEPTH_Burst_SD" nullable="true" originalDbColumnName="depth_burst_sd" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DEPTH_Num_Excluded" nullable="true" originalDbColumnName="depth_num_excluded" pattern="" precision="-1" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DEPTH_Num_Included" nullable="true" originalDbColumnName="depth_num_included" pattern="" precision="-1" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DOX1_2" nullable="true" originalDbColumnName="dox1_2" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DOX1_2_Burst_Max" nullable="true" originalDbColumnName="dox1_2_burst_max" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DOX1_2_Burst_Min" nullable="true" originalDbColumnName="dox1_2_burst_min" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DOX1_2_Burst_SD" nullable="true" originalDbColumnName="dox1_2_burst_sd" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DOX1_2_Num_Excluded" nullable="true" originalDbColumnName="dox1_2_num_excluded" pattern="" precision="-1" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DOX1_2_Num_Included" nullable="true" originalDbColumnName="dox1_2_num_included" pattern="" precision="-1" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DOX1_3" nullable="true" originalDbColumnName="dox1_3" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DOX1_3_Burst_Max" nullable="true" originalDbColumnName="dox1_3_burst_max" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DOX1_3_Burst_Min" nullable="true" originalDbColumnName="dox1_3_burst_min" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DOX1_3_Burst_SD" nullable="true" originalDbColumnName="dox1_3_burst_sd" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DOX1_3_Num_Excluded" nullable="true" originalDbColumnName="dox1_3_num_excluded" pattern="" precision="-1" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DOX1_3_Num_Included" nullable="true" originalDbColumnName="dox1_3_num_included" pattern="" precision="-1" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DOX2" nullable="true" originalDbColumnName="dox2" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DOX2_Burst_Max" nullable="true" originalDbColumnName="dox2_burst_max" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DOX2_Burst_Min" nullable="true" originalDbColumnName="dox2_burst_min" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DOX2_Burst_SD" nullable="true" originalDbColumnName="dox2_burst_sd" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DOX2_Num_Excluded" nullable="true" originalDbColumnName="dox2_num_excluded" pattern="" precision="-1" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DOX2_Num_Included" nullable="true" originalDbColumnName="dox2_num_included" pattern="" precision="-1" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PRES_REL" nullable="true" originalDbColumnName="pres_rel" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PRES_REL_Burst_Max" nullable="true" originalDbColumnName="pres_rel_burst_max" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PRES_REL_Burst_Min" nullable="true" originalDbColumnName="pres_rel_burst_min" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PRES_REL_Burst_SD" nullable="true" originalDbColumnName="pres_rel_burst_sd" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PRES_REL_Num_Excluded" nullable="true" originalDbColumnName="pres_rel_num_excluded" pattern="" precision="-1" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PRES_REL_Num_Included" nullable="true" originalDbColumnName="pres_rel_num_included" pattern="" precision="-1" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PSAL" nullable="true" originalDbColumnName="psal" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PSAL_Burst_Max" nullable="true" originalDbColumnName="psal_burst_max" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PSAL_Burst_Min" nullable="true" originalDbColumnName="psal_burst_min" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PSAL_Burst_SD" nullable="true" originalDbColumnName="psal_burst_sd" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PSAL_Num_Excluded" nullable="true" originalDbColumnName="psal_num_excluded" pattern="" precision="-1" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PSAL_Num_Included" nullable="true" originalDbColumnName="psal_num_included" pattern="" precision="-1" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="TEMP" nullable="true" originalDbColumnName="temp" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="TEMP_Burst_Max" nullable="true" originalDbColumnName="temp_burst_max" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="TEMP_Burst_Min" nullable="true" originalDbColumnName="temp_burst_min" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="TEMP_Burst_SD" nullable="true" originalDbColumnName="temp_burst_sd" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="TEMP_Num_Excluded" nullable="true" originalDbColumnName="temp_num_excluded" pattern="" precision="-1" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="TEMP_Num_Included" nullable="true" originalDbColumnName="temp_num_included" pattern="" precision="-1" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="TURB" nullable="true" originalDbColumnName="turb" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="TURB_Burst_Max" nullable="true" originalDbColumnName="turb_burst_max" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="TURB_Burst_Min" nullable="true" originalDbColumnName="turb_burst_min" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="TURB_Burst_SD" nullable="true" originalDbColumnName="turb_burst_sd" pattern="" precision="-1" sourceType="" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="TURB_Num_Excluded" nullable="true" originalDbColumnName="turb_num_excluded" pattern="" precision="-1" sourceType="" type="id_Integer"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="TURB_Num_Included" nullable="true" originalDbColumnName="turb_num_included" pattern="" precision="-1" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="TIME" nullable="false" originalDbColumnName="time" pattern="" sourceType="" type="id_Double"/>
+      <column comment="" defaultValue="" key="false" name="CHLF" nullable="true" originalDbColumnName="chlf" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="CHLF_Burst_Max" nullable="true" originalDbColumnName="chlf_burst_max" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="CHLF_Burst_Min" nullable="true" originalDbColumnName="chlf_burst_min" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="CHLF_Burst_SD" nullable="true" originalDbColumnName="chlf_burst_sd" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="CHLF_Num_Excluded" nullable="true" originalDbColumnName="chlf_num_excluded" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="CHLF_Num_Included" nullable="true" originalDbColumnName="chlf_num_included" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="CHLR" nullable="true" originalDbColumnName="chlr" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="CHLR_Burst_Max" nullable="true" originalDbColumnName="chlr_burst_max" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="CHLR_Burst_Min" nullable="true" originalDbColumnName="chlr_burst_min" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="CHLR_Burst_SD" nullable="true" originalDbColumnName="chlr_burst_sd" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="CHLR_Num_Excluded" nullable="true" originalDbColumnName="chlr_num_excluded" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="CHLR_Num_Included" nullable="true" originalDbColumnName="chlr_num_included" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="CHLU" nullable="true" originalDbColumnName="chlu" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="CHLU_Burst_Max" nullable="true" originalDbColumnName="chlu_burst_max" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="CHLU_Burst_Min" nullable="true" originalDbColumnName="chlu_burst_min" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="CHLU_Burst_SD" nullable="true" originalDbColumnName="chlu_burst_sd" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="CHLU_Num_Excluded" nullable="true" originalDbColumnName="chlu_num_excluded" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="CHLU_Num_Included" nullable="true" originalDbColumnName="chlu_num_included" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="CNDC" nullable="true" originalDbColumnName="cndc" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="CNDC_Burst_Max" nullable="true" originalDbColumnName="cndc_burst_max" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="CNDC_Burst_Min" nullable="true" originalDbColumnName="cndc_burst_min" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="CNDC_Burst_SD" nullable="true" originalDbColumnName="cndc_burst_sd" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="CNDC_Num_Excluded" nullable="true" originalDbColumnName="cndc_num_excluded" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="CNDC_Num_Included" nullable="true" originalDbColumnName="cndc_num_included" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="CPHL" nullable="true" originalDbColumnName="cphl" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="CPHL_Burst_Max" nullable="true" originalDbColumnName="cphl_burst_max" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="CPHL_Burst_Min" nullable="true" originalDbColumnName="cphl_burst_min" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="CPHL_Burst_SD" nullable="true" originalDbColumnName="cphl_burst_sd" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="CPHL_Num_Excluded" nullable="true" originalDbColumnName="cphl_num_excluded" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="CPHL_Num_Included" nullable="true" originalDbColumnName="cphl_num_included" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="DEPTH" nullable="true" originalDbColumnName="depth" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DEPTH_Burst_Max" nullable="true" originalDbColumnName="depth_burst_max" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DEPTH_Burst_Min" nullable="true" originalDbColumnName="depth_burst_min" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DEPTH_Burst_SD" nullable="true" originalDbColumnName="depth_burst_sd" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DEPTH_Num_Excluded" nullable="true" originalDbColumnName="depth_num_excluded" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="DEPTH_Num_Included" nullable="true" originalDbColumnName="depth_num_included" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="DOX1_2" nullable="true" originalDbColumnName="dox1_2" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DOX1_2_Burst_Max" nullable="true" originalDbColumnName="dox1_2_burst_max" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DOX1_2_Burst_Min" nullable="true" originalDbColumnName="dox1_2_burst_min" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DOX1_2_Burst_SD" nullable="true" originalDbColumnName="dox1_2_burst_sd" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DOX1_2_Num_Excluded" nullable="true" originalDbColumnName="dox1_2_num_excluded" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="DOX1_2_Num_Included" nullable="true" originalDbColumnName="dox1_2_num_included" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="DOX1_3" nullable="true" originalDbColumnName="dox1_3" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DOX1_3_Burst_Max" nullable="true" originalDbColumnName="dox1_3_burst_max" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DOX1_3_Burst_Min" nullable="true" originalDbColumnName="dox1_3_burst_min" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DOX1_3_Burst_SD" nullable="true" originalDbColumnName="dox1_3_burst_sd" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DOX1_3_Num_Excluded" nullable="true" originalDbColumnName="dox1_3_num_excluded" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="DOX1_3_Num_Included" nullable="true" originalDbColumnName="dox1_3_num_included" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="DOX2" nullable="true" originalDbColumnName="dox2" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DOX2_Burst_Max" nullable="true" originalDbColumnName="dox2_burst_max" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DOX2_Burst_Min" nullable="true" originalDbColumnName="dox2_burst_min" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DOX2_Burst_SD" nullable="true" originalDbColumnName="dox2_burst_sd" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="DOX2_Num_Excluded" nullable="true" originalDbColumnName="dox2_num_excluded" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="DOX2_Num_Included" nullable="true" originalDbColumnName="dox2_num_included" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="PRES_REL" nullable="true" originalDbColumnName="pres_rel" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="PRES_REL_Burst_Max" nullable="true" originalDbColumnName="pres_rel_burst_max" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="PRES_REL_Burst_Min" nullable="true" originalDbColumnName="pres_rel_burst_min" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="PRES_REL_Burst_SD" nullable="true" originalDbColumnName="pres_rel_burst_sd" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="PRES_REL_Num_Excluded" nullable="true" originalDbColumnName="pres_rel_num_excluded" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="PRES_REL_Num_Included" nullable="true" originalDbColumnName="pres_rel_num_included" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="PSAL" nullable="true" originalDbColumnName="psal" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="PSAL_Burst_Max" nullable="true" originalDbColumnName="psal_burst_max" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="PSAL_Burst_Min" nullable="true" originalDbColumnName="psal_burst_min" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="PSAL_Burst_SD" nullable="true" originalDbColumnName="psal_burst_sd" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="PSAL_Num_Excluded" nullable="true" originalDbColumnName="psal_num_excluded" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="PSAL_Num_Included" nullable="true" originalDbColumnName="psal_num_included" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="TEMP" nullable="true" originalDbColumnName="temp" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="TEMP_Burst_Max" nullable="true" originalDbColumnName="temp_burst_max" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="TEMP_Burst_Min" nullable="true" originalDbColumnName="temp_burst_min" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="TEMP_Burst_SD" nullable="true" originalDbColumnName="temp_burst_sd" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="TEMP_Num_Excluded" nullable="true" originalDbColumnName="temp_num_excluded" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="TEMP_Num_Included" nullable="true" originalDbColumnName="temp_num_included" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="TURB" nullable="true" originalDbColumnName="turb" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="TURB_Burst_Max" nullable="true" originalDbColumnName="turb_burst_max" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="TURB_Burst_Min" nullable="true" originalDbColumnName="turb_burst_min" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="TURB_Burst_SD" nullable="true" originalDbColumnName="turb_burst_sd" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" name="TURB_Num_Excluded" nullable="true" originalDbColumnName="turb_num_excluded" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" name="TURB_Num_Included" nullable="true" originalDbColumnName="turb_num_included" pattern="" sourceType="" type="id_Integer"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="256">
@@ -634,7 +634,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="timeseries_latitude">
         <mapperTableEntries name="file_id" expression="context.fileId" type="id_Long"/>
@@ -843,7 +843,7 @@
       <column comment="" key="false" name="CHLF_quality_control" nullable="true" pattern="" sourceType="" type="id_Character"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="depth_qc" expression="variables.DEPTH==null?'9':'1' " type="id_Character" nullable="true"/>
         <mapperTableEntries name="pres_rel_qc" expression="variables.PRES_REL==null?'9':'1' " type="id_Character" nullable="true"/>
@@ -1185,7 +1185,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select id as ts_id from timeseries where file_id = '&quot; + context.fileId + &quot;'&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select id as ts_id from timeseries where file_id = &quot; + context.fileId"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
@@ -1329,7 +1329,7 @@
       <column comment="" key="false" name="geom" nullable="true" pattern="" sourceType="GEOMETRY" type="id_Geometry"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="timeseriesGeom">
         <mapperTableEntries name="file_id" expression="context.fileId" type="id_Long"/>
