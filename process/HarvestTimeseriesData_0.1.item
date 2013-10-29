@@ -60,6 +60,120 @@
     <routinesParameter id="_NhR54AuOEeO-v4jR06LTxA" name="TalendDate"/>
     <routinesParameter id="_NhOPgAuOEeO-v4jR06LTxA" name="TalendString"/>
   </parameters>
+  <node componentName="iPostgresqlDbUpdate" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iPostgresqlDbUpdate_1"/>
+    <elementParameter field="TEXT" name="HOST" value="context.harvestDb_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.harvestDb_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.harvestDb_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.harvestDb_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.harvestDb_Login"/>
+    <elementParameter field="TEXT" name="PASS" value="context.harvestDb_Password"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/home/craigj/TOS_DI-r96646-V5.1.3/workspace/changelog.xml&quot;"/>
+    <elementParameter field="CHECK" name="USE_INLINE_CONTENT" value="true"/>
+    <elementParameter field="MEMO" name="INLINE_CONTENT" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?>&#xA;&lt;databaseChangeLog xmlns=&quot;http://www.liquibase.org/xml/ns/dbchangelog&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd&quot;>&#xA;    &lt;changeSet author=&quot;talend&quot; id=&quot;1381295243277-1&quot;>&#xA;        &lt;createTable schemaName=&quot;anmn_ts&quot; tableName=&quot;file&quot;>&#xA;            &lt;column name=&quot;file_id&quot; type=&quot;int8&quot;>&#xA;                &lt;constraints nullable=&quot;false&quot; primaryKey=&quot;true&quot; primaryKeyName=&quot;file_pk&quot;/>&#xA;            &lt;/column>&#xA;            &lt;column name=&quot;url&quot; type=&quot;TEXT&quot;/>&#xA;        &lt;/createTable>&#xA;    &lt;/changeSet>&#xA;    &lt;changeSet author=&quot;talend&quot; id=&quot;1381295243277-5&quot;>&#xA;        &lt;createTable schemaName=&quot;anmn_ts&quot; tableName=&quot;measurement&quot;>&#xA;            &lt;column name=&quot;ts_id&quot; type=&quot;int8&quot;>&#xA;                &lt;constraints nullable=&quot;false&quot;/>&#xA;            &lt;/column>&#xA;            &lt;column name=&quot;TIME&quot; type=&quot;TIMESTAMP WITH TIME ZONE&quot;>&#xA;                &lt;constraints nullable=&quot;false&quot;/>&#xA;            &lt;/column>&#xA;            &lt;column name=&quot;TIME_quality_control&quot; type=&quot;char(1)&quot;/>&#xA;            &lt;column name=&quot;DEPTH&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;DEPTH_Burst_SD&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;DEPTH_Burst_Min&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;DEPTH_Burst_Max&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;DEPTH_Num_Excluded&quot; type=&quot;integer&quot;/>&#xA;            &lt;column name=&quot;DEPTH_Num_Included&quot; type=&quot;integer&quot;/>&#xA;            &lt;column name=&quot;DEPTH_quality_control&quot; type=&quot;char(1)&quot;/>&#xA;            &lt;column name=&quot;TEMP&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;TEMP_Burst_SD&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;TEMP_Burst_Min&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;TEMP_Burst_Max&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;TEMP_Num_Excluded&quot; type=&quot;integer&quot;/>&#xA;            &lt;column name=&quot;TEMP_Num_Included&quot; type=&quot;integer&quot;/>&#xA;            &lt;column name=&quot;TEMP_quality_control&quot; type=&quot;char(1)&quot;/>&#xA;            &lt;column name=&quot;PRES&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;PRES_Burst_SD&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;PRES_Burst_Min&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;PRES_Burst_Max&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;PRES_Num_Excluded&quot; type=&quot;integer&quot;/>&#xA;            &lt;column name=&quot;PRES_Num_Included&quot; type=&quot;integer&quot;/>&#xA;            &lt;column name=&quot;PRES_quality_control&quot; type=&quot;char(1)&quot;/>&#xA;            &lt;column name=&quot;PRES_REL&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;PRES_REL_Burst_SD&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;PRES_REL_Burst_Min&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;PRES_REL_Burst_Max&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;PRES_REL_Num_Excluded&quot; type=&quot;integer&quot;/>&#xA;            &lt;column name=&quot;PRES_REL_Num_Included&quot; type=&quot;integer&quot;/>&#xA;            &lt;column name=&quot;PRES_REL_quality_control&quot; type=&quot;char(1)&quot;/>&#xA;            &lt;column name=&quot;CNDC&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;CNDC_Burst_SD&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;CNDC_Burst_Min&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;CNDC_Burst_Max&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;CNDC_Num_Excluded&quot; type=&quot;integer&quot;/>&#xA;            &lt;column name=&quot;CNDC_Num_Included&quot; type=&quot;integer&quot;/>&#xA;            &lt;column name=&quot;CNDC_quality_control&quot; type=&quot;char(1)&quot;/>&#xA;            &lt;column name=&quot;PSAL&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;PSAL_Burst_SD&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;PSAL_Burst_Min&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;PSAL_Burst_Max&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;PSAL_Num_Excluded&quot; type=&quot;integer&quot;/>&#xA;            &lt;column name=&quot;PSAL_Num_Included&quot; type=&quot;integer&quot;/>&#xA;            &lt;column name=&quot;PSAL_quality_control&quot; type=&quot;char(1)&quot;/>&#xA;            &lt;column name=&quot;DOX2&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;DOX2_Burst_SD&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;DOX2_Burst_Min&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;DOX2_Burst_Max&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;DOX2_Num_Excluded&quot; type=&quot;integer&quot;/>&#xA;            &lt;column name=&quot;DOX2_Num_Included&quot; type=&quot;integer&quot;/>&#xA;            &lt;column name=&quot;DOX2_quality_control&quot; type=&quot;char(1)&quot;/>&#xA;            &lt;column name=&quot;TURB&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;TURB_Burst_SD&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;TURB_Burst_Min&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;TURB_Burst_Max&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;TURB_Num_Excluded&quot; type=&quot;integer&quot;/>&#xA;            &lt;column name=&quot;TURB_Num_Included&quot; type=&quot;integer&quot;/>&#xA;            &lt;column name=&quot;TURB_quality_control&quot; type=&quot;char(1)&quot;/>&#xA;            &lt;column name=&quot;CPHL&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;CPHL_Burst_SD&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;CPHL_Burst_Min&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;CPHL_Burst_Max&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;CPHL_Num_Excluded&quot; type=&quot;integer&quot;/>&#xA;            &lt;column name=&quot;CPHL_Num_Included&quot; type=&quot;integer&quot;/>&#xA;            &lt;column name=&quot;CPHL_quality_control&quot; type=&quot;char(1)&quot;/>&#xA;            &lt;column name=&quot;CHLU&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;CHLU_Burst_SD&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;CHLU_Burst_Min&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;CHLU_Burst_Max&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;CHLU_Num_Excluded&quot; type=&quot;integer&quot;/>&#xA;            &lt;column name=&quot;CHLU_Num_Included&quot; type=&quot;integer&quot;/>&#xA;            &lt;column name=&quot;CHLU_quality_control&quot; type=&quot;char(1)&quot;/>&#xA;            &lt;column name=&quot;CHLF&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;CHLF_Burst_SD&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;CHLF_Burst_Min&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;CHLF_Burst_Max&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;CHLF_Num_Excluded&quot; type=&quot;integer&quot;/>&#xA;            &lt;column name=&quot;CHLF_Num_Included&quot; type=&quot;integer&quot;/>&#xA;            &lt;column name=&quot;CHLF_quality_control&quot; type=&quot;char(1)&quot;/>&#xA;        &lt;/createTable>&#xA;    &lt;/changeSet>&#xA;    &lt;changeSet author=&quot;talend&quot; id=&quot;1381295243277-6&quot;>&#xA;        &lt;createTable schemaName=&quot;anmn_ts&quot; tableName=&quot;timeseries&quot;>&#xA;            &lt;column autoIncrement=&quot;true&quot; name=&quot;id&quot; type=&quot;bigserial&quot;>&#xA;                &lt;constraints nullable=&quot;false&quot; primaryKey=&quot;true&quot; primaryKeyName=&quot;timeseries_pk&quot;/>&#xA;            &lt;/column>&#xA;            &lt;column name=&quot;file_id&quot; type=&quot;int8&quot;>&#xA;                &lt;constraints nullable=&quot;false&quot;/>&#xA;            &lt;/column>&#xA;            &lt;column name=&quot;site_code&quot; type=&quot;TEXT&quot;>&#xA;                &lt;constraints nullable=&quot;false&quot;/>&#xA;            &lt;/column>&#xA;            &lt;column name=&quot;platform_code&quot; type=&quot;TEXT&quot;>&#xA;                &lt;constraints nullable=&quot;false&quot;/>&#xA;            &lt;/column>&#xA;            &lt;column name=&quot;deployment_code&quot; type=&quot;TEXT&quot;>&#xA;                &lt;constraints nullable=&quot;false&quot;/>&#xA;            &lt;/column>&#xA;            &lt;column name=&quot;lat&quot; remarks=&quot;actual latitude of deployment&quot; type=&quot;java.sql.Types.Double&quot;/>&#xA;            &lt;column name=&quot;lon&quot; remarks=&quot;actual longitude of deployment&quot; type=&quot;java.sql.Types.Double&quot;/>&#xA;            &lt;column name=&quot;geom&quot; type=&quot;GEOMETRY&quot;/>&#xA;            &lt;column name=&quot;depth_nominal&quot; remarks=&quot;netCDF global attribute instrument_nominal_depth&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;institution&quot; type=&quot;TEXT&quot;/>&#xA;            &lt;column name=&quot;instrument&quot; type=&quot;TEXT&quot;/>&#xA;            &lt;column name=&quot;instrument_serial_number&quot; type=&quot;TEXT&quot;/>&#xA;            &lt;column name=&quot;time_coverage_start&quot; type=&quot;TIMESTAMP WITH TIME ZONE&quot;/>&#xA;            &lt;column name=&quot;time_coverage_end&quot; type=&quot;TIMESTAMP WITH TIME ZONE&quot;/>&#xA;            &lt;column name=&quot;time_deployment_start&quot; type=&quot;TIMESTAMP WITH TIME ZONE&quot;/>&#xA;            &lt;column name=&quot;time_deployment_end&quot; type=&quot;TIMESTAMP WITH TIME ZONE&quot;/>&#xA;            &lt;column name=&quot;comment&quot; type=&quot;TEXT&quot;/>&#xA;            &lt;column name=&quot;history&quot; type=&quot;TEXT&quot;/>&#xA;            &lt;column name=&quot;toolbox_version&quot; type=&quot;TEXT&quot;/>&#xA;            &lt;column name=&quot;depth_b&quot; type=&quot;boolean&quot;/>&#xA;            &lt;column name=&quot;sea_water_temperature_b&quot; type=&quot;boolean&quot;/>&#xA;            &lt;column name=&quot;sea_water_pressure_b&quot; type=&quot;boolean&quot;/>&#xA;            &lt;column name=&quot;sea_water_pressure_due_to_sea_water_b&quot; type=&quot;boolean&quot;/>&#xA;            &lt;column name=&quot;sea_water_electrical_conductivity_b&quot; type=&quot;boolean&quot;/>&#xA;            &lt;column name=&quot;sea_water_salinity_b&quot; type=&quot;boolean&quot;/>&#xA;            &lt;column name=&quot;moles_of_oxygen_per_unit_mass_in_sea_water_b&quot; type=&quot;boolean&quot;/>&#xA;            &lt;column name=&quot;turbidity_b&quot; type=&quot;boolean&quot;/>&#xA;            &lt;column name=&quot;mass_concentration_of_chlorophyll_in_sea_water_b&quot; type=&quot;boolean&quot;/>&#xA;        &lt;/createTable>&#xA;    &lt;/changeSet>&#xA;    &lt;changeSet author=&quot;talend&quot; id=&quot;1381295243277-7&quot;>&#xA;        &lt;sql>&#xA;            ALTER TABLE timeseries&#xA;            ALTER COLUMN geom TYPE geometry(GEOMETRY, 4326)&#xA;            USING ST_SetSRID(geom,4326);&#xA;            CREATE INDEX timeseries_gist_idx ON timeseries USING GIST (geom);  &#xA;        &lt;/sql>&#xA;    &lt;/changeSet>&#xA;    &lt;changeSet author=&quot;talend&quot; id=&quot;1381295243277-8&quot;>&#xA;        &lt;addPrimaryKey columnNames=&quot;ts_id, time&quot; constraintName=&quot;measurement_pk&quot; schemaName=&quot;anmn_ts&quot; tableName=&quot;measurement&quot;/>&#xA;    &lt;/changeSet>&#xA;    &lt;changeSet author=&quot;talend&quot; id=&quot;1381295243277-11&quot;>&#xA;        &lt;addUniqueConstraint columnNames=&quot;deployment_code, instrument, depth_nominal&quot; constraintName=&quot;timeseries_deployment_instrument_depth_uc&quot; deferrable=&quot;false&quot; disabled=&quot;false&quot; initiallyDeferred=&quot;false&quot; schemaName=&quot;anmn_ts&quot; tableName=&quot;timeseries&quot;/>&#xA;    &lt;/changeSet>&#xA;    &lt;changeSet author=&quot;talend&quot; id=&quot;1381295243277-12&quot;>&#xA;        &lt;addForeignKeyConstraint baseColumnNames=&quot;ts_id&quot; baseTableName=&quot;measurement&quot; baseTableSchemaName=&quot;anmn_ts&quot; constraintName=&quot;measurement_ts_fk&quot; deferrable=&quot;false&quot; initiallyDeferred=&quot;false&quot; onDelete=&quot;CASCADE&quot; onUpdate=&quot;CASCADE&quot; referencedColumnNames=&quot;id&quot; referencedTableName=&quot;timeseries&quot; referencedTableSchemaName=&quot;anmn_ts&quot; referencesUniqueColumn=&quot;false&quot;/>&#xA;    &lt;/changeSet>&#xA;    &lt;changeSet author=&quot;talend&quot; id=&quot;1381295243277-13&quot;>&#xA;        &lt;addForeignKeyConstraint baseColumnNames=&quot;file_id&quot; baseTableName=&quot;timeseries&quot; baseTableSchemaName=&quot;anmn_ts&quot; constraintName=&quot;timeseries_file_fk&quot; deferrable=&quot;false&quot; initiallyDeferred=&quot;false&quot; onDelete=&quot;CASCADE&quot; onUpdate=&quot;CASCADE&quot; referencedColumnNames=&quot;id&quot; referencedTableName=&quot;indexed_file&quot; referencedTableSchemaName=&quot;anmn_ts&quot; referencesUniqueColumn=&quot;false&quot;/>&#xA;    &lt;/changeSet>&#xA;&lt;/databaseChangeLog>&#xA;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+  </node>
+  <node componentName="iIndexFiles" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iIndexFiles_1"/>
+    <elementParameter field="CHECK" name="START" value="true"/>
+    <elementParameter field="TEXT" name="HOST" value="context.harvestDb_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.harvestDb_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.harvestDb_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.harvestDb_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.harvestDb_Login"/>
+    <elementParameter field="TEXT" name="PASS" value="context.harvestDb_Password"/>
+    <elementParameter field="TEXT" name="JOBNAME" value="&quot;index&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.sourceDir"/>
+    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
+    <elementParameter field="CHECK" name="ERROR" value="false"/>
+    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
+    <elementParameter field="TABLE" name="FILES"/>
+    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
+    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" value="&quot;*.txt&quot;"/>
+    <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="iIndexFiles_1">
+      <column defaultValue="" key="false" length="255" name="filePath" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column defaultValue="" key="false" length="0" name="fileLastModified" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'000Z'&quot;" precision="0" sourceType="" type="id_Date"/>
+    </metadata>
+  </node>
+  <node componentName="iPostgresqlGenerateChangelog" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iPostgresqlGenerateChangelog_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.harvestDb_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.harvestDb_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.harvestDb_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.harvestDb_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.harvestDb_Login"/>
+    <elementParameter field="TEXT" name="PASS" value="context.harvestDb_Password"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/tmp/harvestDb_changelog.xml&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+  </node>
+  <node componentName="iDeletedResources" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iDeletedResources_1"/>
+    <elementParameter field="TEXT" name="HOST" value="context.harvestDb_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.harvestDb_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.harvestDb_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.harvestDb_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.harvestDb_Login"/>
+    <elementParameter field="TEXT" name="PASS" value="context.harvestDb_Password"/>
+    <elementParameter field="TEXT" name="JOBNAME" value="&quot;index&quot;"/>
+    <elementParameter field="TEXT" name="HARVEST_TYPE" value="&quot;harvest&quot;"/>
+    <elementParameter field="RADIO" name="USE_DEFAULT" value="true"/>
+    <elementParameter field="RADIO" name="USE_FILTER" value="false"/>
+    <elementParameter field="TEXT" name="FILTER" value="&quot;%&quot;"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_QUERY" value="false"/>
+    <elementParameter field="MEMO" name="CUSTOM_QUERY" value="&quot;select id, url, modified &quot; +&#xA;&quot;  from deleted_resource &quot; +&#xA;&quot; where job_name = ? &quot; +&#xA;&quot;   and harvest_type = ? &quot;&#xA;      "/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="DeleteTimeseriesMetadata"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_-8JaoDYNEeOBXOTTBaxmyA"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="fileId"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="((Long)globalMap.get(&quot;iDeletedResources_1_FILE_ID&quot;))"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
   <node componentName="iHarvestResources" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="iHarvestResources_1"/>
     <elementParameter field="TEXT" name="HOST" value="context.harvestDb_Server"/>
@@ -133,142 +247,6 @@
     <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
     <metadata connector="FLOW" name="tRunJob_4"/>
   </node>
-  <node componentName="iDeletedResources" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="576">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iDeletedResources_1"/>
-    <elementParameter field="TEXT" name="HOST" value="context.harvestDb_Server"/>
-    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL"/>
-    <elementParameter field="TEXT" name="PORT" value="context.harvestDb_Port"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.harvestDb_Database"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.harvestDb_Schema"/>
-    <elementParameter field="TEXT" name="USER" value="context.harvestDb_Login"/>
-    <elementParameter field="TEXT" name="PASS" value="context.harvestDb_Password"/>
-    <elementParameter field="TEXT" name="JOBNAME" value="&quot;index&quot;"/>
-    <elementParameter field="TEXT" name="HARVEST_TYPE" value="&quot;harvest&quot;"/>
-    <elementParameter field="RADIO" name="USE_DEFAULT" value="true"/>
-    <elementParameter field="RADIO" name="USE_FILTER" value="false"/>
-    <elementParameter field="TEXT" name="FILTER" value="&quot;%&quot;"/>
-    <elementParameter field="RADIO" name="USE_CUSTOM_QUERY" value="false"/>
-    <elementParameter field="MEMO" name="CUSTOM_QUERY" value="&quot;select id, url, modified &quot; +&#xA;&quot;  from deleted_resource &quot; +&#xA;&quot; where job_name = ? &quot; +&#xA;&quot;   and harvest_type = ? &quot;&#xA;      "/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
-    <elementParameter field="MEMO" name="COMMENT" value=""/>
-    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
-  </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="576">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1"/>
-    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
-    <elementParameter field="TEXT" name="CONTEXT_JOB" value=""/>
-    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="DeleteTimeseriesMetadata"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_-8JaoDYNEeOBXOTTBaxmyA"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
-    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default"/>
-    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
-    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
-    <elementParameter field="TABLE" name="CONTEXTPARAMS">
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="fileId"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="((Long)globalMap.get(&quot;iDeletedResources_1_FILE_ID&quot;))"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
-    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
-    <elementParameter field="MEMO" name="COMMENT" value=""/>
-    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
-    <metadata connector="FLOW" name="tRunJob_1"/>
-  </node>
-  <node componentName="iPostgresqlDbUpdate" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iPostgresqlDbUpdate_1"/>
-    <elementParameter field="TEXT" name="HOST" value="context.harvestDb_Server"/>
-    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL"/>
-    <elementParameter field="TEXT" name="PORT" value="context.harvestDb_Port"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.harvestDb_Database"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.harvestDb_Schema"/>
-    <elementParameter field="TEXT" name="USER" value="context.harvestDb_Login"/>
-    <elementParameter field="TEXT" name="PASS" value="context.harvestDb_Password"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;/home/craigj/TOS_DI-r96646-V5.1.3/workspace/changelog.xml&quot;"/>
-    <elementParameter field="CHECK" name="USE_INLINE_CONTENT" value="true"/>
-    <elementParameter field="MEMO" name="INLINE_CONTENT" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?>&#xA;&lt;databaseChangeLog xmlns=&quot;http://www.liquibase.org/xml/ns/dbchangelog&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd&quot;>&#xA;    &lt;changeSet author=&quot;talend&quot; id=&quot;1381295243277-1&quot;>&#xA;        &lt;createTable schemaName=&quot;anmn_ts&quot; tableName=&quot;file&quot;>&#xA;            &lt;column name=&quot;file_id&quot; type=&quot;int8&quot;>&#xA;                &lt;constraints nullable=&quot;false&quot; primaryKey=&quot;true&quot; primaryKeyName=&quot;file_pk&quot;/>&#xA;            &lt;/column>&#xA;            &lt;column name=&quot;url&quot; type=&quot;TEXT&quot;/>&#xA;        &lt;/createTable>&#xA;    &lt;/changeSet>&#xA;    &lt;changeSet author=&quot;talend&quot; id=&quot;1381295243277-5&quot;>&#xA;        &lt;createTable schemaName=&quot;anmn_ts&quot; tableName=&quot;measurement&quot;>&#xA;            &lt;column name=&quot;ts_id&quot; type=&quot;int8&quot;>&#xA;                &lt;constraints nullable=&quot;false&quot;/>&#xA;            &lt;/column>&#xA;            &lt;column name=&quot;TIME&quot; type=&quot;TIMESTAMP WITH TIME ZONE&quot;>&#xA;                &lt;constraints nullable=&quot;false&quot;/>&#xA;            &lt;/column>&#xA;            &lt;column name=&quot;TIME_quality_control&quot; type=&quot;char(1)&quot;/>&#xA;            &lt;column name=&quot;DEPTH&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;DEPTH_quality_control&quot; type=&quot;char(1)&quot;/>&#xA;            &lt;column name=&quot;b_depth&quot; type=&quot;boolean&quot;/>&#xA;            &lt;column name=&quot;TEMP&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;TEMP_quality_control&quot; type=&quot;char(1)&quot;/>&#xA;            &lt;column name=&quot;b_sea_water_temperature&quot; type=&quot;boolean&quot;/>&#xA;            &lt;column name=&quot;PRES&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;PRES_quality_control&quot; type=&quot;char(1)&quot;/>&#xA;            &lt;column name=&quot;b_sea_water_pressure&quot; type=&quot;boolean&quot;/>&#xA;            &lt;column name=&quot;PRES_REL&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;PRES_REL_quality_control&quot; type=&quot;char(1)&quot;/>&#xA;            &lt;column name=&quot;b_sea_water_pressure_due_to_sea_water&quot; type=&quot;boolean&quot;/>&#xA;            &lt;column name=&quot;CNDC&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;CNDC_quality_control&quot; type=&quot;char(1)&quot;/>&#xA;            &lt;column name=&quot;b_sea_water_electrical_conductivity&quot; type=&quot;boolean&quot;/>&#xA;            &lt;column name=&quot;PSAL&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;PSAL_quality_control&quot; type=&quot;char(1)&quot;/>&#xA;            &lt;column name=&quot;b_sea_water_salinity&quot; type=&quot;boolean&quot;/>&#xA;            &lt;column name=&quot;DOX2&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;DOX2_quality_control&quot; type=&quot;char(1)&quot;/>&#xA;            &lt;column name=&quot;b_moles_of_oxygen_per_unit_mass_in_sea_water&quot; type=&quot;boolean&quot;/>&#xA;            &lt;column name=&quot;TURB&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;TURB_quality_control&quot; type=&quot;char(1)&quot;/>&#xA;            &lt;column name=&quot;b_turbidity&quot; type=&quot;boolean&quot;/>&#xA;            &lt;column name=&quot;CPHL&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;CPHL_quality_control&quot; type=&quot;char(1)&quot;/>&#xA;            &lt;column name=&quot;CHLU&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;CHLU_quality_control&quot; type=&quot;char(1)&quot;/>&#xA;            &lt;column name=&quot;CHLF&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;CHLF_quality_control&quot; type=&quot;char(1)&quot;/>&#xA;            &lt;column name=&quot;b_mass_concentration_of_chlorophyll_in_sea_water&quot; type=&quot;boolean&quot;/>&#xA;        &lt;/createTable>&#xA;    &lt;/changeSet>&#xA;    &lt;changeSet author=&quot;talend&quot; id=&quot;1381295243277-6&quot;>&#xA;        &lt;createTable schemaName=&quot;anmn_ts&quot; tableName=&quot;timeseries&quot;>&#xA;            &lt;column autoIncrement=&quot;true&quot; name=&quot;id&quot; type=&quot;bigserial&quot;>&#xA;                &lt;constraints nullable=&quot;false&quot; primaryKey=&quot;true&quot; primaryKeyName=&quot;timeseries_pk&quot;/>&#xA;            &lt;/column>&#xA;            &lt;column name=&quot;file_id&quot; type=&quot;int8&quot;>&#xA;                &lt;constraints nullable=&quot;false&quot;/>&#xA;            &lt;/column>&#xA;            &lt;column name=&quot;site_code&quot; type=&quot;TEXT&quot;>&#xA;                &lt;constraints nullable=&quot;false&quot;/>&#xA;            &lt;/column>&#xA;            &lt;column name=&quot;platform_code&quot; type=&quot;TEXT&quot;>&#xA;                &lt;constraints nullable=&quot;false&quot;/>&#xA;            &lt;/column>&#xA;            &lt;column name=&quot;deployment_code&quot; type=&quot;TEXT&quot;>&#xA;                &lt;constraints nullable=&quot;false&quot;/>&#xA;            &lt;/column>&#xA;            &lt;column name=&quot;lat&quot; remarks=&quot;actual latitude of deployment&quot; type=&quot;java.sql.Types.Double&quot;/>&#xA;            &lt;column name=&quot;lon&quot; remarks=&quot;actual longitude of deployment&quot; type=&quot;java.sql.Types.Double&quot;/>&#xA;            &lt;column name=&quot;geom&quot; type=&quot;GEOMETRY&quot;/>&#xA;            &lt;column name=&quot;depth_nominal&quot; remarks=&quot;netCDF global attribute instrument_nominal_depth&quot; type=&quot;FLOAT4(8,8)&quot;/>&#xA;            &lt;column name=&quot;institution&quot; type=&quot;TEXT&quot;/>&#xA;            &lt;column name=&quot;instrument&quot; type=&quot;TEXT&quot;/>&#xA;            &lt;column name=&quot;instrument_serial_number&quot; type=&quot;TEXT&quot;/>&#xA;            &lt;column name=&quot;time_coverage_start&quot; type=&quot;TIMESTAMP WITH TIME ZONE&quot;/>&#xA;            &lt;column name=&quot;time_coverage_end&quot; type=&quot;TIMESTAMP WITH TIME ZONE&quot;/>&#xA;            &lt;column name=&quot;time_deployment_start&quot; type=&quot;TIMESTAMP WITH TIME ZONE&quot;/>&#xA;            &lt;column name=&quot;time_deployment_end&quot; type=&quot;TIMESTAMP WITH TIME ZONE&quot;/>&#xA;            &lt;column name=&quot;comment&quot; type=&quot;TEXT&quot;/>&#xA;            &lt;column name=&quot;history&quot; type=&quot;TEXT&quot;/>&#xA;            &lt;column name=&quot;toolbox_version&quot; type=&quot;TEXT&quot;/>&#xA;            &lt;column name=&quot;b_depth&quot; type=&quot;boolean&quot;/>&#xA;            &lt;column name=&quot;b_sea_water_temperature&quot; type=&quot;boolean&quot;/>&#xA;            &lt;column name=&quot;b_sea_water_pressure&quot; type=&quot;boolean&quot;/>&#xA;            &lt;column name=&quot;b_sea_water_pressure_due_to_sea_water&quot; type=&quot;boolean&quot;/>&#xA;            &lt;column name=&quot;b_sea_water_electrical_conductivity&quot; type=&quot;boolean&quot;/>&#xA;            &lt;column name=&quot;b_sea_water_salinity&quot; type=&quot;boolean&quot;/>&#xA;            &lt;column name=&quot;b_moles_of_oxygen_per_unit_mass_in_sea_water&quot; type=&quot;boolean&quot;/>&#xA;            &lt;column name=&quot;b_turbidity&quot; type=&quot;boolean&quot;/>&#xA;            &lt;column name=&quot;b_mass_concentration_of_chlorophyll_in_sea_water&quot; type=&quot;boolean&quot;/>&#xA;        &lt;/createTable>&#xA;    &lt;/changeSet>&#xA;    &lt;changeSet author=&quot;talend&quot; id=&quot;1381295243277-7&quot;>&#xA;        &lt;addPrimaryKey columnNames=&quot;ts_id, time&quot; constraintName=&quot;measurement_pk&quot; schemaName=&quot;anmn_ts&quot; tableName=&quot;measurement&quot;/>&#xA;    &lt;/changeSet>&#xA;    &lt;changeSet author=&quot;talend&quot; id=&quot;1381295243277-11&quot;>&#xA;        &lt;addUniqueConstraint columnNames=&quot;deployment_code, instrument, depth_nominal&quot; constraintName=&quot;timeseries_deployment_instrument_depth_uc&quot; deferrable=&quot;false&quot; disabled=&quot;false&quot; initiallyDeferred=&quot;false&quot; schemaName=&quot;anmn_ts&quot; tableName=&quot;timeseries&quot;/>&#xA;    &lt;/changeSet>&#xA;    &lt;changeSet author=&quot;talend&quot; id=&quot;1381295243277-12&quot;>&#xA;        &lt;addForeignKeyConstraint baseColumnNames=&quot;ts_id&quot; baseTableName=&quot;measurement&quot; baseTableSchemaName=&quot;anmn_ts&quot; constraintName=&quot;measurement_ts_fk&quot; deferrable=&quot;false&quot; initiallyDeferred=&quot;false&quot; onDelete=&quot;CASCADE&quot; onUpdate=&quot;CASCADE&quot; referencedColumnNames=&quot;id&quot; referencedTableName=&quot;timeseries&quot; referencedTableSchemaName=&quot;anmn_ts&quot; referencesUniqueColumn=&quot;false&quot;/>&#xA;    &lt;/changeSet>&#xA;    &lt;changeSet author=&quot;talend&quot; id=&quot;1381295243277-13&quot;>&#xA;        &lt;addForeignKeyConstraint baseColumnNames=&quot;file_id&quot; baseTableName=&quot;timeseries&quot; baseTableSchemaName=&quot;anmn_ts&quot; constraintName=&quot;timeseries_file_fk&quot; deferrable=&quot;false&quot; initiallyDeferred=&quot;false&quot; onDelete=&quot;CASCADE&quot; onUpdate=&quot;CASCADE&quot; referencedColumnNames=&quot;id&quot; referencedTableName=&quot;indexed_file&quot; referencedTableSchemaName=&quot;anmn_ts&quot; referencesUniqueColumn=&quot;false&quot;/>&#xA;    &lt;/changeSet>&#xA;&lt;/databaseChangeLog>&#xA;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
-    <elementParameter field="MEMO" name="COMMENT" value=""/>
-    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
-  </node>
-  <node componentName="iIndexFiles" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iIndexFiles_1"/>
-    <elementParameter field="CHECK" name="START" value="true"/>
-    <elementParameter field="TEXT" name="HOST" value="context.harvestDb_Server"/>
-    <elementParameter field="TEXT" name="PORT" value="context.harvestDb_Port"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.harvestDb_Database"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.harvestDb_Schema"/>
-    <elementParameter field="TEXT" name="USER" value="context.harvestDb_Login"/>
-    <elementParameter field="TEXT" name="PASS" value="context.harvestDb_Password"/>
-    <elementParameter field="TEXT" name="JOBNAME" value="&quot;index&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.sourceDir"/>
-    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
-    <elementParameter field="CHECK" name="ERROR" value="false"/>
-    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
-    <elementParameter field="TABLE" name="FILES"/>
-    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
-    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" value="&quot;*.txt&quot;"/>
-    <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
-    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
-    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
-    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
-    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="false"/>
-    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="true"/>
-    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
-    <elementParameter field="MEMO" name="COMMENT" value=""/>
-    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
-    <metadata connector="FLOW" name="iIndexFiles_1">
-      <column defaultValue="" key="false" length="255" name="filePath" nullable="true" precision="0" sourceType="" type="id_String"/>
-      <column defaultValue="" key="false" length="0" name="fileLastModified" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'000Z'&quot;" precision="0" sourceType="" type="id_Date"/>
-    </metadata>
-  </node>
-  <node componentName="iPostgresqlGenerateChangelog" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iPostgresqlGenerateChangelog_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="HOST" value="context.harvestDb_Server"/>
-    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL"/>
-    <elementParameter field="TEXT" name="PORT" value="context.harvestDb_Port"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.harvestDb_Database"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.harvestDb_Schema"/>
-    <elementParameter field="TEXT" name="USER" value="context.harvestDb_Login"/>
-    <elementParameter field="TEXT" name="PASS" value="context.harvestDb_Password"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;/tmp/harvestDb_changelog.xml&quot;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
-    <elementParameter field="MEMO" name="COMMENT" value=""/>
-    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
-  </node>
-  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="iHarvestResources_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="iHarvestResources_1" target="tRunJob_3">
-    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
-    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="iHarvestResources_1" offsetLabelX="0" offsetLabelY="0" source="iHarvestResources_1" target="iDeletedResources_1">
-    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2"/>
-  </connection>
-  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="iHarvestResources_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="iHarvestResources_1" target="tRunJob_4">
-    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
-    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate3"/>
-  </connection>
-  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="iDeletedResources_1" offsetLabelX="0" offsetLabelY="0" source="iDeletedResources_1" target="tRunJob_1">
-    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
-    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate2"/>
-  </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="iPostgresqlDbUpdate_1" offsetLabelX="0" offsetLabelY="0" source="iPostgresqlDbUpdate_1" target="iHarvestResources_1">
     <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3"/>
@@ -277,20 +255,28 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4"/>
   </connection>
-  <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iHarvestResources_1"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Harvest/re-harvest metadata and data for new or modified resources"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iDeletedResources_1"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Delete metadata and data for deleted resources"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
-  </subjob>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="iDeletedResources_1" offsetLabelX="0" offsetLabelY="0" source="iDeletedResources_1" target="tRunJob_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate2"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="iHarvestResources_1" offsetLabelX="0" offsetLabelY="0" source="iHarvestResources_1" target="iDeletedResources_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="iHarvestResources_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="iHarvestResources_1" target="tRunJob_4">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate3"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="iHarvestResources_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="iHarvestResources_1" target="tRunJob_3">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1"/>
+  </connection>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="iPostgresqlDbUpdate_1"/>
@@ -307,6 +293,20 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="iPostgresqlGenerateChangelog_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iDeletedResources_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Delete metadata and data for deleted resources"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iHarvestResources_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Harvest/re-harvest metadata and data for new or modified resources"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
   </subjob>

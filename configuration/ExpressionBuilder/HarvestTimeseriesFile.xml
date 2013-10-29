@@ -1,9 +1,7 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="null=>Var=>depth_qc" expression="variables.DEPTH.equals(null)?'9':'1'">
-  <variables name="variables.TIME" value="0" talendType="id_Double"/>
-  <variables name="variables.DEPTH" value="null" talendType="id_Float" nullable="true"/>
-  <variables name="variables.PRES_REL" value="null" talendType="id_Float" nullable="true"/>
-  <variables name="variables.TEMP" value="null" talendType="id_Float" nullable="true"/>
-  <variables name="row3.ts_id" value="0" talendType="id_Long"/>
-  <variables name="if (variables.DEPTH == null) { return '9'; } else { return '1'; }   " value="null" talendType="id_Character" nullable="true"/>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="null=>Var=>isTIME" expression="row4.variable.equals(&quot;TIME&quot;)">
+  <variables name="row4.variable" value="&quot;test&quot;" talendType="id_String" nullable="true"/>
+  <variables name="row4.name" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row4.value" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row4.type" value="null" talendType="id_String" nullable="true"/>
 </expression:EMFExpression>

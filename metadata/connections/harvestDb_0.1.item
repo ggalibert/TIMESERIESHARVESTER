@@ -16,7 +16,7 @@
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_29iloDI5EeOserjBNni6OQ" name="harvest" dataManager="_Mvxq8CTpEeOTa_OfsPeSzA">
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_29iloTI5EeOserjBNni6OQ" name="anmn">
-      <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_29ilojI5EeOserjBNni6OQ" name="measurement" id="_nKFLQDE5EeOcI7mZXhxeFw" label="measurement">
+      <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_29ilojI5EeOserjBNni6OQ" name="measurement" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_nKFLQDE5EeOcI7mZXhxeFw" label="measurement">
         <feature xsi:type="relational:TdColumn" xmi:id="_29ilozI5EeOserjBNni6OQ" name="ts_id" label="ts_id" length="19" sourceType="INT8" talendType="id_Long" key="true" nullable="false">
           <taggedValue xmi:id="_29ilpDI5EeOserjBNni6OQ" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_29ilpTI5EeOserjBNni6OQ" language="COLUMN_DEF"/>
@@ -73,7 +73,7 @@
           <sqlDataType xmi:id="_29ilzjI5EeOserjBNni6OQ" name="BPCHAR" numericPrecisionRadix="10" javaDataType="1" nullable="columnNullable"/>
         </feature>
       </ownedElement>
-      <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_29ilzzI5EeOserjBNni6OQ" name="timeseries" id="_vbpjYDE6EeOcI7mZXhxeFw" label="timeseries">
+      <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_29ilzzI5EeOserjBNni6OQ" name="timeseries" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_vbpjYDE6EeOcI7mZXhxeFw" label="timeseries">
         <feature xsi:type="relational:TdColumn" xmi:id="_29il0DI5EeOserjBNni6OQ" name="id" label="id" length="19" sourceType="BIGSERIAL" talendType="id_Long" key="true" nullable="false">
           <taggedValue xmi:id="_29il0TI5EeOserjBNni6OQ" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_29il0jI5EeOserjBNni6OQ" body="nextval('timeseries_id_seq'::regclass)" language="COLUMN_DEF"/>

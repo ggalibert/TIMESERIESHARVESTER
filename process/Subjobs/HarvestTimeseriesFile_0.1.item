@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="url" prompt="url?" promptNeeded="false" type="id_String" value="/home/ggalibert/Documents/ANMN/NSW/PH100/Biogeochem_averaged_product_timeseries/IMOS_ANMN-NSW_CTPSOKUE_20100603T000000Z_PH100_FV02_PH100-1006-WQM-24_burst-averaged_END-20100708T235900Z_C-20131004T064300Z.nc"/>
+    <contextParameter comment="" name="url" prompt="url?" promptNeeded="false" type="id_String" value="/home/ggalibert/Documents/ANMN/NRS/NRSDAR/Biogeochem_timeseries/IMOS_ANMN-NRS_CKOSTUZ_20090816T000000Z_NRSDAR_FV02_NRSDAR-0908-WQM-6_burst-averaged_END-20100103T234600Z_C-20131021T043400Z.nc"/>
     <contextParameter comment="" name="fileId" prompt="fileId?" promptNeeded="false" type="id_Long" value="1"/>
     <contextParameter comment="" name="harvestDb_Database" prompt="harvestDb_Database?" promptNeeded="false" repositoryContextId="_fkVpgDCXEeORtbT5Dzlaaw" type="id_String" value="harvest"/>
     <contextParameter comment="" name="harvestDb_Login" prompt="harvestDb_Login?" promptNeeded="false" repositoryContextId="_fkVpgDCXEeORtbT5Dzlaaw" type="id_String" value="anmn_ts"/>
@@ -11,7 +11,7 @@
     <contextParameter comment="" name="harvestDb_Server" prompt="harvestDb_Server?" promptNeeded="false" repositoryContextId="_fkVpgDCXEeORtbT5Dzlaaw" type="id_String" value="localhost"/>
   </context>
   <context confirmationNeeded="false" name="Test">
-    <contextParameter comment="" name="url" prompt="url?" promptNeeded="false" type="id_String" value="/home/ggalibert/Documents/ANMN/NSW/PH100/Biogeochem_averaged_product_timeseries/IMOS_ANMN-NSW_CTPSOKUE_20100603T000000Z_PH100_FV02_PH100-1006-WQM-24_burst-averaged_END-20100708T235900Z_C-20131004T064300Z.nc"/>
+    <contextParameter comment="" name="url" prompt="url?" promptNeeded="false" type="id_String" value="/home/ggalibert/Documents/ANMN/NRS/NRSDAR/Biogeochem_timeseries/IMOS_ANMN-NRS_CKOSTUZ_20090816T000000Z_NRSDAR_FV02_NRSDAR-0908-WQM-6_burst-averaged_END-20100103T234600Z_C-20131021T043400Z.nc"/>
     <contextParameter comment="" name="fileId" prompt="fileId?" promptNeeded="false" type="id_Long" value="1"/>
     <contextParameter comment="" name="harvestDb_Database" prompt="harvestDb_Database?" promptNeeded="false" repositoryContextId="_fkVpgDCXEeORtbT5Dzlaaw" type="id_String" value="harvest"/>
     <contextParameter comment="" name="harvestDb_Login" prompt="harvestDb_Login?" promptNeeded="false" repositoryContextId="_fkVpgDCXEeORtbT5Dzlaaw" type="id_String" value="anmn_ts"/>
@@ -23,7 +23,7 @@
   <parameters>
     <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value=" -Xms256M -Xmx1024M"/>
     <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="32"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="384"/>
     <elementParameter field="TEXT" name="SCHEMA_OPTIONS" value="none"/>
     <elementParameter field="TEXT" name="OEM_CUSTOM_ATTRIBUTE" value=""/>
@@ -53,8 +53,9 @@
     <routinesParameter id="_NhR54AuOEeO-v4jR06LTxA" name="TalendDate"/>
     <routinesParameter id="_NhOPgAuOEeO-v4jR06LTxA" name="TalendString"/>
     <routinesParameter id="_IMfY4Dp8EeKYTu4DLH4cKg" name="NetCDFUtils"/>
+    <routinesParameter id="_BzxlsElWEeK5TPMSOHM6dA" name="ArgoUtils"/>
   </parameters>
-  <node componentName="tPostgresqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="-160">
+  <node componentName="tPostgresqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="-320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlConnection_1"/>
     <elementParameter field="TEXT" name="HOST" value="context.harvestDb_Server"/>
     <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL"/>
@@ -73,7 +74,7 @@
     <elementParameter field="MEMO" name="COMMENT" value=""/>
     <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
   </node>
-  <node componentName="tPostgresqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="896">
+  <node componentName="tPostgresqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="672">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlCommit_1"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tPostgresqlConnection_1"/>
     <elementParameter field="CHECK" name="CLOSE" value="true"/>
@@ -83,7 +84,7 @@
     <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
     <metadata connector="FLOW" name="tPostgresqlCommit_1"/>
   </node>
-  <node componentName="iNetCDFGlobalAttributes" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="160" posY="128">
+  <node componentName="iNetCDFGlobalAttributes" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="576" posY="-160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="iNetCDFGlobalAttributes_1"/>
     <elementParameter field="FILE" name="FILENAME" value="context.url"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -107,7 +108,7 @@
       <column comment="" key="false" length="32" name="toolbox_version" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="128">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="768" posY="-160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -131,15 +132,6 @@
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="64" name="deployment_code" nullable="false" pattern="" precision="0" sourceType="TEXT" type="id_String" originalLength="64">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="actual latitude of deployment" key="false" length="8" name="lat" nullable="true" pattern="" precision="8" sourceType="FLOAT4" type="id_Float">
-        <additionalField key="Comment" value="actual latitude of deployment"/>
-      </column>
-      <column comment="actual longitude of deployment" key="false" length="8" name="lon" nullable="true" pattern="" precision="8" sourceType="FLOAT4" type="id_Float">
-        <additionalField key="Comment" value="actual longitude of deployment"/>
-      </column>
-      <column comment="" key="false" length="2147483647" name="geom" nullable="true" pattern="" precision="0" sourceType="GEOMETRY" type="id_Geometry">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="netCDF global attribute instrument_nominal_depth" key="false" length="8" name="depth_nominal" nullable="true" pattern="" precision="8" sourceType="FLOAT4" type="id_Float">
@@ -175,16 +167,13 @@
       </column>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="timeseries">
         <mapperTableEntries name="file_id" expression="context.fileId" type="id_Long"/>
         <mapperTableEntries name="site_code" expression="row1.site_code" type="id_String"/>
         <mapperTableEntries name="platform_code" expression="row1.platform_code" type="id_String"/>
         <mapperTableEntries name="deployment_code" expression="row1.deployment_code" type="id_String"/>
-        <mapperTableEntries name="lat" expression="" type="id_Float" nullable="true"/>
-        <mapperTableEntries name="lon" expression="" type="id_Float" nullable="true"/>
-        <mapperTableEntries name="geom" expression="" type="id_Geometry" nullable="true"/>
         <mapperTableEntries name="depth_nominal" expression="Numeric.convertImpliedDecimalFormat(&quot;&quot;,row1.instrument_nominal_depth) " type="id_Float" nullable="true"/>
         <mapperTableEntries name="institution" expression="row1.institution" type="id_String" nullable="true"/>
         <mapperTableEntries name="instrument" expression="row1.instrument" type="id_String" nullable="true"/>
@@ -215,7 +204,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="128">
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="-160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlOutput_1"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tPostgresqlConnection_1"/>
@@ -256,21 +245,6 @@
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="deployment_code"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="lat"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="lon"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="geom"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -352,15 +326,6 @@
       <column comment="" key="false" length="64" name="deployment_code" nullable="false" pattern="" precision="0" sourceType="TEXT" type="id_String" originalLength="64">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="actual latitude of deployment" key="false" length="8" name="lat" nullable="true" pattern="" precision="8" sourceType="FLOAT4" type="id_Float">
-        <additionalField key="Comment" value="actual latitude of deployment"/>
-      </column>
-      <column comment="actual longitude of deployment" key="false" length="8" name="lon" nullable="true" pattern="" precision="8" sourceType="FLOAT4" type="id_Float">
-        <additionalField key="Comment" value="actual longitude of deployment"/>
-      </column>
-      <column comment="" key="false" length="2147483647" name="geom" nullable="true" pattern="" precision="0" sourceType="GEOMETRY" type="id_Geometry">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="netCDF global attribute instrument_nominal_depth" key="false" length="8" name="depth_nominal" nullable="true" pattern="" precision="8" sourceType="FLOAT4" type="id_Float">
         <additionalField key="Comment" value="netCDF global attribute instrument_nominal_depth"/>
       </column>
@@ -406,15 +371,6 @@
       <column comment="" key="false" length="64" name="deployment_code" nullable="false" pattern="" precision="0" sourceType="TEXT" type="id_String" originalLength="64">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="actual latitude of deployment" key="false" length="8" name="lat" nullable="true" pattern="" precision="8" sourceType="FLOAT4" type="id_Float">
-        <additionalField key="Comment" value="actual latitude of deployment"/>
-      </column>
-      <column comment="actual longitude of deployment" key="false" length="8" name="lon" nullable="true" pattern="" precision="8" sourceType="FLOAT4" type="id_Float">
-        <additionalField key="Comment" value="actual longitude of deployment"/>
-      </column>
-      <column comment="" key="false" length="2147483647" name="geom" nullable="true" pattern="" precision="0" sourceType="GEOMETRY" type="id_Geometry">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="netCDF global attribute instrument_nominal_depth" key="false" length="8" name="depth_nominal" nullable="true" pattern="" precision="8" sourceType="FLOAT4" type="id_Float">
         <additionalField key="Comment" value="netCDF global attribute instrument_nominal_depth"/>
       </column>
@@ -450,7 +406,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String"/>
     </metadata>
   </node>
-  <node componentName="iIncludeSdiLibraries" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="-320">
+  <node componentName="iIncludeSdiLibraries" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="-320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="iIncludeSdiLibraries_1"/>
     <elementParameter field="CHECK" name="START" value="true"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import org.talend.sdi.geometry.Geometry;"/>
@@ -502,7 +458,7 @@
       </column>
     </metadata>
   </node>
-  <node componentName="iNetCDFInput" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="160" posY="384">
+  <node componentName="iNetCDFInput" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="192" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="iNetCDFInput_2"/>
     <elementParameter field="FILE" name="FILENAME" value="context.url"/>
     <elementParameter field="TABLE" name="SCHEMAS">
@@ -612,7 +568,7 @@
       <column comment="" defaultValue="" key="false" name="TURB_Num_Included" nullable="true" originalDbColumnName="turb_num_included" pattern="" sourceType="" type="id_Integer"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="256">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_5"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -645,7 +601,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="256">
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlOutput_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tPostgresqlConnection_1"/>
@@ -708,7 +664,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="384">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_6"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -741,7 +697,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="384">
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlOutput_6"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tPostgresqlConnection_1"/>
@@ -804,7 +760,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="512">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_4"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -818,32 +774,82 @@
     <elementParameter field="MEMO" name="COMMENT" value=""/>
     <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
     <metadata connector="FLOW" label="timeseries" name="measurement_variables">
-      <column comment="" key="true" name="ts_id" nullable="false" pattern="" sourceType="INT8" type="id_Long"/>
-      <column comment="" key="false" name="time" nullable="false" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" sourceType="TIMESTAMP" type="id_Date"/>
-      <column comment="" defaultValue="" key="false" name="TIME_quality_control" nullable="true" pattern="" sourceType="" type="id_Character"/>
-      <column comment="" key="false" name="depth" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="DEPTH_quality_control" nullable="true" pattern="" sourceType="" type="id_Character"/>
-      <column comment="" key="false" name="pres_rel" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="PRES_REL_quality_control" nullable="true" pattern="" sourceType="" type="id_Character"/>
-      <column comment="" defaultValue="" key="false" name="temp" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="TEMP_quality_control" nullable="true" pattern="" sourceType="" type="id_Character"/>
-      <column comment="" key="false" name="cndc" nullable="true" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" key="false" name="CNDC_quality_control" nullable="true" pattern="" sourceType="" type="id_Character"/>
-      <column comment="" key="false" name="psal" nullable="true" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" key="false" name="PSAL_quality_control" nullable="true" pattern="" sourceType="" type="id_Character"/>
-      <column comment="" key="false" name="dox2" nullable="true" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" key="false" name="DOX2_quality_control" nullable="true" pattern="" sourceType="" type="id_Character"/>
-      <column comment="" key="false" name="turb" nullable="true" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" key="false" name="TURB_quality_control" nullable="true" pattern="" sourceType="" type="id_Character"/>
-      <column comment="" key="false" name="cphl" nullable="true" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" key="false" name="CPHL_quality_control" nullable="true" pattern="" sourceType="" type="id_Character"/>
-      <column comment="" key="false" name="chlu" nullable="true" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" key="false" name="CHLU_quality_control" nullable="true" pattern="" sourceType="" type="id_Character"/>
-      <column comment="" key="false" name="chlf" nullable="true" pattern="" sourceType="" type="id_Float"/>
-      <column comment="" key="false" name="CHLF_quality_control" nullable="true" pattern="" sourceType="" type="id_Character"/>
+      <column comment="" defaultValue="" key="true" length="-1" name="ts_id" nullable="false" pattern="" precision="-1" sourceType="INT8" type="id_Long"/>
+      <column comment="" key="false" length="-1" name="time" nullable="false" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TIME_quality_control" nullable="true" pattern="" precision="-1" sourceType="" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="depth" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DEPTH_Burst_Max" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DEPTH_Burst_Min" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DEPTH_Burst_SD" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DEPTH_Num_Excluded" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DEPTH_Num_Included" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DEPTH_quality_control" nullable="true" pattern="" precision="-1" sourceType="" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="pres_rel" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PRES_REL_Burst_Max" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PRES_REL_Burst_Min" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PRES_REL_Burst_SD" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PRES_REL_Num_Excluded" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PRES_REL_Num_Included" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PRES_REL_quality_control" nullable="true" pattern="" precision="-1" sourceType="" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="temp" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TEMP_Burst_Max" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TEMP_Burst_Min" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TEMP_Burst_SD" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TEMP_Num_Excluded" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TEMP_Num_Included" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TEMP_quality_control" nullable="true" pattern="" precision="-1" sourceType="" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="cndc" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CNDC_Burst_Max" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CNDC_Burst_Min" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CNDC_Burst_SD" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CNDC_Num_Excluded" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CNDC_Num_Included" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CNDC_quality_control" nullable="true" pattern="" precision="-1" sourceType="" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="psal" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PSAL_Burst_Max" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PSAL_Burst_Min" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PSAL_Burst_SD" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PSAL_Num_Excluded" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PSAL_Num_Included" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PSAL_quality_control" nullable="true" pattern="" precision="-1" sourceType="" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="dox2" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float"/>
+      <column comment="" key="false" name="DOX2_Burst_Max" nullable="true" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" key="false" name="DOX2_Burst_Min" nullable="true" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" key="false" name="DOX2_Burst_SD" nullable="true" pattern="" sourceType="" type="id_Float"/>
+      <column comment="" key="false" name="DOX2_Num_Excluded" nullable="true" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" key="false" name="DOX2_Num_Included" nullable="true" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DOX2_quality_control" nullable="true" pattern="" precision="-1" sourceType="" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="turb" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TURB_Burst_Max" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TURB_Burst_Min" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TURB_Burst_SD" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TURB_Num_Excluded" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TURB_Num_Included" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TURB_quality_control" nullable="true" pattern="" precision="-1" sourceType="" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="cphl" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CPHL_Burst_Max" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CPHL_Burst_Min" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CPHL_Burst_SD" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CPHL_Num_Excluded" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CPHL_Num_Included" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CPHL_quality_control" nullable="true" pattern="" precision="-1" sourceType="" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="chlu" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLU_Burst_Max" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLU_Burst_Min" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLU_Burst_SD" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLU_Num_Excluded" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLU_Num_Included" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLU_quality_control" nullable="true" pattern="" precision="-1" sourceType="" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="chlf" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLF_Burst_Max" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLF_Burst_Min" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLF_Burst_SD" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLF_Num_Excluded" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLF_Num_Included" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLF_quality_control" nullable="true" pattern="" precision="-1" sourceType="" type="id_Character"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="depth_qc" expression="variables.DEPTH==null?'9':'1' " type="id_Character" nullable="true"/>
         <mapperTableEntries name="pres_rel_qc" expression="variables.PRES_REL==null?'9':'1' " type="id_Character" nullable="true"/>
@@ -857,28 +863,78 @@
         <mapperTableEntries name="chlf_qc" expression="variables.CHLF==null?'9':'1' " type="id_Character" nullable="true"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="measurement_variables">
-        <mapperTableEntries name="ts_id" expression="row3.ts_id " type="id_Long"/>
+        <mapperTableEntries name="ts_id" expression="row3.ts_id" type="id_Long"/>
         <mapperTableEntries name="time" expression="NetCDFUtils.addDays(&quot;01/01/1950 00:00:00&quot;, &quot;MM/dd/yyyy HH:mm:ss&quot;, variables.TIME)" type="id_Date"/>
         <mapperTableEntries name="TIME_quality_control" expression="'1'" type="id_Character" nullable="true"/>
-        <mapperTableEntries name="depth" expression="variables.DEPTH  " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="depth" expression="variables.DEPTH " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="DEPTH_Burst_Max" expression="variables.DEPTH_Burst_Max" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="DEPTH_Burst_Min" expression="variables.DEPTH_Burst_Min " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="DEPTH_Burst_SD" expression="variables.DEPTH_Burst_SD " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="DEPTH_Num_Excluded" expression="variables.DEPTH_Num_Excluded " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="DEPTH_Num_Included" expression="variables.DEPTH_Num_Included " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="DEPTH_quality_control" expression="Var.depth_qc " type="id_Character" nullable="true"/>
-        <mapperTableEntries name="pres_rel" expression="variables.PRES_REL  " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="pres_rel" expression="variables.PRES_REL" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="PRES_REL_Burst_Max" expression="variables.PRES_REL_Burst_Max" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="PRES_REL_Burst_Min" expression="variables.PRES_REL_Burst_Min" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="PRES_REL_Burst_SD" expression="variables.PRES_REL_Burst_SD" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="PRES_REL_Num_Excluded" expression="variables.PRES_REL_Num_Excluded" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="PRES_REL_Num_Included" expression="variables.PRES_REL_Num_Included" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="PRES_REL_quality_control" expression="Var.pres_rel_qc " type="id_Character" nullable="true"/>
-        <mapperTableEntries name="temp" expression="variables.TEMP  " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="temp" expression="variables.TEMP" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="TEMP_Burst_Max" expression="variables.TEMP_Burst_Max" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="TEMP_Burst_Min" expression="variables.TEMP_Burst_Min" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="TEMP_Burst_SD" expression="variables.TEMP_Burst_SD" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="TEMP_Num_Excluded" expression="variables.TEMP_Num_Excluded" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="TEMP_Num_Included" expression="variables.TEMP_Num_Included" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="TEMP_quality_control" expression="Var.temp_qc " type="id_Character" nullable="true"/>
-        <mapperTableEntries name="cndc" expression="variables.CNDC " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="cndc" expression="variables.CNDC" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CNDC_Burst_Max" expression="variables.CNDC_Burst_Max" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CNDC_Burst_Min" expression="variables.CNDC_Burst_Min" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CNDC_Burst_SD" expression="variables.CNDC_Burst_SD" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CNDC_Num_Excluded" expression="variables.CNDC_Num_Excluded" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CNDC_Num_Included" expression="variables.CNDC_Num_Included" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="CNDC_quality_control" expression="Var.cndc_qc " type="id_Character" nullable="true"/>
-        <mapperTableEntries name="psal" expression="variables.PSAL " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="psal" expression="variables.PSAL" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="PSAL_Burst_Max" expression="variables.PSAL_Burst_Max" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="PSAL_Burst_Min" expression="variables.PSAL_Burst_Min" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="PSAL_Burst_SD" expression="variables.PSAL_Burst_SD" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="PSAL_Num_Excluded" expression="variables.PSAL_Num_Excluded" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="PSAL_Num_Included" expression="variables.PSAL_Num_Included" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="PSAL_quality_control" expression="Var.psal_qc " type="id_Character" nullable="true"/>
-        <mapperTableEntries name="dox2" expression="variables.DOX2 " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="dox2" expression="variables.DOX2" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="DOX2_Burst_Max" expression="variables.DOX2_Burst_Max" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="DOX2_Burst_Min" expression="variables.DOX2_Burst_Min" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="DOX2_Burst_SD" expression="variables.DOX2_Burst_SD" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="DOX2_Num_Excluded" expression="variables.DOX2_Num_Excluded" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="DOX2_Num_Included" expression="variables.DOX2_Num_Included" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="DOX2_quality_control" expression="Var.dox2_qc " type="id_Character" nullable="true"/>
-        <mapperTableEntries name="turb" expression="variables.TURB " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="turb" expression="variables.TURB" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="TURB_Burst_Max" expression="variables.TURB_Burst_Max" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="TURB_Burst_Min" expression="variables.TURB_Burst_Min" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="TURB_Burst_SD" expression="variables.TURB_Burst_SD" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="TURB_Num_Excluded" expression="variables.TURB_Num_Excluded" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="TURB_Num_Included" expression="variables.TURB_Num_Included" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="TURB_quality_control" expression="Var.turb_qc " type="id_Character" nullable="true"/>
-        <mapperTableEntries name="cphl" expression="variables.CPHL " type="id_Float" nullable="true"/>
-        <mapperTableEntries name="CPHL_quality_control" expression="Var.cphl_qc" type="id_Character" nullable="true"/>
-        <mapperTableEntries name="chlu" expression="variables.CHLU " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="cphl" expression="variables.CPHL" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CPHL_Burst_Max" expression="variables.CPHL_Burst_Max" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CPHL_Burst_Min" expression="variables.CPHL_Burst_Min" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CPHL_Burst_SD" expression="variables.CPHL_Burst_SD" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CPHL_Num_Excluded" expression="variables.CPHL_Num_Excluded" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CPHL_Num_Included" expression="variables.CPHL_Num_Included" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CPHL_quality_control" expression="Var.cphl_qc " type="id_Character" nullable="true"/>
+        <mapperTableEntries name="chlu" expression="variables.CHLU" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CHLU_Burst_Max" expression="variables.CHLU_Burst_Max" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CHLU_Burst_Min" expression="variables.CHLU_Burst_Min" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CHLU_Burst_SD" expression="variables.CHLU_Burst_SD" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CHLU_Num_Excluded" expression="variables.CHLU_Num_Excluded" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CHLU_Num_Included" expression="variables.CHLU_Num_Included" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="CHLU_quality_control" expression="Var.chlu_qc " type="id_Character" nullable="true"/>
-        <mapperTableEntries name="chlf" expression="variables.CHLF " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="chlf" expression="variables.CHLF" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CHLF_Burst_Max" expression="variables.CHLF_Burst_Max" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CHLF_Burst_Min" expression="variables.CHLF_Burst_Min" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CHLF_Burst_SD" expression="variables.CHLF_Burst_SD" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CHLF_Num_Excluded" expression="variables.CHLF_Num_Excluded" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CHLF_Num_Included" expression="variables.CHLF_Num_Included" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="CHLF_quality_control" expression="Var.chlf_qc " type="id_Character" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="variables" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
@@ -967,7 +1023,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="512">
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlOutput_4"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tPostgresqlConnection_1"/>
@@ -1012,12 +1068,62 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEPTH_Burst_Max"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEPTH_Burst_Min"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEPTH_Burst_SD"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEPTH_Num_Excluded"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEPTH_Num_Included"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="DEPTH_quality_control"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="pres_rel"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRES_REL_Burst_Max"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRES_REL_Burst_Min"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRES_REL_Burst_SD"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRES_REL_Num_Excluded"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRES_REL_Num_Included"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -1032,12 +1138,62 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEMP_Burst_Max"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEMP_Burst_Min"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEMP_Burst_SD"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEMP_Num_Excluded"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEMP_Num_Included"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="TEMP_quality_control"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="cndc"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CNDC_Burst_Max"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CNDC_Burst_Min"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CNDC_Burst_SD"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CNDC_Num_Excluded"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CNDC_Num_Included"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -1052,12 +1208,62 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PSAL_Burst_Max"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PSAL_Burst_Min"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PSAL_Burst_SD"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PSAL_Num_Excluded"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PSAL_Num_Included"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="PSAL_quality_control"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="dox2"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DOX2_Burst_Max"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DOX2_Burst_Min"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DOX2_Burst_SD"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DOX2_Num_Excluded"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DOX2_Num_Included"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -1072,12 +1278,62 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TURB_Burst_Max"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TURB_Burst_Min"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TURB_Burst_SD"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TURB_Num_Excluded"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TURB_Num_Included"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="TURB_quality_control"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="cphl"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CPHL_Burst_Max"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CPHL_Burst_Min"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CPHL_Burst_SD"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CPHL_Num_Excluded"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CPHL_Num_Included"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -1092,12 +1348,62 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHLU_Burst_Max"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHLU_Burst_Min"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHLU_Burst_SD"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHLU_Num_Excluded"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHLU_Num_Included"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CHLU_quality_control"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="chlf"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHLF_Burst_Max"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHLF_Burst_Min"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHLF_Burst_SD"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHLF_Num_Excluded"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHLF_Num_Included"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -1117,59 +1423,159 @@
     <elementParameter field="MEMO" name="COMMENT" value=""/>
     <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
     <metadata connector="FLOW" label="timeseries" name="tPostgresqlOutput_4">
-      <column comment="" key="true" name="ts_id" nullable="false" pattern="" sourceType="INT8" type="id_Long"/>
-      <column comment="" key="false" name="time" nullable="false" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" sourceType="TIMESTAMP" type="id_Date"/>
-      <column comment="" defaultValue="" key="false" name="TIME_quality_control" nullable="true" pattern="" sourceType="CHAR" type="id_Character"/>
-      <column comment="" key="false" name="depth" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="DEPTH_quality_control" nullable="true" pattern="" sourceType="CHAR" type="id_Character"/>
-      <column comment="" key="false" name="pres_rel" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="PRES_REL_quality_control" nullable="true" pattern="" sourceType="CHAR" type="id_Character"/>
-      <column comment="" defaultValue="" key="false" name="temp" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="TEMP_quality_control" nullable="true" pattern="" sourceType="CHAR" type="id_Character"/>
-      <column comment="" key="false" name="cndc" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" key="false" name="CNDC_quality_control" nullable="true" pattern="" sourceType="CHAR" type="id_Character"/>
-      <column comment="" key="false" name="psal" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" key="false" name="PSAL_quality_control" nullable="true" pattern="" sourceType="CHAR" type="id_Character"/>
-      <column comment="" key="false" name="dox2" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" key="false" name="DOX2_quality_control" nullable="true" pattern="" sourceType="CHAR" type="id_Character"/>
-      <column comment="" key="false" name="turb" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" key="false" name="TURB_quality_control" nullable="true" pattern="" sourceType="CHAR" type="id_Character"/>
-      <column comment="" key="false" name="cphl" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" key="false" name="CPHL_quality_control" nullable="true" pattern="" sourceType="CHAR" type="id_Character"/>
-      <column comment="" key="false" name="chlu" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" key="false" name="CHLU_quality_control" nullable="true" pattern="" sourceType="CHAR" type="id_Character"/>
-      <column comment="" key="false" name="chlf" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" key="false" name="CHLF_quality_control" nullable="true" pattern="" sourceType="CHAR" type="id_Character"/>
+      <column comment="" defaultValue="" key="true" length="-1" name="ts_id" nullable="false" pattern="" precision="-1" sourceType="INT8" type="id_Long"/>
+      <column comment="" key="false" length="-1" name="time" nullable="false" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TIME_quality_control" nullable="true" pattern="" precision="-1" sourceType="CHAR" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="depth" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DEPTH_Burst_Max" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DEPTH_Burst_Min" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DEPTH_Burst_SD" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DEPTH_Num_Excluded" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DEPTH_Num_Included" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DEPTH_quality_control" nullable="true" pattern="" precision="-1" sourceType="CHAR" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="pres_rel" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PRES_REL_Burst_Max" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PRES_REL_Burst_Min" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PRES_REL_Burst_SD" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PRES_REL_Num_Excluded" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PRES_REL_Num_Included" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PRES_REL_quality_control" nullable="true" pattern="" precision="-1" sourceType="CHAR" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="temp" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TEMP_Burst_Max" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TEMP_Burst_Min" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TEMP_Burst_SD" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TEMP_Num_Excluded" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TEMP_Num_Included" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TEMP_quality_control" nullable="true" pattern="" precision="-1" sourceType="CHAR" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="cndc" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CNDC_Burst_Max" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CNDC_Burst_Min" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CNDC_Burst_SD" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CNDC_Num_Excluded" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CNDC_Num_Included" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CNDC_quality_control" nullable="true" pattern="" precision="-1" sourceType="CHAR" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="psal" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PSAL_Burst_Max" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PSAL_Burst_Min" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PSAL_Burst_SD" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PSAL_Num_Excluded" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PSAL_Num_Included" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PSAL_quality_control" nullable="true" pattern="" precision="-1" sourceType="CHAR" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="dox2" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" key="false" name="DOX2_Burst_Max" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" key="false" name="DOX2_Burst_Min" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" key="false" name="DOX2_Burst_SD" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" key="false" name="DOX2_Num_Excluded" nullable="true" pattern="" sourceType="INT4" type="id_Integer"/>
+      <column comment="" key="false" name="DOX2_Num_Included" nullable="true" pattern="" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DOX2_quality_control" nullable="true" pattern="" precision="-1" sourceType="CHAR" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="turb" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TURB_Burst_Max" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TURB_Burst_Min" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TURB_Burst_SD" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TURB_Num_Excluded" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TURB_Num_Included" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TURB_quality_control" nullable="true" pattern="" precision="-1" sourceType="CHAR" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="cphl" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CPHL_Burst_Max" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CPHL_Burst_Min" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CPHL_Burst_SD" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CPHL_Num_Excluded" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CPHL_Num_Included" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CPHL_quality_control" nullable="true" pattern="" precision="-1" sourceType="CHAR" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="chlu" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLU_Burst_Max" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLU_Burst_Min" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLU_Burst_SD" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLU_Num_Excluded" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLU_Num_Included" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLU_quality_control" nullable="true" pattern="" precision="-1" sourceType="CHAR" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="chlf" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLF_Burst_Max" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLF_Burst_Min" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLF_Burst_SD" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLF_Num_Excluded" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLF_Num_Included" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLF_quality_control" nullable="true" pattern="" precision="-1" sourceType="CHAR" type="id_Character"/>
     </metadata>
     <metadata connector="REJECT" label="timeseries" name="REJECT">
-      <column comment="" key="true" name="ts_id" nullable="false" pattern="" sourceType="INT8" type="id_Long"/>
-      <column comment="" key="false" name="time" nullable="false" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" sourceType="TIMESTAMP" type="id_Date"/>
-      <column comment="" defaultValue="" key="false" name="TIME_quality_control" nullable="true" pattern="" sourceType="CHAR" type="id_Character"/>
-      <column comment="" key="false" name="depth" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="DEPTH_quality_control" nullable="true" pattern="" sourceType="CHAR" type="id_Character"/>
-      <column comment="" key="false" name="pres_rel" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="PRES_REL_quality_control" nullable="true" pattern="" sourceType="CHAR" type="id_Character"/>
-      <column comment="" defaultValue="" key="false" name="temp" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" defaultValue="" key="false" name="TEMP_quality_control" nullable="true" pattern="" sourceType="CHAR" type="id_Character"/>
-      <column comment="" key="false" name="cndc" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" key="false" name="CNDC_quality_control" nullable="true" pattern="" sourceType="CHAR" type="id_Character"/>
-      <column comment="" key="false" name="psal" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" key="false" name="PSAL_quality_control" nullable="true" pattern="" sourceType="CHAR" type="id_Character"/>
-      <column comment="" key="false" name="dox2" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" key="false" name="DOX2_quality_control" nullable="true" pattern="" sourceType="CHAR" type="id_Character"/>
-      <column comment="" key="false" name="turb" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" key="false" name="TURB_quality_control" nullable="true" pattern="" sourceType="CHAR" type="id_Character"/>
-      <column comment="" key="false" name="cphl" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" key="false" name="CPHL_quality_control" nullable="true" pattern="" sourceType="CHAR" type="id_Character"/>
-      <column comment="" key="false" name="chlu" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" key="false" name="CHLU_quality_control" nullable="true" pattern="" sourceType="CHAR" type="id_Character"/>
-      <column comment="" key="false" name="chlf" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
-      <column comment="" key="false" name="CHLF_quality_control" nullable="true" pattern="" sourceType="CHAR" type="id_Character"/>
+      <column comment="" defaultValue="" key="true" length="-1" name="ts_id" nullable="false" pattern="" precision="-1" sourceType="INT8" type="id_Long"/>
+      <column comment="" key="false" length="-1" name="time" nullable="false" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TIME_quality_control" nullable="true" pattern="" precision="-1" sourceType="CHAR" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="depth" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DEPTH_Burst_Max" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DEPTH_Burst_Min" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DEPTH_Burst_SD" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DEPTH_Num_Excluded" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DEPTH_Num_Included" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DEPTH_quality_control" nullable="true" pattern="" precision="-1" sourceType="CHAR" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="pres_rel" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PRES_REL_Burst_Max" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PRES_REL_Burst_Min" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PRES_REL_Burst_SD" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PRES_REL_Num_Excluded" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PRES_REL_Num_Included" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PRES_REL_quality_control" nullable="true" pattern="" precision="-1" sourceType="CHAR" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="temp" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TEMP_Burst_Max" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TEMP_Burst_Min" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TEMP_Burst_SD" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TEMP_Num_Excluded" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TEMP_Num_Included" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TEMP_quality_control" nullable="true" pattern="" precision="-1" sourceType="CHAR" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="cndc" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CNDC_Burst_Max" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CNDC_Burst_Min" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CNDC_Burst_SD" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CNDC_Num_Excluded" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CNDC_Num_Included" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CNDC_quality_control" nullable="true" pattern="" precision="-1" sourceType="CHAR" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="psal" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PSAL_Burst_Max" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PSAL_Burst_Min" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PSAL_Burst_SD" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PSAL_Num_Excluded" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PSAL_Num_Included" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PSAL_quality_control" nullable="true" pattern="" precision="-1" sourceType="CHAR" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="dox2" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" key="false" name="DOX2_Burst_Max" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" key="false" name="DOX2_Burst_Min" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" key="false" name="DOX2_Burst_SD" nullable="true" pattern="" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" key="false" name="DOX2_Num_Excluded" nullable="true" pattern="" sourceType="INT4" type="id_Integer"/>
+      <column comment="" key="false" name="DOX2_Num_Included" nullable="true" pattern="" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DOX2_quality_control" nullable="true" pattern="" precision="-1" sourceType="CHAR" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="turb" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TURB_Burst_Max" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TURB_Burst_Min" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TURB_Burst_SD" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TURB_Num_Excluded" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TURB_Num_Included" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="TURB_quality_control" nullable="true" pattern="" precision="-1" sourceType="CHAR" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="cphl" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CPHL_Burst_Max" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CPHL_Burst_Min" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CPHL_Burst_SD" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CPHL_Num_Excluded" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CPHL_Num_Included" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CPHL_quality_control" nullable="true" pattern="" precision="-1" sourceType="CHAR" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="chlu" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLU_Burst_Max" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLU_Burst_Min" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLU_Burst_SD" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLU_Num_Excluded" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLU_Num_Included" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLU_quality_control" nullable="true" pattern="" precision="-1" sourceType="CHAR" type="id_Character"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="chlf" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLF_Burst_Max" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLF_Burst_Min" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLF_Burst_SD" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLF_Num_Excluded" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLF_Num_Included" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHLF_quality_control" nullable="true" pattern="" precision="-1" sourceType="CHAR" type="id_Character"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String"/>
     </metadata>
   </node>
-  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="640">
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlInput_1"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tPostgresqlConnection_1"/>
@@ -1204,7 +1610,7 @@
       <column comment="" key="false" name="ts_id" nullable="false" pattern="" sourceType="INT8" type="id_Long"/>
     </metadata>
   </node>
-  <node componentName="tPostgresqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="0">
+  <node componentName="tPostgresqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="-160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlRow_2"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tPostgresqlConnection_1"/>
@@ -1238,7 +1644,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String"/>
     </metadata>
   </node>
-  <node componentName="tPostgresqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="0">
+  <node componentName="tPostgresqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="-160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlRow_1"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tPostgresqlConnection_1"/>
@@ -1273,7 +1679,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String"/>
     </metadata>
   </node>
-  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="768">
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlInput_2"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tPostgresqlConnection_1"/>
@@ -1311,7 +1717,7 @@
       <column comment="" key="false" name="lat" nullable="true" pattern="" sourceType="FLOAT8" type="id_Double"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="768">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -1333,7 +1739,7 @@
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="timeseriesGeom">
         <mapperTableEntries name="file_id" expression="context.fileId" type="id_Long"/>
-        <mapperTableEntries name="geom" expression="new Geometry(&quot;POINT (&quot; + row2.lon + &quot; &quot; + row2.lat + &quot;)&quot;)" type="id_Geometry" nullable="true"/>
+        <mapperTableEntries name="geom" expression="ArgoUtils.makePoint(row2.lon, row2.lat, &quot;EPSG:4326&quot;) " type="id_Geometry" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="lon" type="id_Double" nullable="true"/>
@@ -1341,7 +1747,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="768">
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlOutput_2"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tPostgresqlConnection_1"/>
@@ -1457,7 +1863,7 @@
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="iNetCDFGlobalAttributes_1" offsetLabelX="0" offsetLabelY="0" source="iNetCDFGlobalAttributes_1" target="iNetCDFInput_2">
     <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk8"/>
   </connection>
   <connection connectorName="FLOW" label="timeseries" lineStyle="0" metaname="timeseries" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tPostgresqlOutput_1">
     <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
@@ -2007,6 +2413,156 @@
       <elementValue elementRef="TRACE_COLUMN" value="cndc"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CPHL_Burst_SD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DOX2_Burst_SD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CNDC_Burst_SD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CNDC_Burst_Min"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRES_REL_Burst_Min"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHLU_Burst_Max"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHLU_Num_Excluded"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CNDC_Burst_Max"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRES_REL_Burst_Max"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PSAL_Burst_SD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHLF_Burst_SD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DEPTH_Num_Excluded"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CNDC_Num_Excluded"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHLF_Burst_Min"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRES_REL_Num_Included"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHLF_Burst_Max"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TURB_Num_Included"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TEMP_Burst_SD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TURB_Burst_Max"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TEMP_Burst_Max"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TEMP_Burst_Min"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DEPTH_Burst_SD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PSAL_Burst_Min"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PSAL_Num_Excluded"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DEPTH_Num_Included"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CPHL_Num_Excluded"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CPHL_Num_Included"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TEMP_Num_Included"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DOX2_Num_Included"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRES_REL_Burst_SD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DOX2_Burst_Max"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHLU_Burst_SD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DOX2_Num_Excluded"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PSAL_Burst_Max"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TEMP_Num_Excluded"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DEPTH_Burst_Min"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRES_REL_Num_Excluded"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHLU_Burst_Min"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHLF_Num_Excluded"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TURB_Burst_Min"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHLF_Num_Included"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DOX2_Burst_Min"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TURB_Num_Excluded"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DEPTH_Burst_Max"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CPHL_Burst_Max"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CPHL_Burst_Min"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHLU_Num_Included"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PSAL_Num_Included"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CNDC_Num_Included"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TURB_Burst_SD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
@@ -2103,7 +2659,7 @@
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="iNetCDFGlobalAttributes_1"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Harvest metadata for timeseries"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Harvest global attributes for timeseries"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
   </subjob>
