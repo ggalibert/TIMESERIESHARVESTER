@@ -2,10 +2,10 @@
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default">
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="harvestDb_Database" prompt="harvestDb_Database?" promptNeeded="false" repositoryContextId="_fkVpgDCXEeORtbT5Dzlaaw" type="id_String" value="harvest"/>
-    <contextParameter comment="" name="harvestDb_Login" prompt="harvestDb_Login?" promptNeeded="false" repositoryContextId="_fkVpgDCXEeORtbT5Dzlaaw" type="id_String" value="anmn_ts"/>
-    <contextParameter comment="" name="harvestDb_Password" prompt="harvestDb_Password?" promptNeeded="false" repositoryContextId="_fkVpgDCXEeORtbT5Dzlaaw" type="id_Password" value="upOyF11++1g="/>
+    <contextParameter comment="" name="harvestDb_Login" prompt="harvestDb_Login?" promptNeeded="false" repositoryContextId="_fkVpgDCXEeORtbT5Dzlaaw" type="id_String" value="anmn_wqm"/>
+    <contextParameter comment="" name="harvestDb_Password" prompt="harvestDb_Password?" promptNeeded="false" repositoryContextId="_fkVpgDCXEeORtbT5Dzlaaw" type="id_Password" value="G3UKtCST7rb096uhdGeE6g=="/>
     <contextParameter comment="" name="harvestDb_Port" prompt="harvestDb_Port?" promptNeeded="false" repositoryContextId="_fkVpgDCXEeORtbT5Dzlaaw" type="id_String" value="5432"/>
-    <contextParameter comment="" name="harvestDb_Schema" prompt="harvestDb_Schema?" promptNeeded="false" repositoryContextId="_fkVpgDCXEeORtbT5Dzlaaw" type="id_String" value="anmn_ts"/>
+    <contextParameter comment="" name="harvestDb_Schema" prompt="harvestDb_Schema?" promptNeeded="false" repositoryContextId="_fkVpgDCXEeORtbT5Dzlaaw" type="id_String" value="anmn_wqm"/>
     <contextParameter comment="" name="harvestDb_Server" prompt="harvestDb_Server?" promptNeeded="false" repositoryContextId="_fkVpgDCXEeORtbT5Dzlaaw" type="id_String" value="localhost"/>
     <contextParameter comment="" name="fileId" prompt="fileId?" promptNeeded="false" type="id_Long" value="1"/>
   </context>
@@ -90,7 +90,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select m.ts_id as ts_id, &#xA;count(m.depth) > 0 as depth_b, &#xA;count(m.temp) > 0 as temp_b, &#xA;count(m.pres) > 0 as pres_b, &#xA;count(m.pres_rel) > 0 as pres_rel_b,&#xA;count(m.cndc) > 0 as cndc_b,&#xA;count(m.psal) > 0 as psal_b, &#xA;count(m.dox2) > 0 as dox2_b,&#xA;count(m.turb) > 0 as turb_b,&#xA;count(m.cphl) + count(m.chlu) + count(m.chlf) > 0 as cphl_b&#xA;from measurement m&#xA;inner join timeseries t&#xA;on t.id = m.ts_id&#xA;where t.file_id = &quot; + context.fileId + &quot;&#xA;group by ts_id&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select m.ts_id as ts_id, &#xA;count(m.\&quot;DEPTH\&quot;) > 0 as depth_b, &#xA;count(m.\&quot;TEMP\&quot;) > 0 as temp_b, &#xA;count(m.\&quot;PRES\&quot;) > 0 as pres_b, &#xA;count(m.\&quot;PRES_REL\&quot;) > 0 as pres_rel_b,&#xA;count(m.\&quot;CNDC\&quot;) > 0 as cndc_b,&#xA;count(m.\&quot;PSAL\&quot;) > 0 as psal_b, &#xA;count(m.\&quot;DOX1_1\&quot;) + count(m.\&quot;DOX1_2\&quot;) + count(m.\&quot;DOX1_3\&quot;) > 0 as dox1_b,&#xA;count(m.\&quot;DOX2\&quot;) > 0 as dox2_b,&#xA;count(m.\&quot;TURB\&quot;) > 0 as turb_b,&#xA;count(m.\&quot;CPHL\&quot;) + count(m.\&quot;CHLU\&quot;) + count(m.\&quot;CHLF\&quot;) > 0 as cphl_b&#xA;from measurement m&#xA;inner join timeseries t&#xA;on t.id = m.ts_id&#xA;where t.file_id = &quot; + context.fileId + &quot;&#xA;group by ts_id&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
@@ -112,6 +112,8 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="psal_b"/>
       <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dox1_b"/>
+      <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="dox2_b"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="turb_b"/>
@@ -131,6 +133,7 @@
       <column comment="" defaultValue="" key="false" length="1" name="pres_rel_b" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean"/>
       <column comment="" defaultValue="" key="false" length="1" name="cndc_b" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean"/>
       <column comment="" defaultValue="" key="false" length="1" name="psal_b" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean"/>
+      <column comment="" defaultValue="" key="false" length="1" name="dox1_b" nullable="true" pattern="" sourceType="BOOL" type="id_Boolean" originalLength="1"/>
       <column comment="" defaultValue="" key="false" length="1" name="dox2_b" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean"/>
       <column comment="" defaultValue="" key="false" length="1" name="turb_b" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean"/>
       <column comment="" defaultValue="" key="false" length="1" name="cphl_b" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean"/>
@@ -157,12 +160,13 @@
       <column comment="" defaultValue="" key="false" name="sea_water_pressure_due_to_sea_water_b" nullable="true" pattern="" sourceType="" type="id_Boolean"/>
       <column comment="" defaultValue="" key="false" name="sea_water_electrical_conductivity_b" nullable="true" pattern="" sourceType="" type="id_Boolean"/>
       <column comment="" defaultValue="" key="false" name="sea_water_salinity_b" nullable="true" pattern="" sourceType="" type="id_Boolean"/>
+      <column comment="" key="false" name="mole_concentration_of_dissolved_molecular_oxygen_in_sea_water_b" nullable="true" pattern="" sourceType="" type="id_Boolean"/>
       <column comment="" defaultValue="" key="false" name="moles_of_oxygen_per_unit_mass_in_sea_water_b" nullable="true" pattern="" sourceType="" type="id_Boolean"/>
       <column comment="" defaultValue="" key="false" name="turbidity_b" nullable="true" pattern="" sourceType="" type="id_Boolean"/>
       <column comment="" defaultValue="" key="false" name="mass_concentration_of_chlorophyll_in_sea_water_b" nullable="true" pattern="" sourceType="" type="id_Boolean"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="timeseries_boolean">
         <mapperTableEntries name="file_id" expression="context.fileId" type="id_Long"/>
@@ -172,6 +176,7 @@
         <mapperTableEntries name="sea_water_pressure_due_to_sea_water_b" expression="row1.pres_rel_b " type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="sea_water_electrical_conductivity_b" expression="row1.cndc_b " type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="sea_water_salinity_b" expression="row1.psal_b " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="mole_concentration_of_dissolved_molecular_oxygen_in_sea_water_b" expression="row1.dox1_b " type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="moles_of_oxygen_per_unit_mass_in_sea_water_b" expression="row1.dox2_b " type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="turbidity_b" expression="row1.turb_b " type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="mass_concentration_of_chlorophyll_in_sea_water_b" expression="row1.cphl_b " type="id_Boolean" nullable="true"/>
@@ -184,6 +189,7 @@
         <mapperTableEntries name="pres_rel_b" type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="cndc_b" type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="psal_b" type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="dox1_b" type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="dox2_b" type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="turb_b" type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="cphl_b" type="id_Boolean" nullable="true"/>
@@ -250,6 +256,11 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mole_concentration_of_dissolved_molecular_oxygen_in_sea_water_b"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="moles_of_oxygen_per_unit_mass_in_sea_water_b"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
@@ -282,6 +293,7 @@
       <column comment="" defaultValue="" key="false" name="sea_water_pressure_due_to_sea_water_b" nullable="true" pattern="" sourceType="BOOL" type="id_Boolean"/>
       <column comment="" defaultValue="" key="false" name="sea_water_electrical_conductivity_b" nullable="true" pattern="" sourceType="BOOL" type="id_Boolean"/>
       <column comment="" defaultValue="" key="false" name="sea_water_salinity_b" nullable="true" pattern="" sourceType="BOOL" type="id_Boolean"/>
+      <column comment="" key="false" name="mole_concentration_of_dissolved_molecular_oxygen_in_sea_water_b" nullable="true" pattern="" sourceType="BOOL" type="id_Boolean"/>
       <column comment="" defaultValue="" key="false" name="moles_of_oxygen_per_unit_mass_in_sea_water_b" nullable="true" pattern="" sourceType="BOOL" type="id_Boolean"/>
       <column comment="" defaultValue="" key="false" name="turbidity_b" nullable="true" pattern="" sourceType="BOOL" type="id_Boolean"/>
       <column comment="" defaultValue="" key="false" name="mass_concentration_of_chlorophyll_in_sea_water_b" nullable="true" pattern="" sourceType="BOOL" type="id_Boolean"/>
@@ -294,6 +306,7 @@
       <column comment="" defaultValue="" key="false" name="sea_water_pressure_due_to_sea_water_b" nullable="true" pattern="" sourceType="BOOL" type="id_Boolean"/>
       <column comment="" defaultValue="" key="false" name="sea_water_electrical_conductivity_b" nullable="true" pattern="" sourceType="BOOL" type="id_Boolean"/>
       <column comment="" defaultValue="" key="false" name="sea_water_salinity_b" nullable="true" pattern="" sourceType="BOOL" type="id_Boolean"/>
+      <column comment="" key="false" name="mole_concentration_of_dissolved_molecular_oxygen_in_sea_water_b" nullable="true" pattern="" sourceType="BOOL" type="id_Boolean"/>
       <column comment="" defaultValue="" key="false" name="moles_of_oxygen_per_unit_mass_in_sea_water_b" nullable="true" pattern="" sourceType="BOOL" type="id_Boolean"/>
       <column comment="" defaultValue="" key="false" name="turbidity_b" nullable="true" pattern="" sourceType="BOOL" type="id_Boolean"/>
       <column comment="" defaultValue="" key="false" name="mass_concentration_of_chlorophyll_in_sea_water_b" nullable="true" pattern="" sourceType="BOOL" type="id_Boolean"/>
@@ -391,6 +404,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="cphl_b"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dox1_b"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
@@ -460,6 +476,9 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="sea_water_pressure_b"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="mole_concentration_of_dissolved_molecular_oxygen_in_sea_water_b"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>

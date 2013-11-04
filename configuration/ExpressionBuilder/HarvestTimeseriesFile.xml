@@ -1,7 +1,117 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="null=>Var=>isTIME" expression="row4.variable.equals(&quot;TIME&quot;)">
-  <variables name="row4.variable" value="&quot;test&quot;" talendType="id_String" nullable="true"/>
-  <variables name="row4.name" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row4.value" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row4.type" value="null" talendType="id_String" nullable="true"/>
-</expression:EMFExpression>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore">
+  <expression:EMFExpression id="null=>Var=>isTIME" expression="row4.variable.equals(&quot;TIME&quot;)">
+    <variables name="row4.variable" value="&quot;test&quot;" talendType="id_String" nullable="true"/>
+    <variables name="row4.name" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row4.value" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row4.type" value="null" talendType="id_String" nullable="true"/>
+  </expression:EMFExpression>
+  <expression:EMFExpression id="null=>timeseries=>time_coverage_start" expression="TalendDate.parseDate(&quot;yyyy-MM-dd'T'HH:mm:ssZ&quot;,StringHandling.EREPLACE(row1.time_coverage_start,&quot;Z&quot;,&quot;+0000&quot;))">
+    <variables name="row1.institution" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.site_code" value="null" talendType="id_String"/>
+    <variables name="row1.platform_code" value="null" talendType="id_String"/>
+    <variables name="row1.deployment_code" value="null" talendType="id_String"/>
+    <variables name="row1.instrument_nominal_depth" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.instrument" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.instrument_serial_number" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.time_coverage_start" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.time_coverage_end" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.time_deployment_start" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.time_deployment_end" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.comment" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.history" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.toolbox_version" value="null" talendType="id_String" nullable="true"/>
+  </expression:EMFExpression>
+  <expression:EMFExpression id="null=>timeseries=>time_coverage_end" expression="TalendDate.parseDate(&quot;yyyy-MM-dd'T'HH:mm:ssZ&quot;,StringHandling.EREPLACE(row1.time_coverage_end,&quot;Z&quot;,&quot;+0000&quot;))">
+    <variables name="row1.institution" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.site_code" value="null" talendType="id_String"/>
+    <variables name="row1.platform_code" value="null" talendType="id_String"/>
+    <variables name="row1.deployment_code" value="null" talendType="id_String"/>
+    <variables name="row1.instrument_nominal_depth" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.instrument" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.instrument_serial_number" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.time_coverage_start" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.time_coverage_end" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.time_deployment_start" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.time_deployment_end" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.comment" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.history" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.toolbox_version" value="null" talendType="id_String" nullable="true"/>
+  </expression:EMFExpression>
+  <expression:EMFExpression id="null=>timeseries=>time_deployment_start" expression="TalendDate.parseDate(&quot;yyyy-MM-dd'T'HH:mm:ssZ&quot;,StringHandling.EREPLACE(row1.time_deployment_start,&quot;Z&quot;,&quot;+0000&quot;))">
+    <variables name="row1.institution" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.site_code" value="null" talendType="id_String"/>
+    <variables name="row1.platform_code" value="null" talendType="id_String"/>
+    <variables name="row1.deployment_code" value="null" talendType="id_String"/>
+    <variables name="row1.instrument_nominal_depth" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.instrument" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.instrument_serial_number" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.time_coverage_start" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.time_coverage_end" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.time_deployment_start" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.time_deployment_end" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.comment" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.history" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.toolbox_version" value="null" talendType="id_String" nullable="true"/>
+  </expression:EMFExpression>
+  <expression:EMFExpression id="null=>timeseries=>time_deployment_end" expression="TalendDate.parseDate(&quot;yyyy-MM-dd'T'HH:mm:ssZ&quot;,StringHandling.EREPLACE(row1.time_deployment_end,&quot;Z&quot;,&quot;+0000&quot;))">
+    <variables name="row1.institution" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.site_code" value="null" talendType="id_String"/>
+    <variables name="row1.platform_code" value="null" talendType="id_String"/>
+    <variables name="row1.deployment_code" value="null" talendType="id_String"/>
+    <variables name="row1.instrument_nominal_depth" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.instrument" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.instrument_serial_number" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.time_coverage_start" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.time_coverage_end" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.time_deployment_start" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.time_deployment_end" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.comment" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.history" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.toolbox_version" value="null" talendType="id_String" nullable="true"/>
+  </expression:EMFExpression>
+  <expression:EMFExpression id="null=>Var=>var1" expression="row1.instrument_nominal_depth==null?&quot;null&quot;:row1.instrument_nominal_depth">
+    <variables name="row1.site_code" value="null" talendType="id_String"/>
+    <variables name="row1.platform_code" value="null" talendType="id_String"/>
+    <variables name="row1.deployment_code" value="null" talendType="id_String"/>
+    <variables name="row1.instrument_nominal_depth" value="'12'" talendType="id_String" nullable="true"/>
+    <variables name="row1.site_nominal_depth" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.site_depth_at_deployment" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.instrument" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.instrument_serial_number" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.time_coverage_start" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.time_coverage_end" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.time_deployment_start" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.time_deployment_end" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.comment" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.history" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.toolbox_version" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.instrument_nominal_depth==null?null:Float.parseFloat(row1.instrument_nominal_depth) " value="0" talendType="id_Float"/>
+    <variables name="row1.site_nominal_depth==null?&quot;NaN&quot;:row1.site_nominal_depth" value="null" talendType="id_String"/>
+    <variables name="row1.site_depth_at_deployment==null?&quot;NaN&quot;:row1.site_depth_at_deployment" value="null" talendType="id_String"/>
+    <variables name="row1.instrument_nominal_depth==null?&quot;NaN&quot;:row1.instrument_nominal_depth " value="null" talendType="id_String"/>
+    <variables name="row1.instrument_nominal_depth==null?'NaN':row1.instrument_nominal_depth" value="null" talendType="id_String"/>
+    <variables name="row1.site_nominal_depth==null?'NaN':row1.site_nominal_depth" value="null" talendType="id_String"/>
+    <variables name="row1.site_depth_at_deployment==null?'NaN':row1.site_depth_at_deployment" value="null" talendType="id_String"/>
+  </expression:EMFExpression>
+  <expression:EMFExpression id="null=>timeseries=>instrument_nominal_depth" expression="row1.instrument_nominal_depth!=null?Float.parseFloat(row1.instrument_nominal_depth):null">
+    <variables name="row1.site_code" value="null" talendType="id_String"/>
+    <variables name="row1.platform_code" value="null" talendType="id_String"/>
+    <variables name="row1.deployment_code" value="null" talendType="id_String"/>
+    <variables name="row1.instrument_nominal_depth" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.site_nominal_depth" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.site_depth_at_deployment" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.instrument" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.instrument_serial_number" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.time_coverage_start" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.time_coverage_end" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.time_deployment_start" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.time_deployment_end" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.comment" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.history" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.toolbox_version" value="null" talendType="id_String" nullable="true"/>
+    <variables name="row1.instrument_nominal_depth==null?&quot;null&quot;:row1.instrument_nominal_depth " value="null" talendType="id_String"/>
+    <variables name="row1.site_nominal_depth==null?&quot;NaN&quot;:row1.site_nominal_depth" value="null" talendType="id_String"/>
+    <variables name="row1.site_depth_at_deployment==null?&quot;NaN&quot;:row1.site_depth_at_deployment" value="null" talendType="id_String"/>
+  </expression:EMFExpression>
+</xmi:XMI>

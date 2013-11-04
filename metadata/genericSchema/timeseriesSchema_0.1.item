@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_CU9BsEBPEeO6v8KxMxN-Vw" comment="connectionComment" label="connectionLabel" dataPackage="_CU9owEBPEeO6v8KxMxN-Vw"/>
+  <TalendMetadata:GenericPackage xmi:id="_CU9owEBPEeO6v8KxMxN-Vw" dataManager="_CU9BsEBPEeO6v8KxMxN-Vw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_CU9owUBPEeO6v8KxMxN-Vw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CU9owkBPEeO6v8KxMxN-Vw" name="file_id" id="606" label="file_id" length="19" sourceType="INT8" talendType="id_Long" nullable="false">
+        <initialValue xmi:id="_CU9ow0BPEeO6v8KxMxN-Vw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CU9oxEBPEeO6v8KxMxN-Vw" name="site_code" id="607" label="site_code" length="32" sourceType="TEXT" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_CU9oxUBPEeO6v8KxMxN-Vw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CU9oxkBPEeO6v8KxMxN-Vw" name="platform_code" id="608" label="platform_code" length="32" sourceType="TEXT" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_CU9ox0BPEeO6v8KxMxN-Vw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CU9oyEBPEeO6v8KxMxN-Vw" name="deployment_code" id="609" label="deployment_code" length="64" sourceType="TEXT" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_CU9oyUBPEeO6v8KxMxN-Vw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CU9oykBPEeO6v8KxMxN-Vw" name="lat" id="610" comment="actual latitude of deployment" label="lat" length="8" precision="8" sourceType="FLOAT4" talendType="id_Float">
+        <initialValue xmi:id="_CU9oy0BPEeO6v8KxMxN-Vw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CU9ozEBPEeO6v8KxMxN-Vw" name="lon" id="611" comment="actual longitude of deployment" label="lon" length="8" precision="8" sourceType="FLOAT4" talendType="id_Float">
+        <initialValue xmi:id="_CU9ozUBPEeO6v8KxMxN-Vw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CU9ozkBPEeO6v8KxMxN-Vw" name="geom" id="612" label="geom" length="2147483647" sourceType="GEOMETRY" talendType="id_Geometry">
+        <initialValue xmi:id="_CU9oz0BPEeO6v8KxMxN-Vw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CU9o0EBPEeO6v8KxMxN-Vw" name="depth_nominal" id="613" comment="netCDF global attribute instrument_nominal_depth" label="depth_nominal" length="8" precision="8" sourceType="FLOAT4" talendType="id_Float">
+        <initialValue xmi:id="_CU9o0UBPEeO6v8KxMxN-Vw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CU9o0kBPEeO6v8KxMxN-Vw" name="institution" id="614" label="institution" length="64" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_CU9o00BPEeO6v8KxMxN-Vw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CU9o1EBPEeO6v8KxMxN-Vw" name="instrument" id="615" label="instrument" length="256" sourceType="TEXT" talendType="id_String">
+        <initialValue xmi:id="_CU9o1UBPEeO6v8KxMxN-Vw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CU9o1kBPEeO6v8KxMxN-Vw" name="instrument_serial_number" id="616" label="instrument_serial_number" length="256" sourceType="TEXT" talendType="id_String">
+        <initialValue xmi:id="_CU9o10BPEeO6v8KxMxN-Vw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CU9o2EBPEeO6v8KxMxN-Vw" name="time_coverage_start" id="617" label="time_coverage_start" length="35" precision="6" sourceType="TIMESTAMPTZ" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_CU9o2UBPEeO6v8KxMxN-Vw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CU9o2kBPEeO6v8KxMxN-Vw" name="time_coverage_end" id="618" label="time_coverage_end" length="35" precision="6" sourceType="TIMESTAMPTZ" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_CU9o20BPEeO6v8KxMxN-Vw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CU9o3EBPEeO6v8KxMxN-Vw" name="time_deployment_start" id="619" label="time_deployment_start" length="35" precision="6" sourceType="TIMESTAMPTZ" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_CU9o3UBPEeO6v8KxMxN-Vw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CU9o3kBPEeO6v8KxMxN-Vw" name="time_deployment_end" id="620" label="time_deployment_end" length="35" precision="6" sourceType="TIMESTAMPTZ" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_CU9o30BPEeO6v8KxMxN-Vw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CU9o4EBPEeO6v8KxMxN-Vw" name="comment" id="621" label="comment" length="2147483647" sourceType="TEXT" talendType="id_String">
+        <initialValue xmi:id="_CU9o4UBPEeO6v8KxMxN-Vw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CU9o4kBPEeO6v8KxMxN-Vw" name="history" id="622" label="history" length="2147483647" sourceType="TEXT" talendType="id_String">
+        <initialValue xmi:id="_CU9o40BPEeO6v8KxMxN-Vw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CU9o5EBPEeO6v8KxMxN-Vw" name="toolbox_version" id="623" label="toolbox_version" length="32" sourceType="TEXT" talendType="id_String">
+        <initialValue xmi:id="_CU9o5UBPEeO6v8KxMxN-Vw"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
