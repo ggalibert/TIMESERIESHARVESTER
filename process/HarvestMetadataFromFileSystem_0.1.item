@@ -15,7 +15,7 @@
   </context>
   <context confirmationNeeded="false" name="Prompt">
     <contextParameter comment="" name="paramFile" prompt="paramFile?" promptNeeded="true" type="id_String" value="null"/>
-    <contextParameter comment="" name="sourceDir" prompt="sourceDir?" promptNeeded="true" type="id_String" value="/home/ggalibert/Documents/ANMN"/>
+    <contextParameter comment="" name="sourceDir" prompt="sourceDir?" promptNeeded="true" type="id_String" value="/home/ggalibert/Documents/ANMN_CTD_timeseries_with_bursts"/>
     <contextParameter comment="" name="include" prompt="include?" promptNeeded="true" type="id_String" value=""/>
     <contextParameter comment="" name="exclude" prompt="exclude?" promptNeeded="true" type="id_String" value=""/>
     <contextParameter comment="" name="logDir" prompt="logDir?" promptNeeded="true" type="id_String" value="/tmp"/>
